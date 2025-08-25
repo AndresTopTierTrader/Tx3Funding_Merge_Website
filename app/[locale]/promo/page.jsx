@@ -1,11 +1,11 @@
 import CarouselTextSection from "@/components/common/FinalSection/Carousel-Text-Section";
 import SocialMediaSection from "@/components/common/SocialMediaSection/SocialMedia-Section";
-import CountdownTimer from "@/components/conversions/countdown/Main";
-import { Hero } from "@/components/conversions/Main";
-import { SupportedByTraders } from "@/components/conversions/SupportedByTraders/Main";
-import { Traders } from "@/components/conversions/traders/Traders";
-import { WhatYouAreGetting } from "@/components/conversions/whatYouAreGetting/Main";
-import { Oportunity } from "@/components/conversions/yourOpportunity/Main";
+import CountdownTimer from "@/components/promo/CountDownTimer";
+import Hero from "@/components/promo/Hero";
+import { SupportedByTraders } from "@/components/promo/SupportedByTraders";
+import { Traders } from "@/components/promo/Traders";
+import { WhatYouAreGetting } from "@/components/promo/WhatYouAreGetting";
+import { Opportunity } from "@/components/promo/Opportunity";
 import ComparationSection from "@/components/home/ComparationSection/Comparation-Section";
 import initTranslations from "@/i18n"
 import { ENVIRONMENT_URL } from "@/constants/global";
@@ -210,7 +210,7 @@ export default async function ConversionsPage({ params: { locale } }) {
             <CountdownTimer translations={mainTranslations.countdown} />
             <WhatYouAreGetting translations={mainTranslations.whatYouAreGetting} />
             <Traders translations={mainTranslations.traders} />
-            <Oportunity translations={mainTranslations.oportunity} mainLang={mainLang} />
+            <Opportunity translations={mainTranslations.oportunity} mainLang={mainLang} />
             <SupportedByTraders translations={mainTranslations.supportedByTraders} />
             <div className="mt-6 md:mt-12">
                 <CarouselTextSection mainLang={mainLang} />
