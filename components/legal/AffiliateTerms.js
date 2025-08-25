@@ -3,7 +3,7 @@
 //translations added
 
 const bgImageStyle = {
-    backgroundColor: 'hsla(219,45%,7%,1)',
+    backgroundColor: '#0B111D',
     backgroundImage: `
       radial-gradient(at 63% 43%, hsla(217,43%,7%,1) 0px, transparent 50%),
       radial-gradient(at 63% 59%, hsla(197,100%,32%,0.2) 0px, transparent 50%),

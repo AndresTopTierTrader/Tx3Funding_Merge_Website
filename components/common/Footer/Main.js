@@ -7,7 +7,7 @@ import bigLogo from './assets/bigLogo.svg'
 import { ENVIRONMENT_URL } from "@/constants/global";
 
 const bgImageStyle = {
-    backgroundColor: 'hsla(219,45%,7%,1)',
+    backgroundColor: '#0B111D',
     backgroundImage: `
     radial-gradient(at 43% 100%, hsla(212,100%,35%,0.32) 0px, transparent 50%),
     radial-gradient(at 57% 100%, hsla(194,100%,63%,0.21) 0px, transparent 50%)

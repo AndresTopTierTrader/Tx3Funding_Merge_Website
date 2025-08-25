@@ -18,20 +18,20 @@ const i18nNameSpaces = ["home", "navbar", "payout", "common", "table_section", "
 
 const metadata_en = {
   metadataBase: new URL(`${ENVIRONMENT_URL}`),
-  title: "Your Skills, Big Profit - TopTier Proprietary Trading Firm",
-  description: "Join TopTier Trader, the leading proprietary trading evaluation firm. We're looking for skilled traders to fund. Start your trading journey and unlock new opportunities today!",
-  keywords: "proprietary trading, get funded, trading evaluation, experienced traders, trading journey, financial markets, trading opportunities",
+  title: "Tx3 Funding - Forex or Futures, we will fund you fast",
+  description: "Join Tx3 Funding, the leading proprietary trading firm offering fast funding for Forex and Futures traders. We're looking for skilled traders to fund. Start your trading journey and unlock new opportunities today!",
+  keywords: "proprietary trading, get funded, forex funding, futures funding, trading evaluation, experienced traders, trading journey, financial markets, trading opportunities, prop firm",
   language: "en",
   subject: "Proprietary Trading Firm Services",
   coverage: "Global",
   robots: "index, follow",
-  author: "TopTier Trader",
-  publisher: "TopTier Trader LLC",
+  author: "Tx3 Funding",
+  publisher: "Tx3 Funding LLC",
   og: {
     type: "website",
-    title: "Join TopTier Trader - Exclusive Proprietary Trading Firm",
-    description: "Seeking skilled traders for funding at TopTier Trader. Start your proprietary trading journey with us and explore unlimited financial markets opportunities.",
-    site_name: "TopTier Trader",
+    title: "Join Tx3 Funding - Forex or Futures, we will fund you fast",
+    description: "Seeking skilled traders for fast funding at Tx3 Funding. Trade Forex or Futures with our capital and explore unlimited financial markets opportunities.",
+    site_name: "Tx3 Funding",
     url: `${ENVIRONMENT_URL}/en/`
   },
   alternates: {
@@ -50,20 +50,20 @@ const metadata_en = {
 
 const metadata_es = {
   metadataBase: new URL(`${ENVIRONMENT_URL}`),
-  title: "Fondate con TopTier Trader - Únete a Nuestra Firma de Prop Trading",
-  description: "Únete a TopTier Trader, la firma líder en evaluación de trading propietario. Buscamos traders cualificados para financiar. ¡Inicia tu camino en el trading y descubre nuevas oportunidades hoy!",
-  keywords: "trading propietario, prop trading, prop firm, fondeate, fondeo de forex, fondeo de cuentas, financiacion simulada, financiamiento para traders, evaluación de trading, traders experimentados, carrera en trading, mercados financieros, oportunidades de trading",
+  title: "Tx3 Funding - Forex o Futuros, te fondearemos rápido",
+  description: "Únete a Tx3 Funding, la firma líder en trading propietario que ofrece fondeo rápido para traders de Forex y Futuros. Buscamos traders cualificados para financiar. ¡Inicia tu camino en el trading y descubre nuevas oportunidades hoy!",
+  keywords: "trading propietario, prop trading, prop firm, fondeate, fondeo de forex, fondeo de futuros, fondeo de cuentas, financiacion simulada, financiamiento para traders, evaluación de trading, traders experimentados, carrera en trading, mercados financieros, oportunidades de trading",
   language: "es",
   subject: "Servicios de Firma de Trading Propietario",
   coverage: "Global",
   robots: "index, follow",
-  author: "TopTier Trader",
-  publisher: "TopTier Trader LLC",
+  author: "Tx3 Funding",
+  publisher: "Tx3 Funding LLC",
   og: {
     type: "website",
-    title: "Únete a TopTier Trader - Firma Exclusiva de Trading Propietario",
-    description: "¿Eres un trader cualificado? Únete a TopTier Trader para obtener financiamiento y elevar tu carrera en trading. ¡Aplica ahora y comienza a operar con nuestro capital!",
-    site_name: "TopTier Trader",
+    title: "Únete a Tx3 Funding - Forex o Futuros, te fondearemos rápido",
+    description: "¿Eres un trader cualificado? Únete a Tx3 Funding para obtener financiamiento rápido en Forex o Futuros y elevar tu carrera en trading. ¡Aplica ahora y comienza a operar con nuestro capital!",
+    site_name: "Tx3 Funding",
     url: `${ENVIRONMENT_URL}/es/`
   },
   alternates: {
@@ -85,20 +85,20 @@ const metadata_es = {
 
 const metadata_es_co = {
   metadataBase: new URL(`${ENVIRONMENT_URL}`),
-  title: "Fondate con TopTier Trader - La mejor Prop Firm para Colombia",
-  description: "Únete a TopTier Trader, la firma líder en evaluación de trading propietario. Buscamos traders cualificados para financiar. ¡Inicia tu camino en el trading y descubre nuevas oportunidades hoy!",
-  keywords: "trading propietario, prop trading, prop firm, fondeate, fondeo de forex, fondeo de cuentas, financiacion simulada, financiamiento para traders, evaluación de trading, traders experimentados, carrera en trading, mercados financieros, oportunidades de trading",
+  title: "Tx3 Funding - La mejor Prop Firm para Colombia - Forex o Futuros",
+  description: "Únete a Tx3 Funding, la firma líder en trading propietario que ofrece fondeo rápido para traders de Forex y Futuros. Buscamos traders cualificados para financiar. ¡Inicia tu camino en el trading y descubre nuevas oportunidades hoy!",
+  keywords: "trading propietario, prop trading, prop firm, fondeate, fondeo de forex, fondeo de futuros, fondeo de cuentas, financiacion simulada, financiamiento para traders, evaluación de trading, traders experimentados, carrera en trading, mercados financieros, oportunidades de trading",
   language: "es",
   subject: "Servicios de Firma de Trading Propietario",
   coverage: "Global",
   robots: "index, follow",
-  author: "TopTier Trader",
-  publisher: "TopTier Trader LLC",
+  author: "Tx3 Funding",
+  publisher: "Tx3 Funding LLC",
   og: {
     type: "website",
-    title: "Únete a TopTier Trader - Firma Exclusiva de Trading Propietario",
-    description: "¿Eres un trader cualificado? Únete a TopTier Trader para obtener financiamiento y elevar tu carrera en trading. ¡Aplica ahora y comienza a operar con nuestro capital!",
-    site_name: "TopTier Trader",
+    title: "Únete a Tx3 Funding - Forex o Futuros, te fondearemos rápido",
+    description: "¿Eres un trader cualificado? Únete a Tx3 Funding para obtener financiamiento rápido en Forex o Futuros y elevar tu carrera en trading. ¡Aplica ahora y comienza a operar con nuestro capital!",
+    site_name: "Tx3 Funding",
     url: `${ENVIRONMENT_URL}/es-co/`
   },
   alternates: {
@@ -119,20 +119,20 @@ const metadata_es_co = {
 };
 
 const metadata_es_ar = {
-  title: "Fondate con TopTier Trader - La mejor Prop Firm para Argentina",
-  description: "Únete a TopTier Trader, la firma líder en evaluación de trading propietario. Buscamos traders cualificados para financiar. ¡Inicia tu camino en el trading y descubre nuevas oportunidades hoy!",
-  keywords: "trading propietario, prop trading, prop firm, fondeate, fondeo de forex, fondeo de cuentas, financiacion simulada, financiamiento para traders, evaluación de trading, traders experimentados, carrera en trading, mercados financieros, oportunidades de trading",
+  title: "Tx3 Funding - La mejor Prop Firm para Argentina - Forex o Futuros",
+  description: "Únete a Tx3 Funding, la firma líder en trading propietario que ofrece fondeo rápido para traders de Forex y Futuros. Buscamos traders cualificados para financiar. ¡Inicia tu camino en el trading y descubre nuevas oportunidades hoy!",
+  keywords: "trading propietario, prop trading, prop firm, fondeate, fondeo de forex, fondeo de futuros, fondeo de cuentas, financiacion simulada, financiamiento para traders, evaluación de trading, traders experimentados, carrera en trading, mercados financieros, oportunidades de trading",
   language: "es",
   subject: "Servicios de Firma de Trading Propietario",
   coverage: "Global",
   robots: "index, follow",
-  author: "TopTier Trader",
-  publisher: "TopTier Trader LLC",
+  author: "Tx3 Funding",
+  publisher: "Tx3 Funding LLC",
   og: {
     type: "website",
-    title: "Únete a TopTier Trader - Firma Exclusiva de Trading Propietario",
-    description: "¿Eres un trader cualificado? Únete a TopTier Trader para obtener financiamiento y elevar tu carrera en trading. ¡Aplica ahora y comienza a operar con nuestro capital!",
-    site_name: "TopTier Trader",
+    title: "Únete a Tx3 Funding - Forex o Futuros, te fondearemos rápido",
+    description: "¿Eres un trader cualificado? Únete a Tx3 Funding para obtener financiamiento rápido en Forex o Futuros y elevar tu carrera en trading. ¡Aplica ahora y comienza a operar con nuestro capital!",
+    site_name: "Tx3 Funding",
     url: `${ENVIRONMENT_URL}/es-ar/`
   },
   alternates: {
@@ -154,20 +154,20 @@ const metadata_es_ar = {
 
 const metadata_es_mx = {
   metadataBase: new URL(`${ENVIRONMENT_URL}`),
-  title: "Fondate con TopTier Trader - La mejor Prop Firm para Mexico",
-  description: "Únete a TopTier Trader, la firma líder en evaluación de trading propietario. Buscamos traders cualificados para financiar. ¡Inicia tu camino en el trading y descubre nuevas oportunidades hoy!",
-  keywords: "trading propietario, prop trading, prop firm, fondeate, fondeo de forex, fondeo de cuentas, financiacion simulada, financiamiento para traders, evaluación de trading, traders experimentados, carrera en trading, mercados financieros, oportunidades de trading",
+  title: "Tx3 Funding - La mejor Prop Firm para Mexico - Forex o Futuros",
+  description: "Únete a Tx3 Funding, la firma líder en trading propietario que ofrece fondeo rápido para traders de Forex y Futuros. Buscamos traders cualificados para financiar. ¡Inicia tu camino en el trading y descubre nuevas oportunidades hoy!",
+  keywords: "trading propietario, prop trading, prop firm, fondeate, fondeo de forex, fondeo de futuros, fondeo de cuentas, financiacion simulada, financiamiento para traders, evaluación de trading, traders experimentados, carrera en trading, mercados financieros, oportunidades de trading",
   language: "es",
   subject: "Servicios de Firma de Trading Propietario",
   coverage: "Global",
   robots: "index, follow",
-  author: "TopTier Trader",
-  publisher: "TopTier Trader LLC",
+  author: "Tx3 Funding",
+  publisher: "Tx3 Funding LLC",
   og: {
     type: "website",
-    title: "Únete a TopTier Trader - Firma Exclusiva de Trading Propietario",
-    description: "¿Eres un trader cualificado? Únete a TopTier Trader para obtener financiamiento y elevar tu carrera en trading. ¡Aplica ahora y comienza a operar con nuestro capital!",
-    site_name: "TopTier Trader",
+    title: "Únete a Tx3 Funding - Forex o Futuros, te fondearemos rápido",
+    description: "¿Eres un trader cualificado? Únete a Tx3 Funding para obtener financiamiento rápido en Forex o Futuros y elevar tu carrera en trading. ¡Aplica ahora y comienza a operar con nuestro capital!",
+    site_name: "Tx3 Funding",
     url: `${ENVIRONMENT_URL}/es-mx/`
   },
   alternates: {
@@ -189,20 +189,20 @@ const metadata_es_mx = {
 
 const metadata_es_pr = {
   metadataBase: new URL(`${ENVIRONMENT_URL}`),
-  title: "Fondate con TopTier Trader - La mejor Prop Firm de LATAM",
-  description: "Únete a TopTier Trader, la firma líder en evaluación de trading propietario. Buscamos traders cualificados para financiar. ¡Inicia tu camino en el trading y descubre nuevas oportunidades hoy!",
-  keywords: "trading propietario, prop trading, prop firm, fondeate, fondeo de forex, fondeo de cuentas, financiacion simulada, financiamiento para traders, evaluación de trading, traders experimentados, carrera en trading, mercados financieros, oportunidades de trading",
+  title: "Tx3 Funding - La mejor Prop Firm de LATAM - Forex o Futuros",
+  description: "Únete a Tx3 Funding, la firma líder en trading propietario que ofrece fondeo rápido para traders de Forex y Futuros. Buscamos traders cualificados para financiar. ¡Inicia tu camino en el trading y descubre nuevas oportunidades hoy!",
+  keywords: "trading propietario, prop trading, prop firm, fondeate, fondeo de forex, fondeo de futuros, fondeo de cuentas, financiacion simulada, financiamiento para traders, evaluación de trading, traders experimentados, carrera en trading, mercados financieros, oportunidades de trading",
   language: "es",
   subject: "Servicios de Firma de Trading Propietario",
   coverage: "Global",
   robots: "index, follow",
-  author: "TopTier Trader",
-  publisher: "TopTier Trader LLC",
+  author: "Tx3 Funding",
+  publisher: "Tx3 Funding LLC",
   og: {
     type: "website",
-    title: "Únete a TopTier Trader - Firma Exclusiva de Trading Propietario",
-    description: "¿Eres un trader cualificado? Únete a TopTier Trader para obtener financiamiento y elevar tu carrera en trading. ¡Aplica ahora y comienza a operar con nuestro capital!",
-    site_name: "TopTier Trader",
+    title: "Únete a Tx3 Funding - Forex o Futuros, te fondearemos rápido",
+    description: "¿Eres un trader cualificado? Únete a Tx3 Funding para obtener financiamiento rápido en Forex o Futuros y elevar tu carrera en trading. ¡Aplica ahora y comienza a operar con nuestro capital!",
+    site_name: "Tx3 Funding",
     url: `${ENVIRONMENT_URL}/es-pr/`
   },
   alternates: {
@@ -224,20 +224,20 @@ const metadata_es_pr = {
 
 const metadata_fr = {
   metadataBase: new URL(`${ENVIRONMENT_URL}`),
-  title: "Fondate avec TopTier Trader - Rejoignez Notre Société de Prop Trading",
-  description: "Rejoignez TopTier Trader, la société leader en évaluation de trading propriétaire. Nous recherchons des traders qualifiés à financer. Commencez votre parcours de trading et découvrez de nouvelles opportunités dès aujourd'hui !",
-  keywords: "trading propriétaire, prop trading, société de prop trading, fonde, financement de forex, financement de comptes, financement simulé, financement pour traders, évaluation de trading, traders expérimentés, carrière en trading, marchés financiers, opportunités de trading",
+  title: "Tx3 Funding - Forex ou Futures, nous vous financerons rapidement",
+  description: "Rejoignez Tx3 Funding, la société leader en trading propriétaire offrant un financement rapide pour les traders de Forex et Futures. Nous recherchons des traders qualifiés à financer. Commencez votre parcours de trading et découvrez de nouvelles opportunités dès aujourd'hui !",
+  keywords: "trading propriétaire, prop trading, société de prop trading, fonde, financement de forex, financement de futures, financement de comptes, financement simulé, financement pour traders, évaluation de trading, traders expérimentés, carrière en trading, marchés financiers, opportunités de trading",
   language: "fr",
   subject: "Services de Société de Trading Propriétaire",
   coverage: "Global",
   robots: "index, follow",
-  author: "TopTier Trader",
-  publisher: "TopTier Trader LLC",
+  author: "Tx3 Funding",
+  publisher: "Tx3 Funding LLC",
   og: {
     type: "website",
-    title: "Rejoignez TopTier Trader - Société Exclusive de Trading Propriétaire",
-    description: "Êtes-vous un trader qualifié ? Rejoignez TopTier Trader pour obtenir un financement et propulser votre carrière de trading. Postulez maintenant et commencez à trader avec notre capital !",
-    site_name: "TopTier Trader",
+    title: "Rejoignez Tx3 Funding - Forex ou Futures, nous vous financerons rapidement",
+    description: "Êtes-vous un trader qualifié ? Rejoignez Tx3 Funding pour obtenir un financement rapide en Forex ou Futures et propulser votre carrière de trading. Postulez maintenant et commencez à trader avec notre capital !",
+    site_name: "Tx3 Funding",
     url: `${ENVIRONMENT_URL}/fr/`
   },
   alternates: {
