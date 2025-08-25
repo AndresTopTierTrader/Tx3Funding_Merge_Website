@@ -89,7 +89,7 @@ const BlogCard = ({ blog, index }) => {
             variants={hoverVariants}
             initial="rest"
             whileHover="hover"
-            className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden h-full hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+            className="bg-gradient-to-br from-white/5 to-[#0B111D] border border-[#717892] rounded-2xl overflow-hidden h-full hover:border-[#45D1FF] hover:shadow-lg hover:shadow-[#45D1FF]/25 transition-all duration-300 cursor-pointer backdrop-blur-sm"
           >
             {/* Image Container */}
             <div className="relative overflow-hidden">
@@ -103,7 +103,7 @@ const BlogCard = ({ blog, index }) => {
               
               {/* Overlay with Category */}
               <div className="absolute top-4 left-4">
-                <span className="inline-flex items-center px-3 py-1 bg-white/90 backdrop-blur-sm text-xs font-medium text-gray-700 rounded-full">
+                <span className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-[#45D1FF]/20 to-[#167BCC]/20 backdrop-blur-sm text-xs font-light text-[#45D1FF] rounded-full border border-[#45D1FF]/30">
                   {blog.category}
                 </span>
               </div>
@@ -114,7 +114,7 @@ const BlogCard = ({ blog, index }) => {
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ delay: 0.2, type: "spring" }}
-                  className="inline-flex items-center px-2 py-1 bg-orange-500 text-white text-xs font-medium rounded-full"
+                  className="inline-flex items-center px-2 py-1 bg-gradient-to-r from-orange-400/20 to-orange-600/20 text-orange-400 text-xs font-light rounded-full border border-orange-400/30"
                 >
                   Featured
                 </motion.span>
@@ -123,28 +123,28 @@ const BlogCard = ({ blog, index }) => {
               {/* Quick Actions */}
               <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <motion.button
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.1, boxShadow: "0 0 10px rgba(69, 209, 255, 0.3)" }}
                   whileTap={{ scale: 0.9 }}
                   onClick={(e) => {
                     e.preventDefault();
                     e.stopPropagation();
                     // Handle bookmark logic here
                   }}
-                  className="p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors"
+                  className="p-2 bg-gradient-to-br from-white/10 to-[#0B111D]/50 backdrop-blur-sm rounded-full hover:bg-gradient-to-br hover:from-[#45D1FF]/20 hover:to-[#167BCC]/20 transition-all border border-[#717892]/50"
                 >
-                  <FiBookmark className="w-4 h-4 text-gray-600" />
+                  <FiBookmark className="w-4 h-4 text-[#717892] group-hover:text-[#45D1FF]" />
                 </motion.button>
                 <motion.button
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.1, boxShadow: "0 0 10px rgba(69, 209, 255, 0.3)" }}
                   whileTap={{ scale: 0.9 }}
                   onClick={(e) => {
                     e.preventDefault();
                     e.stopPropagation();
                     // Handle share logic here
                   }}
-                  className="p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors"
+                  className="p-2 bg-gradient-to-br from-white/10 to-[#0B111D]/50 backdrop-blur-sm rounded-full hover:bg-gradient-to-br hover:from-[#45D1FF]/20 hover:to-[#167BCC]/20 transition-all border border-[#717892]/50"
                 >
-                  <FiShare2 className="w-4 h-4 text-gray-600" />
+                  <FiShare2 className="w-4 h-4 text-[#717892] group-hover:text-[#45D1FF]" />
                 </motion.button>
               </div>
             </div>
@@ -159,7 +159,7 @@ const BlogCard = ({ blog, index }) => {
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.1 + tagIndex * 0.05 }}
-                    className="inline-flex items-center gap-1 px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-md hover:bg-gray-200 transition-colors"
+                    className="inline-flex items-center gap-1 px-2 py-1 bg-[#0A1930] text-[#717892] text-xs rounded-md hover:bg-gradient-to-r hover:from-[#45D1FF]/20 hover:to-[#167BCC]/20 hover:text-[#45D1FF] transition-all border border-[#717892]/30 font-light"
                   >
                     <FiTag className="w-3 h-3" />
                     {tag}
@@ -172,7 +172,7 @@ const BlogCard = ({ blog, index }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-blue-600 transition-colors text-xl md:text-2xl"
+                className="font-light text-white mb-3 line-clamp-2 group-hover:text-[#45D1FF] transition-colors text-xl md:text-2xl"
               >
                 {blog.title}
               </motion.h3>
@@ -182,7 +182,7 @@ const BlogCard = ({ blog, index }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
-                className="text-gray-600 text-sm mb-4 line-clamp-3"
+                className="text-[#717892] text-sm mb-4 line-clamp-3 font-light"
               >
                 {blog.description}
               </motion.p>
@@ -192,29 +192,29 @@ const BlogCard = ({ blog, index }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
-                className="flex items-center justify-between text-sm text-gray-500"
+                className="flex items-center justify-between text-sm text-[#717892] font-light"
               >
                 <div className="flex items-center gap-4">
                   <div className="flex items-center gap-1">
-                    <FiUser className="w-4 h-4" />
+                    <FiUser className="w-4 h-4 text-[#45D1FF]" />
                     <span>{blog.author}</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <FiCalendar className="w-4 h-4" />
+                    <FiCalendar className="w-4 h-4 text-[#45D1FF]" />
                     <span>{formatDate(blog.date)}</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <FiClock className="w-4 h-4" />
+                    <FiClock className="w-4 h-4 text-[#45D1FF]" />
                     <span>{blog.readTime}</span>
                   </div>
                 </div>
 
                 {/* Read More Arrow */}
                 <motion.div
-                  className="flex items-center gap-1 text-blue-600 group-hover:gap-2 transition-all duration-300"
+                  className="flex items-center gap-1 text-[#45D1FF] group-hover:gap-2 transition-all duration-300"
                   whileHover={{ x: 5 }}
                 >
-                  <span className="text-sm font-medium">Read more</span>
+                  <span className="text-sm font-light">Read more</span>
                   <FiArrowRight className="w-4 h-4" />
                 </motion.div>
               </motion.div>
@@ -239,7 +239,7 @@ const BlogCard = ({ blog, index }) => {
           variants={hoverVariants}
           initial="rest"
           whileHover="hover"
-          className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden h-full hover:shadow-lg transition-shadow duration-300 flex flex-col cursor-pointer"
+          className="bg-gradient-to-br from-white/5 to-[#0B111D] border border-[#717892] rounded-2xl overflow-hidden h-full hover:border-[#45D1FF] hover:shadow-lg hover:shadow-[#45D1FF]/25 transition-all duration-300 flex flex-col cursor-pointer backdrop-blur-sm"
         >
           {/* Image Container */}
           <div className="relative overflow-hidden flex-shrink-0">
@@ -253,7 +253,7 @@ const BlogCard = ({ blog, index }) => {
             
             {/* Overlay with Category */}
             <div className="absolute top-3 left-3">
-              <span className="inline-flex items-center px-2 py-1 bg-white/90 backdrop-blur-sm text-xs font-medium text-gray-700 rounded-full">
+              <span className="inline-flex items-center px-2 py-1 bg-gradient-to-r from-[#45D1FF]/20 to-[#167BCC]/20 backdrop-blur-sm text-xs font-light text-[#45D1FF] rounded-full border border-[#45D1FF]/30">
                 {blog.category}
               </span>
             </div>
@@ -261,28 +261,28 @@ const BlogCard = ({ blog, index }) => {
             {/* Quick Actions */}
             <div className="absolute top-3 right-3 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <motion.button
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.1, boxShadow: "0 0 8px rgba(69, 209, 255, 0.3)" }}
                 whileTap={{ scale: 0.9 }}
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
                   // Handle bookmark logic here
                 }}
-                className="p-1.5 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors"
+                className="p-1.5 bg-gradient-to-br from-white/10 to-[#0B111D]/50 backdrop-blur-sm rounded-full hover:bg-gradient-to-br hover:from-[#45D1FF]/20 hover:to-[#167BCC]/20 transition-all border border-[#717892]/50"
               >
-                <FiBookmark className="w-3 h-3 text-gray-600" />
+                <FiBookmark className="w-3 h-3 text-[#717892] group-hover:text-[#45D1FF]" />
               </motion.button>
               <motion.button
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.1, boxShadow: "0 0 8px rgba(69, 209, 255, 0.3)" }}
                 whileTap={{ scale: 0.9 }}
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
                   // Handle share logic here
                 }}
-                className="p-1.5 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors"
+                className="p-1.5 bg-gradient-to-br from-white/10 to-[#0B111D]/50 backdrop-blur-sm rounded-full hover:bg-gradient-to-br hover:from-[#45D1FF]/20 hover:to-[#167BCC]/20 transition-all border border-[#717892]/50"
               >
-                <FiShare2 className="w-3 h-3 text-gray-600" />
+                <FiShare2 className="w-3 h-3 text-[#717892] group-hover:text-[#45D1FF]" />
               </motion.button>
             </div>
           </div>
@@ -297,7 +297,7 @@ const BlogCard = ({ blog, index }) => {
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 + tagIndex * 0.05 }}
-                  className="inline-flex items-center gap-1 px-2 py-0.5 bg-gray-100 text-gray-600 text-xs rounded-md hover:bg-gray-200 transition-colors"
+                  className="inline-flex items-center gap-1 px-2 py-0.5 bg-[#0A1930] text-[#717892] text-xs rounded-md hover:bg-gradient-to-r hover:from-[#45D1FF]/20 hover:to-[#167BCC]/20 hover:text-[#45D1FF] transition-all border border-[#717892]/30 font-light"
                 >
                   <FiTag className="w-2.5 h-2.5" />
                   {tag}
@@ -310,7 +310,7 @@ const BlogCard = ({ blog, index }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors text-base leading-tight flex-shrink-0"
+              className="font-light text-white mb-2 line-clamp-2 group-hover:text-[#45D1FF] transition-colors text-base leading-tight flex-shrink-0"
             >
               {blog.title}
             </motion.h3>
@@ -320,7 +320,7 @@ const BlogCard = ({ blog, index }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-gray-600 text-sm mb-4 line-clamp-2 flex-1"
+              className="text-[#717892] text-sm mb-4 line-clamp-2 flex-1 font-light"
             >
               {blog.description}
             </motion.p>
@@ -333,25 +333,25 @@ const BlogCard = ({ blog, index }) => {
               className="mt-auto"
             >
               {/* Author and Date on separate line */}
-              <div className="flex items-center justify-between text-xs text-gray-500 mb-2">
+              <div className="flex items-center justify-between text-xs text-[#717892] mb-2 font-light">
                 <div className="flex items-center gap-1">
-                  <FiUser className="w-3 h-3" />
+                  <FiUser className="w-3 h-3 text-[#45D1FF]" />
                   <span className="truncate">{blog.author}</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <FiClock className="w-3 h-3" />
+                  <FiClock className="w-3 h-3 text-[#45D1FF]" />
                   <span>{blog.readTime}</span>
                 </div>
               </div>
               
               {/* Date and Read More */}
               <div className="flex items-center justify-between">
-                <span className="text-xs text-gray-500">{formatDate(blog.date)}</span>
+                <span className="text-xs text-[#717892] font-light">{formatDate(blog.date)}</span>
                 <motion.div
-                  className="flex items-center gap-1 text-blue-600 group-hover:gap-2 transition-all duration-300"
+                  className="flex items-center gap-1 text-[#45D1FF] group-hover:gap-2 transition-all duration-300"
                   whileHover={{ x: 3 }}
                 >
-                  <span className="text-xs font-medium">Read</span>
+                  <span className="text-xs font-light">Read</span>
                   <FiArrowRight className="w-3 h-3" />
                 </motion.div>
               </div>
@@ -396,16 +396,16 @@ const BlogGrid = ({ blogs, isLoading }) => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: index * 0.1 }}
-            className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden animate-pulse"
+            className="bg-gradient-to-br from-white/5 to-[#0B111D] border border-[#717892] rounded-2xl overflow-hidden animate-pulse backdrop-blur-sm"
           >
-            <div className="h-48 bg-gray-200"></div>
+            <div className="h-48 bg-gradient-to-br from-[#717892]/20 to-[#0A1930]/20"></div>
             <div className="p-6">
-              <div className="h-4 bg-gray-200 rounded mb-3"></div>
-              <div className="h-6 bg-gray-200 rounded mb-3"></div>
-              <div className="h-4 bg-gray-200 rounded mb-4"></div>
+              <div className="h-4 bg-gradient-to-r from-[#717892]/30 to-[#0A1930]/30 rounded mb-3"></div>
+              <div className="h-6 bg-gradient-to-r from-[#717892]/30 to-[#0A1930]/30 rounded mb-3"></div>
+              <div className="h-4 bg-gradient-to-r from-[#717892]/30 to-[#0A1930]/30 rounded mb-4"></div>
               <div className="flex justify-between">
-                <div className="h-4 bg-gray-200 rounded w-1/2"></div>
-                <div className="h-4 bg-gray-200 rounded w-1/4"></div>
+                <div className="h-4 bg-gradient-to-r from-[#717892]/30 to-[#0A1930]/30 rounded w-1/2"></div>
+                <div className="h-4 bg-gradient-to-r from-[#717892]/30 to-[#0A1930]/30 rounded w-1/4"></div>
               </div>
             </div>
           </motion.div>
@@ -420,18 +420,18 @@ const BlogGrid = ({ blogs, isLoading }) => {
         variants={emptyStateVariants}
         initial="hidden"
         animate="visible"
-        className="text-center py-16"
+        className="text-center py-16 bg-gradient-to-br from-white/5 to-[#0B111D] border border-[#717892] rounded-lg backdrop-blur-sm"
       >
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ delay: 0.2, type: "spring" }}
-          className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4"
+          className="w-16 h-16 bg-gradient-to-br from-[#45D1FF]/20 to-[#167BCC]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#45D1FF]/30"
         >
-          <FiTag className="w-8 h-8 text-gray-400" />
+          <FiTag className="w-8 h-8 text-[#45D1FF]" />
         </motion.div>
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">No articles found</h3>
-        <p className="text-gray-600 max-w-md mx-auto">
+        <h3 className="text-xl font-light text-white mb-2">No articles found</h3>
+        <p className="text-[#717892] max-w-md mx-auto font-light">
           Try adjusting your search criteria or clearing your filters to see more results.
         </p>
       </motion.div>

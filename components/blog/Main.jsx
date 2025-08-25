@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiTrendingUp, FiGrid, FiList } from 'react-icons/fi';
 import BlogGrid from './utils/BlogGrid.jsx';
 import BlogFilter from './utils/BlogFilter.jsx';
-import { fetchBlogData, fetchAuthors, fetchCategories, fetchTags } from './utils/data.js'; // Import all fetch functions
+import { fetchBlogData, fetchAuthors, fetchCategories, fetchTags } from './utils/data.js';
 import { FaSortAmountDown } from "react-icons/fa";
 
 const Main = () => {
@@ -20,7 +20,7 @@ const Main = () => {
   const [sortBy, setSortBy] = useState('date');
   const [viewMode, setViewMode] = useState('grid');
   const [isLoading, setIsLoading] = useState(true);
-  const [blogs, setBlogs] = useState([]); // State to store fetched blogs
+  const [blogs, setBlogs] = useState([]);
   const [availableAuthors, setAvailableAuthors] = useState([]);
   const [availableCategories, setAvailableCategories] = useState([]);
   const [availableTags, setAvailableTags] = useState([]);
@@ -32,7 +32,6 @@ const Main = () => {
       setIsLoading(true);
       
       try {
-        // Fetch all data in parallel
         const [blogData, authors, categories, tags] = await Promise.all([
           fetchBlogData(),
           fetchAuthors(),
@@ -67,7 +66,7 @@ const Main = () => {
   // Filter and sort blogs
   const filteredAndSortedBlogs = useMemo(() => {
     console.log('🔄 Filtering blogs. Current blogs:', blogs);
-    let filtered = blogs; // Use the state variable instead of static blogData
+    let filtered = blogs;
 
     // Apply search filter
     if (filters.search) {
@@ -120,7 +119,7 @@ const Main = () => {
           cutoffDate.setFullYear(now.getFullYear() - 1);
           break;
         default:
-          cutoffDate = new Date(0); // Show all
+          cutoffDate = new Date(0);
       }
       
       filtered = filtered.filter(blog => new Date(blog.date) >= cutoffDate);
@@ -151,7 +150,7 @@ const Main = () => {
 
     console.log('📊 Final filtered and sorted blogs:', filtered);
     return filtered;
-  }, [filters, sortBy, blogs]); // Added blogs to dependency array
+  }, [filters, sortBy, blogs]);
 
   const headerVariants = {
     hidden: { opacity: 0, y: -20 },
@@ -190,7 +189,7 @@ const Main = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0B111D]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28">
         
         {/* Header Section */}
@@ -201,7 +200,7 @@ const Main = () => {
           className="text-center mb-12"
         >
           <motion.h1 
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+            className="text-4xl md:text-5xl font-light text-white mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -209,7 +208,7 @@ const Main = () => {
             Our Blog
           </motion.h1>
           <motion.p 
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
+            className="text-xl text-[#717892] max-w-3xl mx-auto font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -224,43 +223,45 @@ const Main = () => {
             animate="visible"
             className="flex items-center justify-center gap-8 mt-8"
           >
-            <div className="flex items-center gap-2 text-gray-600">
-              <FiTrendingUp className="text-green-500" />
-              <span className="text-sm">
-                <span className="font-semibold text-gray-900">{blogs.length}</span> Articles
+            <div className="flex items-center gap-2 text-[#717892]">
+              <FiTrendingUp className="text-[#45D1FF]" />
+              <span className="text-sm font-light">
+                <span className="font-semibold bg-gradient-to-r from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text">{blogs.length}</span> Articles
               </span>
             </div>
-            <div className="h-4 w-px bg-gray-300"></div>
-            <div className="flex items-center gap-2 text-gray-600">
+            <div className="h-4 w-px bg-[#717892]"></div>
+            <div className="flex items-center gap-2 text-[#717892]">
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                className="w-2 h-2 bg-green-500 rounded-full"
+                className="w-2 h-2 bg-gradient-to-r from-[#45D1FF] to-[#167BCC] rounded-full"
               ></motion.div>
-              <span className="text-sm">Updated Weekly</span>
+              <span className="text-sm font-light">Updated Weekly</span>
             </div>
           </motion.div>
         </motion.div>
 
         {/* Filter Component */}
-        <BlogFilter 
-          onFilterChange={setFilters} 
-          filters={filters}
-          availableAuthors={availableAuthors}
-          availableCategories={availableCategories}
-          availableTags={availableTags}
-        />
+        <div className="mb-8">
+          <BlogFilter 
+            onFilterChange={setFilters} 
+            filters={filters}
+            availableAuthors={availableAuthors}
+            availableCategories={availableCategories}
+            availableTags={availableTags}
+          />
+        </div>
 
         {/* Controls Bar */}
         <motion.div
           variants={controlsVariants}
           initial="hidden"
           animate="visible"
-          className="flex items-center justify-between mb-8 bg-white rounded-lg p-4 shadow-sm border border-gray-100"
+          className="flex items-center justify-between mb-8 bg-gradient-to-br from-white/5 to-[#0B111D] border border-[#717892] rounded-lg p-4"
         >
           <div className="flex items-center gap-4">
-            <span className="text-sm text-gray-600">
-              <span className="font-semibold text-gray-900">{filteredAndSortedBlogs.length}</span> 
+            <span className="text-sm text-[#717892] font-light">
+              <span className="font-semibold text-white">{filteredAndSortedBlogs.length}</span> 
               {filteredAndSortedBlogs.length === 1 ? ' article' : ' articles'} found
             </span>
             
@@ -271,7 +272,7 @@ const Main = () => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.8 }}
-                  className="text-xs px-2 py-1 bg-blue-100 text-blue-700 rounded-full"
+                  className="text-xs px-3 py-1 bg-gradient-to-r from-[#45D1FF] to-[#167BCC] text-[#0B111D] rounded-full font-medium"
                 >
                   Filtered
                 </motion.span>
@@ -282,11 +283,11 @@ const Main = () => {
           <div className="flex items-center gap-4">
             {/* Sort Dropdown */}
             <div className="flex items-center gap-2">
-              <FaSortAmountDown className="text-gray-400" />
+              <FaSortAmountDown className="text-[#717892]" />
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="text-sm border border-gray-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="text-sm bg-[#0A1930] border border-[#717892] text-white rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#45D1FF] focus:border-[#45D1FF] transition-all"
               >
                 <option value="date">Latest</option>
                 <option value="title">Title A-Z</option>
@@ -296,15 +297,15 @@ const Main = () => {
             </div>
 
             {/* View Mode Toggle */}
-            <div className="flex items-center bg-gray-100 rounded-lg p-1">
+            <div className="flex items-center bg-[#0A1930] border border-[#717892] rounded-lg p-1">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setViewMode('grid')}
-                className={`p-2 rounded-md transition-colors ${
+                className={`p-2 rounded-md transition-all ${
                   viewMode === 'grid' 
-                    ? 'bg-white text-blue-600 shadow-sm' 
-                    : 'text-gray-500 hover:text-gray-700'
+                    ? 'bg-gradient-to-r from-[#45D1FF] to-[#167BCC] text-[#0B111D] shadow-sm' 
+                    : 'text-[#717892] hover:text-white'
                 }`}
               >
                 <FiGrid className="w-4 h-4" />
@@ -313,10 +314,10 @@ const Main = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setViewMode('list')}
-                className={`p-2 rounded-md transition-colors ${
+                className={`p-2 rounded-md transition-all ${
                   viewMode === 'list' 
-                    ? 'bg-white text-blue-600 shadow-sm' 
-                    : 'text-gray-500 hover:text-gray-700'
+                    ? 'bg-gradient-to-r from-[#45D1FF] to-[#167BCC] text-[#0B111D] shadow-sm' 
+                    : 'text-[#717892] hover:text-white'
                 }`}
               >
                 <FiList className="w-4 h-4" />
@@ -332,13 +333,13 @@ const Main = () => {
             animate={{ opacity: 1 }}
             className="text-center py-12"
           >
-            <div className="inline-flex items-center gap-2 text-gray-600">
+            <div className="inline-flex items-center gap-2 text-[#717892]">
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                className="w-5 h-5 border-2 border-blue-500 border-t-transparent rounded-full"
+                className="w-5 h-5 border-2 border-[#45D1FF] border-t-transparent rounded-full"
               ></motion.div>
-              <span>Loading blogs from Strapi...</span>
+              <span className="font-light">Loading blogs from Strapi...</span>
             </div>
           </motion.div>
         )}
@@ -348,11 +349,11 @@ const Main = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center py-12"
+            className="text-center py-12 bg-gradient-to-br from-white/5 to-[#0B111D] border border-[#717892] rounded-lg"
           >
-            <div className="text-gray-500">
-              <p className="text-lg mb-2">No blogs found</p>
-              <p className="text-sm">Check your Strapi API connection or add some blog posts.</p>
+            <div className="text-[#717892]">
+              <p className="text-lg mb-2 text-white font-light">No blogs found</p>
+              <p className="text-sm font-light">Check your Strapi API connection or add some blog posts.</p>
             </div>
           </motion.div>
         )}
@@ -379,11 +380,15 @@ const Main = () => {
               className="text-center mt-12"
             >
               <motion.button
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ 
+                  scale: 1.05,
+                  boxShadow: "0 0 20px rgba(69, 209, 255, 0.3)"
+                }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 bg-white border border-gray-200 text-gray-700 rounded-lg hover:border-gray-300 hover:shadow-md transition-all duration-200 font-medium"
+                className="px-8 py-3 bg-gradient-to-br from-white/5 to-[#0B111D] border border-[#717892] text-white rounded-lg hover:border-[#45D1FF] hover:shadow-md transition-all duration-200 font-light relative overflow-hidden group"
               >
-                Load More Articles
+                <span className="relative z-10">Load More Articles</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#45D1FF]/10 to-[#167BCC]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
               </motion.button>
             </motion.div>
           )}
