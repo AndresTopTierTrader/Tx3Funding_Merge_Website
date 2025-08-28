@@ -1,36 +1,44 @@
 'use client'
 
-//Functions & Components
+//Functions
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
-import React, { useState, useEffect, use } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import LanguageChanger from "./LanguageChanger";
 import { track } from '@vercel/analytics'
 import { useWindowDimensions } from "@/utils/misc/getWindowDimensions";
-import { IoMdMenu } from "react-icons/io";
-import { MdInsertChartOutlined } from "react-icons/md";
-import { FaRegUserCircle } from "react-icons/fa";
-import levelsLogo from "./assets/levelsLogo.svg";
-import { IoClose } from "react-icons/io5";
 import { usePathname } from "next/navigation";
+
+//Components
+import Dropdown from "./Dropdown";
+import LanguageChanger from "./LanguageChanger.jsx";
+
+//Constants
 import { ENVIRONMENT_URL } from "@/constants/global";
 
 //Images
 import logo from "@/public/img/logo.svg";
-import logoBlack from "@/public/img/logoBlack.svg";
-import Dropdown from "./dropdown";
+import levelsLogo from "./assets/levelsLogo.svg";
 
 //Icons
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
+import { IoMdMenu } from "react-icons/io";
+import { MdInsertChartOutlined } from "react-icons/md";
+import { FaRegUserCircle } from "react-icons/fa";
 
 function Navbar({ locale }) {
 
   const { t } = useTranslation();
   const [isTop, setIsTop] = useState(true);
   const [isNavbarShort, setIsNavbarShort] = useState('');
+
+  /**
+   * Handles scroll events to determine if navbar should show background blur effect
+   * Sets isTop state based on scroll position threshold (50px)
+   */
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,7 +55,10 @@ function Navbar({ locale }) {
 
   const { width } = useWindowDimensions()
 
-  //Checks if navbar is too wide for the screen
+  /**
+   * Monitors window width to determine if navbar should use compact layout
+   * Sets navbar to short mode for specific width ranges (1183px - 1515px)
+   */
   useEffect(() => {
     if (width < 1515 && width > 1183) {
       setIsNavbarShort(true)
@@ -62,16 +73,14 @@ function Navbar({ locale }) {
   const [currentNavState, setCurrentNavState] = useState("");
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
 
-
-
   //levels checker
   const [isLevels, setIsLevels] = useState(currentNavState == 'levels' ? true : false);
-  const [isCouldBeWorse, setIsCouldBeWorse] = useState(currentNavState == 'could-be-worse' ? true : false);
+  const pathname = usePathname();
 
-
-  const [pathname, setPathname] = useState(usePathname());
-  const path = usePathname()
-
+  /**
+   * Detects if current route is the 'levels' page and updates navigation state accordingly
+   * Parses URL segments to determine active section
+   */
   useEffect(() => {
     const segments = pathname.split('/').filter(Boolean);
     if (segments[1] === 'levels') {
@@ -79,13 +88,11 @@ function Navbar({ locale }) {
     }
   }, []);
 
-  useEffect(() => {
-    const segments = pathname.split('/').filter(Boolean);
-    if (segments[1] === 'could-be-worse') {
-      setCurrentNavState('could-be-worse');
-    }
-  }, []);
 
+  /**
+   * Updates isLevels state based on current navigation state
+   * Controls theme and styling variations for the levels section
+   */
   useEffect(() => {
     if (currentNavState === 'levels') {
       setIsLevels(true)
@@ -94,20 +101,18 @@ function Navbar({ locale }) {
     }
   }, [currentNavState]);
 
-  useEffect(() => {
-    if (currentNavState === 'could-be-worse') {
-      setIsCouldBeWorse(true)
-    } else {
-      setIsCouldBeWorse(false)
-    }
-  }, [currentNavState]);
-
-
-
+  /**
+   * Toggles the mobile menu open/closed state
+   * Used by hamburger menu button on mobile devices
+   */
   const handleMenuToggle = () => {
     setMobileMenuIsOpen(!mobileMenuIsOpen);
   };
 
+  /**
+   * Closes the mobile menu by setting state to false
+   * Used when user clicks on menu items or outside menu area
+   */
   const handleCloseMenu = () => {
     setMobileMenuIsOpen(false);
   };
@@ -117,6 +122,14 @@ function Navbar({ locale }) {
     mobile: "text-white/90 cursor-pointer font-light px-2 py-2 text-center text-lg hover:text-ttorange transition-all",
     selected: "text-ttorange cursor-pointer font-semibold px-3 transition-all"
   };
+
+  const marketsDropdown = {
+    title: "Markets",
+    sub: {
+      forex: { name: "Forex", href: `${ENVIRONMENT_URL}/${locale}/forex-challenge` },
+      futures: { name: "Futures", href: `${ENVIRONMENT_URL}/${locale}/futures-challenge` },
+    }
+  }
 
   const productsDropdown = {
     title: t("navbar:products").toString(),
@@ -147,17 +160,25 @@ function Navbar({ locale }) {
     }
   }
 
+  const helpDropdown = {
+    title: "Help Center",
+    sub: {
+      about: { name: "Forex Help Center", href: `https://help.toptiertrader.com/en` },
+      blog: { name: "Futures Help Center", href: `https://help.tx3funding.com/en/` },
+    }
+  }
+
 
   return (
     <AnimatePresence>
       <nav
-        className={`${isTop ? 'bg-transparent' : 'bg-black/40 backdrop-blur-sm mb:bg-black/70'} mb:fixed transition-all duration-500 ease-in rounded-b-lg py-4 mb:px-20 px-5 mb:pt-4 mb:pb-4 max-w-[1200px]:w-[900px] fixed flex justify-between items-center top-0 w-full z-50`}
+        className={`${isTop ? 'bg-transparent' : 'bg-black/40 backdrop-blur-sm mb:bg-black/70'} mb:fixed transition-all duration-500 ease-in rounded-b-lg py-4 px-5 mb:pt-4 mb:pb-4 md:px-24 max-w-[1200px]:w-[900px] fixed flex justify-between items-center top-0 w-full z-50`}
       >
         {/* Logo */}
         <div className="flex mb:flex-row items-center ">
           <Link href={`${ENVIRONMENT_URL}/${locale}`} onClick={() => { currentNavState('') }} alt="Home">
             <Image
-              src={isLevels ? levelsLogo : isCouldBeWorse && isTop ? logoBlack : logo}
+              src={isLevels ? levelsLogo : logo}
               priority={true}
               alt="toptier_logo"
               className="object-contain w-28 mb:w-36 mr-5"
@@ -169,6 +190,13 @@ function Navbar({ locale }) {
         {/* Nav */}
         <div className={`max-custom:hidden flex mb:flex-row mb:justify-around  items-center mt-2 mb:flex-wrap mb:mx-5 max-[1547px]:flex-col`}
         >
+
+          <Dropdown
+            list={marketsDropdown}
+            currentNavState={currentNavState}
+            setCurrentNavState={setCurrentNavState}
+            handleCloseMenu={handleCloseMenu}
+          />
 
           <Dropdown
             list={productsDropdown}
@@ -191,58 +219,33 @@ function Navbar({ locale }) {
             handleCloseMenu={handleCloseMenu}
           />
 
-          <div className="-ml-1">
-            <Link
-              href={`${ENVIRONMENT_URL}/${locale}/contact`}
-              className={
-                currentNavState === "contact"
-                  ? linksStyle.selected
-                  : linksStyle.desktop
-              }
-              onClick={() => setCurrentNavState("contact")}
-            >
-              {t("navbar:contact")}
-            </Link>
-          </div>
-
-          <Link
-            href="https://help.toptiertrader.com"
-            className={
-              currentNavState === "help_center"
-                ? linksStyle.selected
-                : linksStyle.desktop
-            }
-            target="_blank"
-            onClick={() => setCurrentNavState("help_center")}
-          >
-            {t("navbar:help_center")}
-          </Link>
+          <Dropdown
+            list={helpDropdown}
+            currentNavState={currentNavState}
+            setCurrentNavState={setCurrentNavState}
+            handleCloseMenu={handleCloseMenu}
+          />
         </div>
 
         {/* Buttons */}
         <div className="flex flex-row items-center">
-          <div className=" hidden mb:block -mr-1 mb:mr-0">
-            <LanguageChanger isTop={isTop} isCouldBeWorse={isCouldBeWorse} />
+          <div className=" hidden mb:block">
+            <LanguageChanger isTop={isTop} />
           </div>
 
-          <Link href={isLevels ? 'https://levels.toptiertrader.com/login' : 'https://app.toptiertrader.com/login'} className="hidden mb:flex">
-            <button className={`flex flex-row items-center backdrop-blur-lg  ${isCouldBeWorse && isTop ? "text-black border-black" : "text-white/90 border-white/80"} border  rounded-lg py-1.5 px-4`}>
-              Log in
-              <MdInsertChartOutlined className="w-5 h-5 ml-2" />
+          <a>
+            <button className="bg-futuresGreen px-4 py-2 rounded-lg" >
+              <p className="tracking-tight text-sm md:text-base font-medium text-bgDark">Futures</p>
             </button>
-          </Link>
+          </a>
 
-          <Link
-            href={isLevels ? 'https://app.toptierlevels.com/checkout/payment' : 'https://app.toptiertrader.com/buy-challenge/?el=NavbarCTAJuly2025&hcategory=July2025&htrafficsource=Website&id=cad77f17-0cb5-4e7d-8a71-644f4a3f6a17&addons=doubleLeverage&addons=tradeOnWeekends&addons=higherProfitShare&addons=maxLoss'}
-            target="_blank"
-            className={`px-3 mb:ml-6 flex flex-row items-center mb:min-w-[140px] ${isLevels ? 'bg-[#45D1FF] text-[#0B111D] ' : 'bg-[#FF532D] text-white'}   py-2 rounded-lg hover:scale-110 transition-all`}
-            onClick={() => track('Navbar - Get Started')}
-          >
-            <p className="pl-2 text-sm mb:text-sm ">{t("navbar:started")}</p>
-            <FaArrowRight className="w-3 h-3 ml-2" />
-          </Link>
+          <a>
+            <button className="bg-forexBlue px-4 ml-2 py-2 rounded-lg" >
+              <p className="tracking-tight font-medium text-sm md:text-base text-white">Forex</p>
+            </button>
+          </a>
 
-          {/* Mobile Menu */}
+          {/* Short Navbar Menu - Icons */}
           <motion.div
             key={"motion_menu"}
             onClick={handleMenuToggle}
@@ -250,7 +253,7 @@ function Navbar({ locale }) {
           >
             {
               mobileMenuIsOpen ? <IoClose className="w-8 h-8 text-slate-300 ml-2" />
-                : <IoMdMenu className={`block ${isNavbarShort ? 'mb:block mb:ml-4' : 'mb:hidden'} w-10 h-10 ${isCouldBeWorse && isTop ? "text-black border-black" : "text-slate-300 border-slate-400"}  ml-2`} />
+                : <IoMdMenu className={`block ${isNavbarShort ? 'mb:block mb:ml-4' : 'mb:hidden'} w-10 h-10 text-slate-300 border-slate-400 ml-2`} />
             }
           </motion.div>
         </div>
@@ -283,7 +286,7 @@ function Navbar({ locale }) {
 
             {/* LanguageChanger */}
             <div className="bg-[#0B111D] py-5 block mb:hidden -mr-1 mb:mr-0">
-              <LanguageChanger isTop={isTop} isCouldBeWorse={isCouldBeWorse} />
+              <LanguageChanger isTop={isTop} />
             </div>
 
             {/* DropDown */}

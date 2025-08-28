@@ -18,7 +18,12 @@ module.exports = {
       },
       colors: {
         'ttblue': '#3652A7',
+        'textPrimary': '#E7ECF7',
+        'textSecondary': '#B2C2E1',
+        'forexBlue': '#0052B4',
+        'futuresGreen': '#65FD51',
         'ttorange': '#FF532D',
+        'bgDark': '#0B111D',
         'ttelectricBlue': "#64C3E2",
         'secondary':'#717892',
         'primary': '#252831'

@@ -1,7 +1,7 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
 import initTranslations from "@/i18n";
-import TableSection from "@/components/common/TableSection/Main"
+import TableSection from "@/components/common/ForexTableSection/Main"
 import { ENVIRONMENT_URL } from "@/constants/global";
 
 const metadata_en = {

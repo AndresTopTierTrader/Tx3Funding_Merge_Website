@@ -23,7 +23,7 @@ const inter = Inter({
 });
 
 const NavbarLazyLoading = dynamic(
-  () => import("@/components/common/Navbar/Main"),
+  () => import("@/components/common/Navbar/Main.jsx"),
   {
     ssr: true,
     loading: () => <div className="h-16 bg-gray-100 animate-pulse" aria-label="Loading navigation" />,

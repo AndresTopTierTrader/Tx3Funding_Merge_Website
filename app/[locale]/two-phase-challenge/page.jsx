@@ -5,7 +5,7 @@ import { Considerations } from "@/components/two-phase-challenge/considerations/
 import { Hero } from "@/components/two-phase-challenge/hero/Main";
 import { WhichIsForYou } from "@/components/two-phase-challenge/whichIsForYou/Main";
 import initTranslations from "@/i18n";
-import TableSection from "@/components/common/TableSection/Main";
+import TableSection from "@/components/common/ForexTableSection/Main";
 import { ENVIRONMENT_URL } from "@/constants/global";
 
 const metadata_en = {

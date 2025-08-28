@@ -1,6 +1,6 @@
 import CarouselTextSection from "@/components/common/FinalSection/Carousel-Text-Section";
 import SocialMediaSection from "@/components/common/SocialMediaSection/SocialMedia-Section";
-import TableSection from "@/components/common/TableSection/Main";
+import TableSection from "@/components/common/ForexTableSection/Main";
 import { HeroSection } from "@/components/one-phase-challenge/hero/Main";
 import { PassionateTraders } from "@/components/one-phase-challenge/passionateTraders/Main";
 import { TheProcess } from "@/components/one-phase-challenge/theProcess/Main";

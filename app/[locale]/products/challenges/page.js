@@ -11,7 +11,7 @@ const MainSectionLazyLoading = dynamic(() => import("@/components/products/Main"
 })
 
 //Lazy loading for components
-const TableSectionLazyLoading = dynamic(() => import("../../../../components/common/TableSection/Main"), {
+const TableSectionLazyLoading = dynamic(() => import("../../../../components/common/ForexTableSection/Main"), {
   ssr: false,
   loading: () => <div className="w-full py-10 flex mb:flex-row flex-col justify-center items-center rounded-xl">
   </div>

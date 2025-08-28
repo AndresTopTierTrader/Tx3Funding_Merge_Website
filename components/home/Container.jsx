@@ -5,7 +5,6 @@ import dynamic from 'next/dynamic';
 
 // Dynamic imports for constants and styles
 import { bgImageStyle } from "@/constants/styles";
-import { useCountryDetection } from "@/hooks/country/useCountryDetection";
 
 // Loading Component with fade-out transition
 const LoadingScreen = ({ isVisible = true }) => {
@@ -46,35 +45,15 @@ const LoadingScreen = ({ isVisible = true }) => {
 // Minimal loading for dynamic imports
 const MinimalLoader = () => <div className="min-h-screen bg-[#0B111D]" />;
 
-// -------------- Regular Components -----------------
+// Dynamic component imports
 const LandingSection = dynamic(() => import("./LandingSection/Landing-Section"), {
   loading: () => <MinimalLoader />,
   ssr: false
 });
 
-const TableSection = dynamic(() => import("@/components/common/TableSection/Main"), {
+const TableSection = dynamic(() => import("@/components/common/ForexTableSection/Main"), {
   loading: () => <MinimalLoader />,
   ssr: false
-});
-
-const Bento = dynamic(() => import("@/components/common/Bento/Bento"), {
-  loading: () => <MinimalLoader />,
-  ssr: false
-});
-
-const CompetitiveEdgeSection = dynamic(() => import("./CompetitiveEdgeSection/Competitive-Edge-Section"), {
-  loading: () => <MinimalLoader />,
-  ssr: false
-});
-
-const TrustedSection = dynamic(() => import("./TrustedSection/Trusted-Section"), {
-  loading: () => <MinimalLoader />,
-  ssr: true
-});
-
-const TrustpilotSection = dynamic(() => import("./TrustpilotSection/Trustpilot-Section"), {
-  loading: () => <MinimalLoader />,
-  ssr: true
 });
 
 const PayoutSection = dynamic(() => import("./PayoutSection/Payout-Section"), {
@@ -82,129 +61,29 @@ const PayoutSection = dynamic(() => import("./PayoutSection/Payout-Section"), {
   ssr: true
 });
 
-const FinalSection = dynamic(() => import("@/components/common/FinalSection/Final-Section"), {
-  loading: () => <MinimalLoader />,
-  ssr: true
-});
-
-const ComparationSection = dynamic(() => import("./ComparationSection/Comparation-Section"), {
-  loading: () => <MinimalLoader />,
-  ssr: false
-});
-
 const SocialMediaSection = dynamic(() => import("@/components/common/SocialMediaSection/SocialMedia-Section"), {
   loading: () => <MinimalLoader />,
   ssr: true
 });
 
-// ------------------- LATAM Components --------------------
-const LATAMLandingSection = dynamic(() => import("./LATAM_landingSection/LATAM-Landing-Section"), {
-  loading: () => <MinimalLoader />,
-  ssr: false
-});
-
-const LATAMCommunity = dynamic(() => import("./LATAM_community/LATAMCommunity").then(mod => mod.LATAMCommunity), {
-  loading: () => <MinimalLoader />,
-  ssr: false
-});
-
-const LATAMFinalSection = dynamic(() => import("../common/FinalSection/LATAM-Final-Section"), {
-  loading: () => <MinimalLoader />,
-  ssr: true
-});
-
-const LATAMComparationSection = dynamic(() => import("./ComparationSection/LATAM-Comparation-Section"), {
-  loading: () => <MinimalLoader />,
-  ssr: false
-});
-
-const LATAMSocialMediaSection = dynamic(() => import("../common/SocialMediaSection/LATAM-SocialMedia-Section"), {
-  loading: () => <MinimalLoader />,
-  ssr: true
-});
-
-const LATAMTrustedSection = dynamic(() => import("./TrustedSection/LATAM-Trusted-Section"), {
-  loading: () => <MinimalLoader />,
-  ssr: false
-});
-
-const LATAMPayoutSection = dynamic(() => import("./LATAMPayoutSection/LATAM-Payout-Section"), {
-  loading: () => <MinimalLoader />,
-  ssr: true
-});
-
-// Dynamic imports with named exports
-const LATAMFlexChallenge = dynamic(() => import("./LATAM_flexChallenge/LATAMFlexChallenge").then(mod => mod.LATAMFlexChallenge), {
-  loading: () => <MinimalLoader />,
-  ssr: false
-});
-
-const LATAMHowMuchCanYouMake = dynamic(() => import("./LATAM_howMuchCanYouMake/LATAMHowMuchCanYouMake").then(mod => mod.LATAMHowMuchCanYouMake), {
-  loading: () => <MinimalLoader />,
-  ssr: false
-});
-
 export default function Container({ locale, translations, mainLang }) {
-  const { isLatam, currency, loading } = useCountryDetection(mainLang);
   const [showLoadingScreen, setShowLoadingScreen] = useState(true);
   const [contentReady, setContentReady] = useState(false);
 
   useEffect(() => {
-    if (!loading) {
-      const contentTimer = setTimeout(() => {
-        setContentReady(true);
-      }, 50);
+    const contentTimer = setTimeout(() => {
+      setContentReady(true);
+    }, 50);
 
-      const fadeTimer = setTimeout(() => {
-        setShowLoadingScreen(false);
-      }, 800);
+    const fadeTimer = setTimeout(() => {
+      setShowLoadingScreen(false);
+    }, 800);
 
-      return () => {
-        clearTimeout(contentTimer);
-        clearTimeout(fadeTimer);
-      };
-    }
-  }, [loading]);
-
-  // Render content based on region
-  const renderContent = () => {
-    if (isLatam) {
-      return (
-        <>
-          <LATAMLandingSection locale={locale} translations={translations.homeTranslations} />
-          <LATAMPayoutSection translations={translations.payoutTranslations} />
-          <LATAMFlexChallenge locale={mainLang} />
-          <TableSection locale={locale} translations={translations.tableTranslations} />
-          <LATAMHowMuchCanYouMake currency={currency} />
-          <LATAMTrustedSection locale={locale} translations={translations.trustedTranslations} />
-          <LATAMCommunity />
-          <TrustpilotSection noTitle locale={locale} translations={translations.communityTranslations} />
-          <div className="mb:-mt-10">
-            <LATAMFinalSection translations={translations.finalSectionTranslations} locale={locale} isCarousel={true} />
-          </div>
-          <LATAMComparationSection locale={locale} translations={translations.comparationTranslations} />
-          <LATAMSocialMediaSection locale={locale} translations={translations.socialmediaTranslations} />
-        </>
-      );
-    }
-
-    return (
-      <>
-        <LandingSection locale={locale} translations={translations.homeTranslations} />
-        <PayoutSection translations={translations.payoutTranslations} />
-        <TableSection locale={locale} translations={translations.tableTranslations} />
-        <Bento translations={translations.bentoTranslations} />
-        <CompetitiveEdgeSection locale={locale} translations={translations.competitiveEdgeSection} />
-        <TrustedSection locale={locale} translations={translations.trustedTranslations} />
-        <TrustpilotSection locale={locale} translations={translations.communityTranslations} />
-        <div className="mb:-mt-10">
-          <FinalSection translations={translations.finalSectionTranslations} locale={locale} isCarousel={true} />
-        </div>
-        <ComparationSection locale={locale} translations={translations.comparationTranslations} />
-        <SocialMediaSection locale={locale} translations={translations.socialmediaTranslations} />
-      </>
-    );
-  };
+    return () => {
+      clearTimeout(contentTimer);
+      clearTimeout(fadeTimer);
+    };
+  }, []);
 
   return (
     <>
@@ -214,7 +93,10 @@ export default function Container({ locale, translations, mainLang }) {
           className={`transition-opacity duration-[1500ms] ease-out ${showLoadingScreen ? 'opacity-0' : 'opacity-100'
             }`}
         >
-          {renderContent()}
+          <LandingSection locale={locale} translations={translations.homeTranslations} />
+          <PayoutSection translations={translations.payoutTranslations} />
+          <TableSection locale={locale} translations={translations.tableTranslations} />
+          <SocialMediaSection locale={locale} translations={translations.socialmediaTranslations} />
         </div>
       )}
     </>
