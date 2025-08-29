@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-
 // Dynamic imports for constants and styles
 import { bgImageStyle } from "@/constants/styles";
 
@@ -46,17 +45,32 @@ const LoadingScreen = ({ isVisible = true }) => {
 const MinimalLoader = () => <div className="min-h-screen bg-[#0B111D]" />;
 
 // Dynamic component imports
-const LandingSection = dynamic(() => import("./LandingSection/Landing-Section"), {
+const LandingSection = dynamic(() => import("./LandingSection/LandingSection"), {
   loading: () => <MinimalLoader />,
   ssr: false
 });
 
-const TableSection = dynamic(() => import("@/components/common/ForexTableSection/Main"), {
+const WhatTradersWantSection = dynamic(() => import("./WhatTradersWant/WhatTradersWant"), {
   loading: () => <MinimalLoader />,
   ssr: false
 });
 
-const PayoutSection = dynamic(() => import("./PayoutSection/Payout-Section"), {
+const TraderTestimonialsSection = dynamic(() => import("./TraderTestimonials/TraderTestimonials"), {
+  loading: () => <MinimalLoader />,
+  ssr: false
+});
+
+const ProductsSection = dynamic(() => import("./ProductsSection/ProductsSection"), {
+  loading: () => <MinimalLoader />,
+  ssr: false
+});
+
+const ForexTableSection = dynamic(() => import("@/components/common/ForexTableSection/Main"), {
+  loading: () => <MinimalLoader />,
+  ssr: false
+});
+
+const PayoutSection = dynamic(() => import("./PayoutSection/PayoutSection"), {
   loading: () => <MinimalLoader />,
   ssr: true
 });
@@ -94,8 +108,11 @@ export default function Container({ locale, translations, mainLang }) {
             }`}
         >
           <LandingSection locale={locale} translations={translations.homeTranslations} />
+          <WhatTradersWantSection locale={locale} translations={translations.whatTradersWantTranslations} mainLang={mainLang} />
+          <TraderTestimonialsSection locale={locale} translations={translations.traderTestimonialsTranslations} />
+          <ProductsSection />
           <PayoutSection translations={translations.payoutTranslations} />
-          <TableSection locale={locale} translations={translations.tableTranslations} />
+          <ForexTableSection locale={locale} translations={translations.tableTranslations} />
           <SocialMediaSection locale={locale} translations={translations.socialmediaTranslations} />
         </div>
       )}

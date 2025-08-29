@@ -234,16 +234,18 @@ function Navbar({ locale }) {
           </div>
 
           <a>
-            <button className="bg-futuresGreen px-4 py-2 rounded-lg" >
-              <p className="tracking-tight text-sm md:text-base font-medium text-bgDark">Futures</p>
+            <button className="bg-forexBlue px-4 py-2 rounded-lg" >
+              <p className="tracking-tight font-medium text-sm md:text-base text-white">Forex</p>
             </button>
           </a>
 
           <a>
-            <button className="bg-forexBlue px-4 ml-2 py-2 rounded-lg" >
-              <p className="tracking-tight font-medium text-sm md:text-base text-white">Forex</p>
+            <button className="bg-futuresGreen px-4 ml-2 py-2 rounded-lg" >
+              <p className="tracking-tight text-sm md:text-base font-medium text-bgDark">Futures</p>
             </button>
           </a>
+
+       
 
           {/* Short Navbar Menu - Icons */}
           <motion.div

@@ -85,10 +85,11 @@ function LandingSection({ locale, translations }) {
             Whatever you're into Forex, Indices, Crypto or Futures, we’ve got the challenge for you.
           </h2>
 
+          {/* Buttons */}
           <div className="flex flex-col items-center md:flex-row mt-12">
 
             <a href="">
-              <button className="bg-forexBlue hover py-2 px-3 rounded-md flex flex-row items-center">
+              <button className="bg-forexBlue hover:bg-forexBlue/80 transition-all hover py-2 px-3 rounded-md flex flex-row items-center">
                 <p className="text-sm md:text-base tracking-tight text-textPrimary "> Start Trading Forex Now </p>
                 <FaArrowRight className="text-textPrimary ml-2 w-2.5 h-2.5 md:w-3 md:h-3" />
               </button>
