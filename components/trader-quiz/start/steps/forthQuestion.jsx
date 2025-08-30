@@ -76,7 +76,7 @@ function ForthQuestion({ setCurrentStep, setAnswers, translations }) {
             initial="hidden"
             animate="visible"
         >
-            <motion.p variants={itemVariants} className='font-light text-white text-3xl mt-5 mb:mt-0 mb:text-5xl'>{t1_1}</motion.p>
+            <motion.p variants={itemVariants} className='font-light text-textPrimary text-3xl mt-5 mb:mt-0 mb:text-5xl'>{t1_1}</motion.p>
             <motion.p variants={itemVariants} className='bg-gradient-to-r from-ttblue py-0 mb:py-1 to-ttelectricBlue font-medium inline-block text-transparent bg-clip-text text-3xl mb:text-5xl'>{t1_2}</motion.p>
             <motion.p variants={itemVariants} className='mt-3 text-secondary'>
                 {subtitle}
@@ -97,7 +97,7 @@ function ForthQuestion({ setCurrentStep, setAnswers, translations }) {
                             }}
                             checked={selectedOption.id === option.id}
                         />
-                        <label htmlFor={option.id} className='text-white font-light  text-base mb:text-xl'>
+                        <label htmlFor={option.id} className='text-textPrimary font-light  text-base mb:text-xl'>
                             {option.label}
                         </label>
                     </motion.div>
@@ -118,7 +118,7 @@ function ForthQuestion({ setCurrentStep, setAnswers, translations }) {
             </AnimatePresence>
 
             <motion.button
-                className={`bg-ttorange flex flex-row w-full justify-center mb:w-fit items-center text-white rounded-lg text-base px-10 py-2 mt-5 mb:mt-6`}
+                className={`bg-ttorange flex flex-row w-full justify-center mb:w-fit items-center text-textPrimary rounded-lg text-base px-10 py-2 mt-5 mb:mt-6`}
                 onClick={handleSubmit}
                 variants={buttonVariants}
                 whileHover="hover"

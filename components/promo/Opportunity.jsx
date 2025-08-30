@@ -37,11 +37,11 @@ export function Opportunity({ translations, mainLang }) {
         style={{ backgroundImage: `url(${bgOpportunity.src})` }}
         className="p-8 md:p-12 rounded-lg border border-secondary mx-auto max-w-4xl w-full flex flex-col gap-12 bg-cover bg-center mb-10"
       >
-        <h2 className="text-3xl md:text-5xl font-light text-white max-w-md">
+        <h2 className="text-3xl md:text-5xl font-light text-textPrimary max-w-md">
           {translations.t3}
         </h2>
 
-        <ul className="flex flex-col gap-6 text-white">
+        <ul className="flex flex-col gap-6 text-textPrimary">
           {points.map((point) => (
             <li key={point} className="flex gap-4">
               <CheckIcon />

@@ -22,8 +22,8 @@ function PayoutSection({ translations }) {
                 <section className='flex flex-col w-full px-6 mb:hidden'>
                     {/* Box One */}
                     <div className='flex flex-col relative items-start justify-start h-[300px] w-full' >
-                        <p className='text-3xl font-light text-white' >{translations.program}</p>
-                        <p className='text-3xl font-light text-white' >{translations.simple}</p>
+                        <p className='text-3xl font-light text-textPrimary' >{translations.program}</p>
+                        <p className='text-3xl font-light text-textPrimary' >{translations.simple}</p>
 
                         <span className='z-10'>
                             <CtaButton
@@ -42,7 +42,7 @@ function PayoutSection({ translations }) {
                     <div className='bg-gradient-to-br border -mt-28 z-20 p-6 rounded-lg border-[#717892] from-white/5 to-[#0B111D]' >
                         <p className="text-5xl font-light bg-gradient-to-r from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text"> 1</p>
                         <div className="flex flex-row items-center justify-between w-full mt-4">
-                            <p className="text-2xl font-light text-white">{translations.sign_up}</p>
+                            <p className="text-2xl font-light text-textPrimary">{translations.sign_up}</p>
                             <FaArrowDown className="w-4 -mt-32 text-3xl text-gray-500" />
                         </div>
                         <p className="text-[#717892] mt-6" >{translations.sign_up_desc}</p>
@@ -52,7 +52,7 @@ function PayoutSection({ translations }) {
                     <div className='bg-gradient-to-br border mt-10 z-20 p-6 rounded-lg border-[#717892] from-white/5 to-[#0B111D]' >
                         <p className="text-5xl font-light bg-gradient-to-r from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text">2</p>
                         <div className="flex flex-row items-center justify-between w-full mt-4">
-                            <p className="text-2xl font-light text-white">{translations.trade}</p>
+                            <p className="text-2xl font-light text-textPrimary">{translations.trade}</p>
                             <FaArrowDown className="w-4 -mt-32 text-3xl text-gray-500 " />
                         </div>
                         <p className="text-[#717892] mt-6">{translations.trade_desc}</p>
@@ -62,7 +62,7 @@ function PayoutSection({ translations }) {
                     <div className='bg-gradient-to-br border mt-10 z-20 p-6 rounded-lg border-[#717892] from-white/5 to-[#0B111D]' >
                         <p className="text-5xl font-light bg-gradient-to-r from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text">3</p>
                         <div className="flex flex-row items-center justify-between w-full mt-4">
-                            <p className="text-2xl font-light text-white">{translations.funding}</p>
+                            <p className="text-2xl font-light text-textPrimary">{translations.funding}</p>
                             <PiMedalFill className="w-8 -mt-32 text-3xl text-gray-500" />
                         </div>
                         <p className="text-[#717892] mt-6">{translations.funding_desc}</p>
@@ -72,7 +72,7 @@ function PayoutSection({ translations }) {
                     <div className='bg-[#0A1930] border mt-10 z-20 p-6 rounded-lg border-[#717892]' >
                         <p className="text-5xl font-light bg-gradient-to-r from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text">4</p>
                         <div className="flex flex-row items-center justify-between w-full mt-4">
-                            <p className="text-2xl font-light text-white">{translations.scale}</p>
+                            <p className="text-2xl font-light text-textPrimary">{translations.scale}</p>
                             <PiMedalFill className="w-8 -mt-32 text-3xl text-gray-500" />
                         </div>
                         <p className="text-[#717892] mt-6">{translations.scale_desc}</p>
@@ -100,7 +100,7 @@ function PayoutSection({ translations }) {
                             <div className="flex flex-col items-start w-[235px] px-6 pt-6">
                                 <p className="text-5xl font-light bg-gradient-to-r from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text"> 1</p>
                                 <div className="flex flex-row items-center justify-between w-full mt-4">
-                                    <p className="text-2xl font-light text-white">{translations.sign_up}</p>
+                                    <p className="text-2xl font-light text-textPrimary">{translations.sign_up}</p>
                                     <FaArrowRight className="w-4 text-3xl text-gray-500" />
                                 </div>
                                 <p className="text-[#717892] mt-16" >{translations.sign_up_desc}</p>
@@ -111,7 +111,7 @@ function PayoutSection({ translations }) {
                             <div className="flex flex-col items-start w-[235px] px-6 pt-6">
                                 <p className="text-5xl font-light bg-gradient-to-r from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text"> 2</p>
                                 <div className="flex flex-row items-center justify-between w-full mt-4">
-                                    <p className="text-2xl font-light text-white">{translations.trade}</p>
+                                    <p className="text-2xl font-light text-textPrimary">{translations.trade}</p>
                                     <FaArrowRight className="w-4 text-3xl text-gray-500" />
                                 </div>
                                 <p className="text-[#717892] mt-16" >{translations.trade_desc}</p>
@@ -122,7 +122,7 @@ function PayoutSection({ translations }) {
                             <div className="flex flex-col items-start w-[235px] px-6 pt-6">
                                 <p className="text-5xl font-light bg-gradient-to-r from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text"> 3</p>
                                 <div className="flex flex-row items-center justify-between w-full mt-4">
-                                    <p className="text-2xl font-light text-white">{translations.funding}</p>
+                                    <p className="text-2xl font-light text-textPrimary">{translations.funding}</p>
                                     <PiMedalFill className="w-8 text-3xl text-gray-500" />
                                 </div>
                                 <p className="text-[#717892] mt-16">{translations.funding_desc}</p>
@@ -133,7 +133,7 @@ function PayoutSection({ translations }) {
                         <div className="flex flex-row justify-between items-end p-6 bg-[#0A1930] rounded-bl-xl ">
                             <div className="flex flex-col">
                                 <p className="text-5xl font-light bg-gradient-to-r from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text"> 4</p>
-                                <p className="mt-3 text-2xl font-light text-white" >{translations.scale}</p>
+                                <p className="mt-3 text-2xl font-light text-textPrimary" >{translations.scale}</p>
                             </div>
                             <p className="text-[#9FA6B2] text-lg">{translations.scale_desc}</p>
                         </div>
@@ -142,8 +142,8 @@ function PayoutSection({ translations }) {
                     <div className="bg-[#717892] w-[1px] h-[446px]" />
                     {/* Right Box */}
                     <div className="flex flex-col w-[300px] p-6" >
-                        <p className="absolute z-20 text-4xl font-light text-white top-10">{translations.program}</p>
-                        <p className="absolute z-20 text-4xl font-light text-white top-20">{translations.simple}</p>
+                        <p className="absolute z-20 text-4xl font-light text-textPrimary top-10">{translations.program}</p>
+                        <p className="absolute z-20 text-4xl font-light text-textPrimary top-20">{translations.simple}</p>
                         <div className='z-30'>
                             <CtaButton
                                 utm={`https://app.toptiertrader.com/buy-challenge/?el=OurProgramSimpleSectionCTA&hcategory=${CURRENT_MONTH}&htrafficsource=Website&id=cad77f17-0cb5-4e7d-8a71-644f4a3f6a17&addons=doubleLeverage&addons=tradeOnWeekends&addons=higherProfitShare&addons=maxLoss`}

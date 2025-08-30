@@ -40,10 +40,10 @@ function ProductDetails({ productDisplayInfo, environmentUrl }) {
     <>
       {/* Header Section */}
       <section className='flex flex-row justify-between'>
-        <h2 className="text-2xl font-medium text-white mb-6">Your Selected Challenge</h2>
+        <h2 className="text-2xl font-medium text-textPrimary mb-6">Your Selected Challenge</h2>
         <a
           href={`${environmentUrl}/select-challenge`}
-          className='flex flex-row items-center text-slate-300 transition-all hover:text-white hover:font-medium py-2 h-fit rounded-lg px-6 border border-slate-300'
+          className='flex flex-row items-center text-slate-300 transition-all hover:text-textPrimary hover:font-medium py-2 h-fit rounded-lg px-6 border border-slate-300'
           target='_blank'
           rel="noopener noreferrer"
         >
@@ -59,7 +59,7 @@ function ProductDetails({ productDisplayInfo, environmentUrl }) {
           {/* Challenge Type */}
           <div className="flex flex-col space-y-2">
             <span className="text-md font-light text-slate-400">Challenge:</span>
-            <span className="text-xl font-medium text-white">
+            <span className="text-xl font-medium text-textPrimary">
               {productDisplayInfo.challengeType}
             </span>
           </div>
@@ -69,7 +69,7 @@ function ProductDetails({ productDisplayInfo, environmentUrl }) {
             <span className="text-md font-light text-slate-400">Challenge Amount:</span>
             <section className='flex flex-row'>
               <RiMoneyDollarCircleLine className='w-7 h-7 text-slate-300 mr-1' />
-              <span className="text-lg font-medium text-white">
+              <span className="text-lg font-medium text-textPrimary">
                 {extractChallengeAmount(productDisplayInfo.productName)}
               </span>
             </section>
@@ -92,12 +92,12 @@ function ProductDetails({ productDisplayInfo, environmentUrl }) {
               ) : (
                 // Fallback to original circle if no logo found
                 <div className="w-7 h-7  bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-1">
-                  <span className="text-white text-xs font-bold">
+                  <span className="text-textPrimary text-xs font-bold">
                     {formattedBrokerName.charAt(0)}
                   </span>
                 </div>
               )}
-              <span className="text-lg font-medium text-white">
+              <span className="text-lg font-medium text-textPrimary">
                 {formattedBrokerName}
               </span>
             </section>
@@ -123,7 +123,7 @@ function ProductDetails({ productDisplayInfo, environmentUrl }) {
               />
             </svg>
 
-            <span className="text-lg ml-2 font-light text-white">
+            <span className="text-lg ml-2 font-light text-textPrimary">
               {translateAddons(productDisplayInfo.addons).length > 0
                 ? translateAddons(productDisplayInfo.addons).join(', ')
                 : 'None'}

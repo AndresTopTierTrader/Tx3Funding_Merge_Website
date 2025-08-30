@@ -36,9 +36,9 @@ const ProgressBar = ({ currentStep, totalSteps = 7 }) => {
             variants={itemVariants}
             className={`w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full text-xs sm:text-sm font-bold ${
               index === 0
-                ? 'bg-[#111F45] text-white'
+                ? 'bg-[#111F45] text-textPrimary'
                 : index < currentStep
-                ? 'bg-[#111F45] text-white'
+                ? 'bg-[#111F45] text-textPrimary'
                 : 'bg-[#D7E0FF] text-gray-600'
             }`}
             animate={index < currentStep ? { scale: [1, 1.1, 1] } : {}}

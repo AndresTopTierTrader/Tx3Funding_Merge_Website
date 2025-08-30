@@ -5,7 +5,7 @@ import getCurrentUTMMonth from "../../utils/misc/getCurrentUTM";
 export function SupportedByTraders({ translations }) {
   return (
     <section className="flex flex-col items-center gap-12 md:gap-16 px-7 py-12 md:py-20">
-      <h3 className="text-center text-3xl md:text-4xl font-light text-white">
+      <h3 className="text-center text-3xl md:text-4xl font-light text-textPrimary">
         {translations.t4}
       </h3>
 
@@ -14,15 +14,15 @@ export function SupportedByTraders({ translations }) {
         className="border border-secondary p-6 md:p-12 rounded-lg flex flex-col justify-center min-h-[380px] md:min-h-[444px] gap-12 max-w-4xl w-full mx-auto bg-cover bg-right md:bg-center"
       >
         <span className="mt-12 md:mt-0">
-          <p className="font-light text-3xl md:text-4xl text-white">
+          <p className="font-light text-3xl md:text-4xl text-textPrimary">
             {translations.t5_1}
           </p>
-          <h2 className="text-white font-light text-4xl md:text-7xl md:mt-6">
+          <h2 className="text-textPrimary font-light text-4xl md:text-7xl md:mt-6">
             {translations.t5_2}
           </h2>
         </span>
 
-        <p className="px-4 py-2 rounded-lg border border-secondary text-md md:text-xl w-fit bg-gradient-to-br from-[#2F3547] via-black/50 to-black/0 text-white">
+        <p className="px-4 py-2 rounded-lg border border-secondary text-md md:text-xl w-fit bg-gradient-to-br from-[#2F3547] via-black/50 to-black/0 text-textPrimary">
           @anthonysworld & @cuebanks
         </p>
       </article>

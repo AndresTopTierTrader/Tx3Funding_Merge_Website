@@ -77,7 +77,7 @@ function OrderError({ error, onRetry, onGoBack }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-3xl font-light text-white"
+          className="text-3xl font-light text-textPrimary"
         >
           Order Creation Failed
         </motion.h2>
@@ -104,7 +104,7 @@ function OrderError({ error, onRetry, onGoBack }) {
             onClick={onRetry}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="flex-1 flex items-center justify-center bg-gradient-to-r from-[#0052B4] to-[#167ACC] text-white font-medium py-3 px-6 rounded-lg hover:opacity-90 transition-opacity"
+            className="flex-1 flex items-center justify-center bg-gradient-to-r from-[#0052B4] to-[#167ACC] text-textPrimary font-medium py-3 px-6 rounded-lg hover:opacity-90 transition-opacity"
           >
             <FaRedo className="w-4 h-4 mr-2" />
             Try Again
@@ -115,7 +115,7 @@ function OrderError({ error, onRetry, onGoBack }) {
             onClick={onGoBack}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="flex-1 flex items-center justify-center bg-[#181D28] border border-[#4D516A] text-white font-medium py-3 px-6 rounded-lg hover:bg-[#131927] transition-colors"
+            className="flex-1 flex items-center justify-center bg-[#181D28] border border-[#4D516A] text-textPrimary font-medium py-3 px-6 rounded-lg hover:bg-[#131927] transition-colors"
           >
             <FaArrowLeft className="w-4 h-4 mr-2" />
             Go Back

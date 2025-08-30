@@ -10,7 +10,7 @@ function StepIndicator({ currentStep }) {
 
   return (
     <div className="mb-8">
-      <h2 className="text-2xl font-medium text-white mb-6">
+      <h2 className="text-2xl font-medium text-textPrimary mb-6">
         {currentStepConfig?.title}
       </h2>
       <p className="text-slate-400 text-lg">

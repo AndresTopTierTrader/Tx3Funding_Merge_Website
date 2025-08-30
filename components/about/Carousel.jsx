@@ -39,7 +39,7 @@ function Carousel() {
 
 
     return (
-        <div className='text-white w-full mb:max-w-[1000px] '>
+        <div className='text-textPrimary w-full mb:max-w-[1000px] '>
 
             {/* Desktop images */}
             <div className='hidden mb:flex justify-around flex-row w-full pb-36'>

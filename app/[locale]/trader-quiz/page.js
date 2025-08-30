@@ -16,7 +16,7 @@ const MainSectionLazyLoading = dynamic(() => import("@/components/trader-quiz/Ma
       <div className="mb-8">
         <div className="w-16 h-16 mx-auto rounded-full border-4 border-[#45D1FF] border-t-transparent animate-spin"></div>
       </div>
-      <p className="text-xl font-light text-white opacity-80 animate-pulse">Loading the trader quiz...</p>
+      <p className="text-xl font-light text-textPrimary opacity-80 animate-pulse">Loading the trader quiz...</p>
     </div>
     <style dangerouslySetInnerHTML={{
       __html: `

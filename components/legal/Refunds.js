@@ -26,7 +26,7 @@ function Team({ translations }) {
     return (
         <div style={bgImageStyle} className='flex flex-col'>
             <div className="mx-10 py-20 mb:pt-24 mb:-mb-16">
-                <h1 className="text-center text-4xl mb:text-center mb:text-6xl font-light text-white">{t1_1} <span className="bg-gradient-to-r from-ttblue py-1 to-ttelectricBlue inline-block text-transparent bg-clip-text">{t1_2}</span>
+                <h1 className="text-center text-4xl mb:text-center mb:text-6xl font-light text-textPrimary">{t1_1} <span className="bg-gradient-to-r from-ttblue py-1 to-ttelectricBlue inline-block text-transparent bg-clip-text">{t1_2}</span>
                 </h1>
                 {/* Refunds after successful completion of the Challenge */}
                 <div className="pt-16">

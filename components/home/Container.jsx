@@ -19,7 +19,7 @@ const LoadingScreen = ({ isVisible = true }) => {
         <div className="mb-8">
           <div className="w-16 h-16 mx-auto rounded-full border-4 border-[#45D1FF] border-t-transparent animate-spin"></div>
         </div>
-        <p className="text-xl font-light text-white opacity-80 animate-pulse">Loading a Top Tier Experience...</p>
+        <p className="text-xl font-light text-textPrimary opacity-80 animate-pulse">Loading a Top Tier Experience...</p>
       </div>
       <style jsx>{`
         @keyframes fade-in {
@@ -47,28 +47,29 @@ const MinimalLoader = () => <div className="min-h-screen bg-[#0B111D]" />;
 // Dynamic component imports
 const LandingSection = dynamic(() => import("./LandingSection/LandingSection"), {
   loading: () => <MinimalLoader />,
-  ssr: false
+  ssr: true
 });
 
 const WhatTradersWantSection = dynamic(() => import("./WhatTradersWant/WhatTradersWant"), {
   loading: () => <MinimalLoader />,
-  ssr: false
+  ssr: true
 });
 
 const TraderTestimonialsSection = dynamic(() => import("./TraderTestimonials/TraderTestimonials"), {
   loading: () => <MinimalLoader />,
-  ssr: false
+  ssr: true
 });
 
 const ProductsSection = dynamic(() => import("./ProductsSection/ProductsSection"), {
   loading: () => <MinimalLoader />,
-  ssr: false
+  ssr: true
 });
 
-const ForexTableSection = dynamic(() => import("@/components/common/ForexTableSection/Main"), {
+const TableContainersSection = dynamic(() => import("@/components/common/TableContainersSection/TableContainersSection"), {
   loading: () => <MinimalLoader />,
   ssr: false
 });
+
 
 const PayoutSection = dynamic(() => import("./PayoutSection/PayoutSection"), {
   loading: () => <MinimalLoader />,
@@ -111,8 +112,8 @@ export default function Container({ locale, translations, mainLang }) {
           <WhatTradersWantSection locale={locale} translations={translations.whatTradersWantTranslations} mainLang={mainLang} />
           <TraderTestimonialsSection locale={locale} translations={translations.traderTestimonialsTranslations} />
           <ProductsSection />
+          <TableContainersSection locale={locale} translations={translations} />
           <PayoutSection translations={translations.payoutTranslations} />
-          <ForexTableSection locale={locale} translations={translations.tableTranslations} />
           <SocialMediaSection locale={locale} translations={translations.socialmediaTranslations} />
         </div>
       )}

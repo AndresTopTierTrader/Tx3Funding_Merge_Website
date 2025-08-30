@@ -13,10 +13,15 @@ import projectxImg from './assets/projectx.png'
 import decorationBlueImg from './assets/product_decoration_blue.png'
 import decorationGreenImg from './assets/product_decoration_green.png'
 
+//Components
+import BenefitsSection from './BenefitsSection'
+
 function ProductsSection() {
     return (
         <section className="bg-[#0B111D] py-16 md:py-28 flex flex-col items-center w-full">
             <div className="flex flex-col w-full items-center max-w-[1200px] tracking-tight px-4">
+
+                {/* Cards Section */}
                 <section className="flex flex-col md:flex-row pt-10 items-center">
 
                     {/* Forex Card */}
@@ -121,6 +126,11 @@ function ProductsSection() {
 
                     </div>
 
+                </section>
+
+                {/* Benefits Sections */}
+                <section className='flex flex-row items-center'>
+                    <BenefitsSection />
                 </section>
             </div>
         </section>

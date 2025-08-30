@@ -43,14 +43,14 @@ function HoursPayout({ translations }) {
               {/* Text Container */}
               <Image src={img24HourPayoutMb} alt='24-hour-payout' className='object-contain -ml-3 -mt-5 h-[300px] ' />
               <div className='flex flex-col text-xs font-semibold  ml-4 -mt-6'>
-                <p className='text-white italic'> {translations.hourGet} {translations.hourDay}   </p>
+                <p className='text-textPrimary italic'> {translations.hourGet} {translations.hourDay}   </p>
                 <div className='flex flex-row text-2xl items-center  -mt-1'>
-                  <p className='text-white italica'> {translations.hourOne}</p>
+                  <p className='text-textPrimary italica'> {translations.hourOne}</p>
                 </div>
                 {/* Button */}
                 <div className='bg-[#0B111D] flex flex-row items-center justify-center px-4 py-2 mb:ml-6 rounded-lg hover:bg-[#0B111D] transition-all hover:scale-110'>
-                  <p className='font-light text-xs text-white'>Get Funded</p>
-                  <FaArrowRight className='w-3 h-3 text-white ml-2 ' />
+                  <p className='font-light text-xs text-textPrimary'>Get Funded</p>
+                  <FaArrowRight className='w-3 h-3 text-textPrimary ml-2 ' />
                 </div>
               </div>
             </div>
@@ -59,16 +59,16 @@ function HoursPayout({ translations }) {
           {/* Desktop */}
           <div className="hidden mb:flex flex-row items-center -ml-10">
             <div className='flex flex-row items-center text-xl font-semibold italic'>
-              <p className='text-white'>{translations.hourGet} <span className='mb:mr-2' > {translations.hourDay} </span> </p>
+              <p className='text-textPrimary'>{translations.hourGet} <span className='mb:mr-2' > {translations.hourDay} </span> </p>
 
-              <p className='text-white text-4xl'> {translations.hourOne} </p>
+              <p className='text-textPrimary text-4xl'> {translations.hourOne} </p>
             </div>
 
             <Image src={img24HourPayout} alt='24-hour-payout' className='object-contain mb:ml-4 mb:h-[80px]  ' />
 
             <div className='bg-[#0B111D] flex flex-row items-center px-4 py-2 mb:ml-6 rounded-lg hover:bg-[#0B111D] transition-all hover:scale-110'>
-              <p className='font-light text-sm text-white'>Get Funded</p>
-              <FaArrowRight className='w-3 h-3 text-white ml-2 ' />
+              <p className='font-light text-sm text-textPrimary'>Get Funded</p>
+              <FaArrowRight className='w-3 h-3 text-textPrimary ml-2 ' />
             </div>
 
           </div>

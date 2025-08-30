@@ -194,7 +194,7 @@ function Main({ translations, locale }) {
       >
         <div className="flex flex-col-reverse mb:flex-row items-center justify-between max-w-[900px] w-full gap-6 mb:gap-8 mx-auto">
           <div className="flex-1 max-w-[400px]">
-            <h1 className="text-center text-3xl mb:text-left mb:text-4xl font-light text-white">
+            <h1 className="text-center text-3xl mb:text-left mb:text-4xl font-light text-textPrimary">
               {whatIs}
               <br />{" "}
               <span className="bg-gradient-to-r from-ttblue py-0 mb:py-1 to-ttelectricBlue font-medium inline-block text-transparent bg-clip-text">
@@ -202,7 +202,7 @@ function Main({ translations, locale }) {
               </span>{" "}
               <br />
             </h1>
-            <h2 className="mt-6 text-center px-4 mb:px-0 mb:text-left text-sm mb:text-normal text-white">
+            <h2 className="mt-6 text-center px-4 mb:px-0 mb:text-left text-sm mb:text-normal text-textPrimary">
               <span className="font-medium">
                 {quizDescription}
                 <br />{" "}
@@ -236,7 +236,7 @@ function Main({ translations, locale }) {
       {/* Avatar section*/}
       <div className="flex flex-col items-center justify-center w-full max-w-[1600px] mt-24 mb:mt-16 px-4">
         <div className="text-center mb-16 md:mb-20">
-          <h3 className="text-3xl md:text-4xl lg:text-5xl font-light text-white leading-tight">
+          <h3 className="text-3xl md:text-4xl lg:text-5xl font-light text-textPrimary leading-tight">
             {t2_1}{" "}
             <span className="bg-gradient-to-r font-medium from-ttblue to-ttelectricBlue inline-block text-transparent bg-clip-text">
               {t2_2}
@@ -272,7 +272,7 @@ function Main({ translations, locale }) {
                   <h4 className="font-bold text-base md:text-lg lg:text-xl mb-1 bg-gradient-to-r from-[#0052B4] to-[#45D1FF] text-transparent bg-clip-text">
                     {avatar.name}
                   </h4>
-                  <p className="font-normal text-xs md:text-sm lg:text-base text-white leading-tight">
+                  <p className="font-normal text-xs md:text-sm lg:text-base text-textPrimary leading-tight">
                     {avatar.description}
                   </p>
                 </div>

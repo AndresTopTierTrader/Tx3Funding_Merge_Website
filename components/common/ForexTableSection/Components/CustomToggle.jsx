@@ -10,7 +10,7 @@ export default function CustomToggle({ isEnabled, onToggle }) {
       <div
         className={`absolute h-7 w-8 transition-transform duration-300 rounded-sm ${
           isEnabled 
-            ? "bg-[#F36235] translate-x-8" 
+            ? "bg-forexBlue translate-x-8" 
             : "bg-[#5B6C8D] translate-x-0"   
         }`}
       />
@@ -19,14 +19,14 @@ export default function CustomToggle({ isEnabled, onToggle }) {
       <div className="relative flex w-full z-10">
         <span
           className={`flex-1 text-center text-xs font-medium transition-colors duration-300 ${
-            isEnabled ? "text-[#F36235]" : "text-transparent" 
+            isEnabled ? "text-slate-200" : "text-transparent" 
           }`}
         >
           ON
         </span>
         <span
           className={`flex-1 text-center text-xs font-medium transition-colors duration-300 ${
-            isEnabled ? "text-transparent" : "text-white"
+            isEnabled ? "text-transparent" : "text-textPrimary"
           }`}
         >
           OFF

@@ -34,7 +34,7 @@ function Main({ translations }) {
         {/* Title, Description & button*/}
         <div>
           <div className="mx-10">
-            <h1 className="text-center text-4xl mb:text-center mb:text-5xl font-light text-white">
+            <h1 className="text-center text-4xl mb:text-center mb:text-5xl font-light text-textPrimary">
               {" "} {translations.titleOne} {" "} {translations.titleTwo} 
              
             </h1>
@@ -49,7 +49,7 @@ function Main({ translations }) {
           <div className="flex flex-col items-center mb:flex-row  mb:mt-16">
             <Image src={CueImg} className="w-56" alt='cue-img' />
             <div className="flex flex-col items-center mt-5 mb:mt-0 mb:items-start  mb:ml-24">
-              <h2 className="mb:text-left text-center text-4xl font-light text-white">Cue Banks</h2>
+              <h2 className="mb:text-left text-center text-4xl font-light text-textPrimary">Cue Banks</h2>
               <p className=" mb:text-left text-center text-sm mt-4 text-secondary mb:w-full">{translations.cueStory}              </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ function Main({ translations }) {
           <div className="flex flex-col-reverse items-center mb:flex-row  mt-12 mb:mt-12">
 
             <div className="flex flex-col mb:items-end items-center ">
-              <h2 className="mb:text-left text-center text-4xl font-light text-white">Anthony Williams</h2>
+              <h2 className="mb:text-left text-center text-4xl font-light text-textPrimary">Anthony Williams</h2>
               <p className="mb:text-right text-center text-sm mt-4 text-secondary mb:w-full"> {translations.anthonyStory}
               </p>
             </div>
@@ -75,24 +75,24 @@ function Main({ translations }) {
           <div className="bg-gradient-to-br from-blue-600 to-blue-800 h-fit mb:h-[450px] w-auto mb:w-80 rounded-xl flex flex-col items-center mx-8 mb:mx-0 mb:mb-0 mb-10">
             <Image src={oneCardImage} alt="card-img" width={250} height={250} />
             <div className="text-center px-10 mb-10">
-              <p className="text-white font-medium text-xl">{translations.missionTitle}</p>
-              <p className="text-white font-light text-base mt-2">{translations.missionContent}</p>
+              <p className="text-textPrimary font-medium text-xl">{translations.missionTitle}</p>
+              <p className="text-textPrimary font-light text-base mt-2">{translations.missionContent}</p>
             </div>
           </div>
           {/* Vision Statement */}
           <div className="bg-gradient-to-br from-orange-500 to-orange-700 h-fit mb:h-[450px] w-auto mb:w-80 rounded-xl flex flex-col items-center mx-8 mb:mx-0  mb:mb-0 mb-10">
             <Image src={twoCardImage} alt="card-img" width={250} height={250} />
             <div className="text-center px-10 mb-10">
-              <p className="text-white font-medium text-xl">{translations.visionTitle}</p>
-              <p className="text-white font-light text-base mt-2">{translations.visionContent}</p>
+              <p className="text-textPrimary font-medium text-xl">{translations.visionTitle}</p>
+              <p className="text-textPrimary font-light text-base mt-2">{translations.visionContent}</p>
             </div>
           </div>
           {/* Mission Statement */}
           <div className="bg-gradient-to-br from-blue-600 to-blue-800 h-fit mb:h-[450px] w-auto mb:w-80 rounded-xl flex flex-col items-center mx-8 mb:mx-0  mb:mb-0 mb-10">
             <Image src={threeCardImage} alt="card-img" width={250} height={250} />
             <div className="text-center px-10 mb-10">
-              <p className="text-white font-medium text-xl">{translations.purposeTitle}</p>
-              <p className="text-white font-light text-base mt-2"> {translations.purposeContent} </p>
+              <p className="text-textPrimary font-medium text-xl">{translations.purposeTitle}</p>
+              <p className="text-textPrimary font-light text-base mt-2"> {translations.purposeContent} </p>
             </div>
           </div>
         </section>

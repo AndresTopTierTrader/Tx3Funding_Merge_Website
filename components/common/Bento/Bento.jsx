@@ -101,7 +101,7 @@ export default function Bento({ translations }) {
     ];
 
     return (
-        <SectionLayout bgColor="bg-[#0B111D]" className='text-white pb-24 pt-0 md:pt-10'>
+        <SectionLayout bgColor="bg-[#0B111D]" className='text-textPrimary pb-24 pt-0 md:pt-10'>
             <article className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto max-w-4xl">
                 <div className="rounded-lg border p-6 border-[#717892] bg-gradient-to-br from-[#0052B4]/50 to-transparent md:min-h-[296px] flex flex-col justify-between gap-8">
                     <span className="flex items-center justify-between">

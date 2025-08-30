@@ -181,7 +181,7 @@ function CreateLink({ userData, currentLanguage, avatarDescription, translations
             href={link} 
             onClick={handleClick} 
             target='_blank' 
-            className='bg-ttorange px-4 flex flex-row rounded-xl hover:cursor-pointer hover:scale-110 transition-all hover:bg-orange-600 text-white items-center py-2'
+            className='bg-ttorange px-4 flex flex-row rounded-xl hover:cursor-pointer hover:scale-110 transition-all hover:bg-orange-600 text-textPrimary items-center py-2'
         >
             <p>{t('buyNow')}</p>
             <FaArrowRight className='w-4 mb:w-3 mb:h-3 ml-2 h-4' />

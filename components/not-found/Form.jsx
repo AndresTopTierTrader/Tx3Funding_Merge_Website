@@ -107,12 +107,12 @@ const Form = () => {
                         className='mt-5 h-fit-content p-2 border-2 border-gray-300 rounded-lg w-full'
                         onChange={handleExplanationChange}
                     />
-                    <button onClick={handleSubmit} className='text-white w-fit mt-5 px-8 cursor-pointer hover: py-2 transition-all hover:bg-orange-600 hover:scale-110 rounded-xl bg-ttorange font-bold'>Submit</button>
+                    <button onClick={handleSubmit} className='text-textPrimary w-fit mt-5 px-8 cursor-pointer hover: py-2 transition-all hover:bg-orange-600 hover:scale-110 rounded-xl bg-ttorange font-bold'>Submit</button>
                 </div>
             )}
 
             {message && (
-                <div className={`mt-5 p-4 rounded-lg ${message.startsWith('Error') ? 'bg-red-500 text-white' : 'bg-green-500 text-white'}`}>
+                <div className={`mt-5 p-4 rounded-lg ${message.startsWith('Error') ? 'bg-red-500 text-textPrimary' : 'bg-green-500 text-textPrimary'}`}>
                     {message}
                 </div>
             )}

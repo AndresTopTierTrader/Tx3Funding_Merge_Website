@@ -238,7 +238,7 @@ function UserData({ onSubmit, translations }) {
             animate="visible"
             onSubmit={handleSubmit}
         >
-            <motion.p variants={itemVariants} className='font-light text-white text-3xl mt-5 mb:mt-0 mb:text-5xl'>{t1_1}</motion.p>
+            <motion.p variants={itemVariants} className='font-light text-textPrimary text-3xl mt-5 mb:mt-0 mb:text-5xl'>{t1_1}</motion.p>
             <motion.p variants={itemVariants} className='bg-gradient-to-r from-ttblue py-0 mb:py-1 to-ttelectricBlue font-medium inline-block text-transparent bg-clip-text text-3xl mb:text-5xl'>{t1_2}</motion.p>
             <motion.p variants={itemVariants} className='mt-3 text-secondary'>{subtitle}</motion.p>
 
@@ -357,7 +357,7 @@ function UserData({ onSubmit, translations }) {
                 whileHover={isFormValid ? { scale: 1.03 } : {}}
                 whileTap={isFormValid ? { scale: 0.97 } : {}}
                 transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                className={`bg-ttorange flex flex-row items-center text-white w-full mb:w-fit justify-center rounded-lg text-base px-8 py-2 mt-10 ${
+                className={`bg-ttorange flex flex-row items-center text-textPrimary w-full mb:w-fit justify-center rounded-lg text-base px-8 py-2 mt-10 ${
                     isFormValid ? 'hover:scale-105 transition-all cursor-pointer' : 'opacity-50 cursor-not-allowed'
                 }`}
                 disabled={!isFormValid}

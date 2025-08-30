@@ -51,12 +51,12 @@ const Carousel = ({mainLang}) => {
             <ul className='slide-track flex items-center gap-12 md:gap-24 py-8 bg-transparent '>
                 {images.map((image, index) => (
                     <li key={`track1 - ${image.name}-${index}`} className='slide grid -mx-4 md:-mx-8 place-items-center'>
-                          <p className="bg-[#181D28] py-2 px-4 rounded-lg text-white font-light text-xs">{image.name}</p>
+                          <p className="bg-[#181D28] py-2 px-4 rounded-lg text-textPrimary font-light text-xs">{image.name}</p>
                     </li>
                 ))}
                 {images.map((image, index) => (
                     <li key={`track2 - ${image.name}-${index}`} className='slide grid -mx-4 md:-mx-8 place-items-center'>
-                       <p className="bg-[#181D28] py-2 px-4 rounded-lg text-white font-light text-xs">{image.name}</p>
+                       <p className="bg-[#181D28] py-2 px-4 rounded-lg text-textPrimary font-light text-xs">{image.name}</p>
                     </li>
                 ))}
             </ul>

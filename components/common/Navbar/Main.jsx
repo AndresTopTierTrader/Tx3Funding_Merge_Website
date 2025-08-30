@@ -118,8 +118,8 @@ function Navbar({ locale }) {
   };
 
   const linksStyle = {
-    desktop: `text-white/90 hover:text-white cursor-pointer font-light px-3 transition-all`,
-    mobile: "text-white/90 cursor-pointer font-light px-2 py-2 text-center text-lg hover:text-ttorange transition-all",
+    desktop: `text-textPrimary/90 hover:text-textPrimary cursor-pointer font-light px-3 transition-all`,
+    mobile: "text-textPrimary/90 cursor-pointer font-light px-2 py-2 text-center text-lg hover:text-ttorange transition-all",
     selected: "text-ttorange cursor-pointer font-semibold px-3 transition-all"
   };
 
@@ -235,7 +235,7 @@ function Navbar({ locale }) {
 
           <a>
             <button className="bg-forexBlue px-4 py-2 rounded-lg" >
-              <p className="tracking-tight font-medium text-sm md:text-base text-white">Forex</p>
+              <p className="tracking-tight font-medium text-sm md:text-base text-textPrimary">Forex</p>
             </button>
           </a>
 
@@ -269,7 +269,7 @@ function Navbar({ locale }) {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -100, opacity: 0 }}
           transition={{ type: "spring", stiffness: 100, damping: 20 }}
-          className={`flex fixed flex-col w-full overflow-auto top-[70px] mb:top-[70px] overflow-x-hidden h-auto pb-5 bg-[#0B111D]/40 backdrop-blur-2xl text-white rounded-b-xl z-50`}
+          className={`flex fixed flex-col w-full overflow-auto top-[70px] mb:top-[70px] overflow-x-hidden h-auto pb-5 bg-[#0B111D]/40 backdrop-blur-2xl text-textPrimary rounded-b-xl z-50`}
         >
           <motion.div
             initial="hidden"

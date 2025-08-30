@@ -69,7 +69,7 @@ export function Traders({ translations }) {
 
   return (
     <section className="flex flex-col items-center gap-8 md:gap-20 mx-auto max-w-[1460px] py-12 md:py-20">
-      <h2 className="text-center text-3xl md:text-4xl font-light text-white px-7">
+      <h2 className="text-center text-3xl md:text-4xl font-light text-textPrimary px-7">
         {translations.t2}
       </h2>
       <div className="flex items-center gap-6 overflow-x-scroll pb-4 w-full pl-7">

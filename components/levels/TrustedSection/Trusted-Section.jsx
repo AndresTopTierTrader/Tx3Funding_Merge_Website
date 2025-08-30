@@ -78,7 +78,7 @@ function TrustedSection({ locale, translations }) {
             >
                 <div className="flex flex-col items-center">
                     <motion.h3
-                        className="text-3xl text-center mb:text-4xl font-light mb:font-light text-white"
+                        className="text-3xl text-center mb:text-4xl font-light mb:font-light text-textPrimary"
                         variants={itemVariants}
                     >
                         {translations.title}
@@ -97,7 +97,7 @@ function TrustedSection({ locale, translations }) {
                                 variants={cardVariants}
                             >
                                 <motion.p variants={itemVariants} className="text-6xl font-light bg-gradient-to-b mt-3 from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text">1</motion.p>
-                                <motion.p variants={itemVariants} className='text-2xl text-white mt-1'>{translations.firstTitle}</motion.p>
+                                <motion.p variants={itemVariants} className='text-2xl text-textPrimary mt-1'>{translations.firstTitle}</motion.p>
                                 <motion.p variants={itemVariants} className="text-[#717892] mt-7 max-w-[450px]">{translations.firstDesc}</motion.p>
                                 <motion.div 
                                     className='w-full flex flex-col items-center'
@@ -111,7 +111,7 @@ function TrustedSection({ locale, translations }) {
                                 variants={cardVariants}
                             >
                                 <motion.p variants={itemVariants} className="text-6xl font-light bg-gradient-to-b mt-3 from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text">2</motion.p>
-                                <motion.p variants={itemVariants} className='text-2xl text-white mt-1'>{translations.secondTitle}</motion.p>
+                                <motion.p variants={itemVariants} className='text-2xl text-textPrimary mt-1'>{translations.secondTitle}</motion.p>
                                 <motion.p variants={itemVariants} className="text-[#717892] mt-7 max-w-[450px]">{translations.secondDesc}</motion.p>
                                 <motion.div 
                                     className='w-full flex flex-col items-center'
@@ -127,7 +127,7 @@ function TrustedSection({ locale, translations }) {
                         >
                             <div>
                                 <motion.p variants={itemVariants} className="text-6xl font-light bg-gradient-to-b mt-3 from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text">3</motion.p>
-                                <motion.p variants={itemVariants} className='text-2xl text-white mt-1'>{translations.thirdTitle}</motion.p>
+                                <motion.p variants={itemVariants} className='text-2xl text-textPrimary mt-1'>{translations.thirdTitle}</motion.p>
                                 <motion.p variants={itemVariants} className="text-[#717892] mt-7 max-w-[450px]">{translations.thirdDesc}</motion.p>
                             </div>
                             <motion.div 

@@ -9,13 +9,13 @@ function PopUp({ translations, popUpOpen }) {
     const [selectedLanguage, setSelectedLanguage] = useState('null')
 
     const buttonStyles = {
-        selected: 'flex flex-row items-center bg-ttblue text-white py-2 mb:mr-5 px-8 rounded-2xl font-bold mr-3 transition-all hover:scale-110 hover:bg-ttblue',
-        notSelected: 'bg-white text-ttblue border-2 border-ttblue py-2 mb:mr-5 mr-3 px-8 rounded-2xl font-bold transition-all hover:scale-110 hover:bg-ttblue hover:text-white'
+        selected: 'flex flex-row items-center bg-ttblue text-textPrimary py-2 mb:mr-5 px-8 rounded-2xl font-bold mr-3 transition-all hover:scale-110 hover:bg-ttblue',
+        notSelected: 'bg-white text-ttblue border-2 border-ttblue py-2 mb:mr-5 mr-3 px-8 rounded-2xl font-bold transition-all hover:scale-110 hover:bg-ttblue hover:text-textPrimary'
     }
 
     const ctaStyles = {
-        active: 'bg-ttorange text-white py-3 mt-8 w-fit px-6 rounded-2xl font-bold transition-all hover:scale-110 hover:bg-ttorange',
-        inactive: 'bg-orange-300 text-white py-3 mt-8 w-fit px-6 rounded-2xl font-bold transition-all cursor-not-allowed '
+        active: 'bg-ttorange text-textPrimary py-3 mt-8 w-fit px-6 rounded-2xl font-bold transition-all hover:scale-110 hover:bg-ttorange',
+        inactive: 'bg-orange-300 text-textPrimary py-3 mt-8 w-fit px-6 rounded-2xl font-bold transition-all cursor-not-allowed '
     }
 
     const [currentLink, setCurrentLink] = useState('')

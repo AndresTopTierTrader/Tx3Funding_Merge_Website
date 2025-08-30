@@ -11,10 +11,10 @@ function Help({ translations, locale }) {
                 <div className='flex flex-col w-full items-center'>
                     <div className='flex mb:flex-row flex-col-reverse mb:items-start items-center text-center mb:text-start justify-between w-full'>
                         <div className='flex flex-col mb:items-start items-center'>
-                            <p className='text-3xl text-white font-light mt-4'> {translations.help.title} </p>
+                            <p className='text-3xl text-textPrimary font-light mt-4'> {translations.help.title} </p>
                             <p className='mb:max-w-[400px] text-center mb:text-left text-slate-300 mt-2'> {translations.help.p} </p>
                             <a href={`${ENVIRONMENT_URL}/${locale}/contact`} target='_blank'>
-                                <button className='bg-transparent border-2 border-slate-300 text-white py-2 mt-8 w-fit px-6 rounded-xl font-medium transition-all hover:scale-110 hover:bg-ttblue hover:text-white'>  {translations.help.cta}</button>
+                                <button className='bg-transparent border-2 border-slate-300 text-textPrimary py-2 mt-8 w-fit px-6 rounded-xl font-medium transition-all hover:scale-110 hover:bg-ttblue hover:text-textPrimary'>  {translations.help.cta}</button>
                             </a>
                         </div>
                         <Image src={iconFour} alt='icon-four' className='w-52 mb:ml-44 ' />

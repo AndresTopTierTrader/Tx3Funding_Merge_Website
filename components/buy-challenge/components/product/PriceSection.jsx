@@ -28,7 +28,7 @@ function PriceSection({ originalPrice, appliedCoupon }) {
           </h2>
           {appliedCoupon && (
             <p className="text-green-400 text-md md:mt-2 font-medium">
-              <span className='text-white font-light'>You save </span>
+              <span className='text-textPrimary font-light'>You save </span>
               ${formatPrice(savings)} ({getCouponDiscountPercentage(appliedCoupon)}%)
             </p>
           )}

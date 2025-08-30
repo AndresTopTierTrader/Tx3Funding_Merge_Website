@@ -51,7 +51,7 @@ const Footer = ({ locale, translations }) => {
                                     href={href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-white hover:text-gray-300 transition-colors"
+                                    className="text-textPrimary hover:text-gray-300 transition-colors"
                                     aria-label={label}
                                 >
                                     <span className="sr-only">{label}</span>
@@ -67,40 +67,40 @@ const Footer = ({ locale, translations }) => {
                     {/* Navigation Links */}
                     <div className="flex flex-col gap-y-10 md:gap-y-0 pb-8 md:pb-0 mb:pb-0 mb:gap-y-0 md:flex-row mb:flex-row gap-x-8 md:gap-x-6 mb:gap-x-10">
                         <div>
-                            <h3 className="text-white font-semibold mb-4 md:mb-3 text-base md:text-sm">{products}</h3>
+                            <h3 className="text-textPrimary font-semibold mb-4 md:mb-3 text-base md:text-sm">{products}</h3>
                             <ul className="space-y-2 md:space-y-1.5">
-                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/products/challenges`} className="text-gray-500 hover:text-white text-sm md:text-xs">Challenges</Link></li>
-                                <li><Link href={`${ENVIRONMENT_URL}/${locale}`} className="text-gray-500 hover:text-white text-sm md:text-xs">Levels</Link></li>
-                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/trader-quiz`} className="text-gray-500 hover:text-white text-sm md:text-xs">Trader Quiz</Link></li>
+                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/products/challenges`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">Challenges</Link></li>
+                                <li><Link href={`${ENVIRONMENT_URL}/${locale}`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">Levels</Link></li>
+                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/trader-quiz`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">Trader Quiz</Link></li>
                             </ul>
                         </div>
 
                         <div>
-                            <h3 className="text-white font-semibold mb-4 md:mb-3 text-base md:text-sm">{resources}</h3>
+                            <h3 className="text-textPrimary font-semibold mb-4 md:mb-3 text-base md:text-sm">{resources}</h3>
                             <ul className="space-y-2 md:space-y-1.5">
-                                <li><Link href={`https://www.youtube.com/@toptier.trader`} className="text-gray-500 hover:text-white text-sm md:text-xs">Podcasts</Link></li>
-                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/blog`} className="text-gray-500 hover:text-white text-sm md:text-xs">Blog</Link></li>
-                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/academy`} className="text-gray-500 hover:text-white text-sm md:text-xs">TT Academy</Link></li>
-                                <li><Link href={`https://help.toptiertrader.com`} className="text-gray-500 hover:text-white text-sm md:text-xs">FAQ</Link></li>
+                                <li><Link href={`https://www.youtube.com/@toptier.trader`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">Podcasts</Link></li>
+                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/blog`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">Blog</Link></li>
+                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/academy`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">TT Academy</Link></li>
+                                <li><Link href={`https://help.toptiertrader.com`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">FAQ</Link></li>
                             </ul>
                         </div>
 
                         <div>
-                            <h3 className="text-white font-semibold mb-4 md:mb-3 text-base md:text-sm">{company}</h3>
+                            <h3 className="text-textPrimary font-semibold mb-4 md:mb-3 text-base md:text-sm">{company}</h3>
                             <ul className="space-y-2 md:space-y-1.5">
-                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/about`} className="text-gray-500 hover:text-white text-sm md:text-xs">{about}</Link></li>
-                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/contact`} className="text-gray-500 hover:text-white text-sm md:text-xs">{contact}</Link></li>
-                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/affiliates-program`} className="text-gray-500 hover:text-white text-sm md:text-xs">{affiliates}</Link></li>
+                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/about`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">{about}</Link></li>
+                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/contact`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">{contact}</Link></li>
+                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/affiliates-program`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">{affiliates}</Link></li>
                             </ul>
                         </div>
 
                         <div>
-                            <h3 className="text-white font-semibold mb-4 md:mb-3 text-base md:text-sm">Disclosures</h3>
+                            <h3 className="text-textPrimary font-semibold mb-4 md:mb-3 text-base md:text-sm">Disclosures</h3>
                             <ul className="space-y-2 md:space-y-1.5">
-                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/aml-policy`} className="text-gray-500 hover:text-white text-sm md:text-xs">AML Policy</Link></li>
-                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/privacy`} className="text-gray-500 hover:text-white text-sm md:text-xs">{privacyLink}</Link></li>
-                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/refunds`} className="text-gray-500 hover:text-white text-sm md:text-xs">{refundLink}</Link></li>
-                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/terms`} className="text-gray-500 hover:text-white text-sm md:text-xs">{termsLink}</Link></li>
+                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/aml-policy`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">AML Policy</Link></li>
+                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/privacy`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">{privacyLink}</Link></li>
+                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/refunds`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">{refundLink}</Link></li>
+                                <li><Link href={`${ENVIRONMENT_URL}/${locale}/terms`} className="text-gray-500 hover:text-textPrimary text-sm md:text-xs">{termsLink}</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -108,9 +108,9 @@ const Footer = ({ locale, translations }) => {
 
                 <div className="border-t border-gray-700 pt-8 md:pt-6 w-full">
                     <div className="text-gray-500 text-sm md:text-xs">
-                        <h3 className="font-bold text-white mb-2 text-sm md:text-xs">DISCLAIMER:</h3>
+                        <h3 className="font-bold text-textPrimary mb-2 text-sm md:text-xs">DISCLAIMER:</h3>
                         All content published and distributed by TopTier Trader, LLC and its affiliates (collectively, the Company) is to be treated as general information only. None of the information provided by the Company or contained herein is intended as investment advice, an offer or solicitation of an offer to buy or sell, or a recommendation, endorsement, or sponsorship of any security, company, or fund. Use of the information contained on the Company's websites is at your own risk and the Company and assumes no responsibility or liability for any use or misuse of such information. Nothing contained herein is a solicitation or an offer to buy or sell futures, options, or forex. Past performance is not necessarily indicative of future results.
-                        <h3 className="font-bold text-white mb-2 mt-5 md:mt-4 text-sm md:text-xs">SIMULATED TRADING DISCLAIMER:</h3>
+                        <h3 className="font-bold text-textPrimary mb-2 mt-5 md:mt-4 text-sm md:text-xs">SIMULATED TRADING DISCLAIMER:</h3>
 
                         The company is not a broker and does not accept deposits. Hypothetical or simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
                     </div>

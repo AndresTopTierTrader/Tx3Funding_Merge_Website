@@ -39,7 +39,7 @@ const HowItWorks = ({ translations, locale }) => {
 
           {/* How it Works */}
           <div className="space-y-6 sm:space-y-7 md:space-y-8 order-2 lg:order-2 max-w-md sm:max-w-lg md:max-w-none mx-auto lg:mx-0">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-normal text-white text-center lg:text-left leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-normal text-textPrimary text-center lg:text-left leading-tight">
               {howItWorksTitle}
             </h2>
 
@@ -60,14 +60,14 @@ const HowItWorks = ({ translations, locale }) => {
                           className="w-full h-full rounded-full flex items-center justify-center"
                           style={{ backgroundColor: "#0B111D" }}
                         >
-                          <span className="text-white font-normal text-sm sm:text-lg">
+                          <span className="text-textPrimary font-normal text-sm sm:text-lg">
                             {step.number}
                           </span>
                         </div>
                       </div>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-white font-normal text-sm sm:text-base md:text-lg leading-relaxed text-left">
+                      <p className="text-textPrimary font-normal text-sm sm:text-base md:text-lg leading-relaxed text-left">
                         {step.text}
                       </p>
                     </div>

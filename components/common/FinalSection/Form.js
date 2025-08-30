@@ -139,7 +139,7 @@ function Form({locale, formTranslations }) {
 
   return (
     <div className=''>
-      <p className="text-white font-normal text-xl py-3">
+      <p className="text-textPrimary font-normal text-xl py-3">
         {formTranslations.formTitle1} <br /> {formTranslations.formTitle2}
       </p>
       <p className='text-[#FF532D] text-base font-bold'>
@@ -154,7 +154,7 @@ function Form({locale, formTranslations }) {
         <div className="flex items-center mb-3">
           <input
             type="email"
-            className="h-10 bg-[#252832] text-white w-full px-3 text-sm rounded-lg"
+            className="h-10 bg-[#252832] text-textPrimary w-full px-3 text-sm rounded-lg"
             placeholder={formTranslations.emailHere || "email@example.com"}
             value={email}
             onChange={handleEmailChange}
@@ -166,7 +166,7 @@ function Form({locale, formTranslations }) {
         <div className="flex items-center">
           <input
             type="text"
-            className="h-10 bg-[#252832] text-white w-12 pl-3 text-sm rounded-l-lg"
+            className="h-10 bg-[#252832] text-textPrimary w-12 pl-3 text-sm rounded-l-lg"
             placeholder="+00"
             value={countryCode}
             onChange={handleCountryCodeChange}
@@ -174,17 +174,17 @@ function Form({locale, formTranslations }) {
           />
           <input
             type="tel"
-            className="h-10 bg-[#252832] text-white w-36 mb:w-44 px-3 text-sm rounded-r-lg"
+            className="h-10 bg-[#252832] text-textPrimary w-36 mb:w-44 px-3 text-sm rounded-r-lg"
             placeholder={formTranslations.phoneHere || "(123) 456 789"}
             value={phoneNumber}
             onChange={handlePhoneNumberChange}
             suppressHydrationWarning={true}
           />
-          <button type="submit" className='bg-[#1769E5] text-sm text-white text-md px-6 py-2.5 ml-3 rounded-lg'>
+          <button type="submit" className='bg-[#1769E5] text-sm text-textPrimary text-md px-6 py-2.5 ml-3 rounded-lg'>
             {formTranslations.formSubmit}
           </button>
         </div>
-        {error && <p className="bg-red-400 text-white py-4 px-10 mt-10 rounded-xl">{error}</p>}
+        {error && <p className="bg-red-400 text-textPrimary py-4 px-10 mt-10 rounded-xl">{error}</p>}
       </form>
       {isSubmitted && <p className="bg-green-300 text-gray-800 py-4 px-10 mt-10 rounded-xl">{formTranslations.successMessage || "Your information has been successfully submitted!"}</p>}
     </div>

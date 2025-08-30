@@ -67,7 +67,7 @@ function CompetitiveEdgeSection({ translations }) {
                         variants={titleVariants}
                         className='flex flex-col items-center mb:items-start'
                     >
-                        <h3 className='text-white font-light text-3xl mb:text-4xl text-center mb:text-left max-w-[400px]'>
+                        <h3 className='text-textPrimary font-light text-3xl mb:text-4xl text-center mb:text-left max-w-[400px]'>
                             {translations.title}
                         </h3>
                         <p className="pt-5 mb:text-left text-sm text-center font-light mb:font-normal mb:text-base w-full text-[#717892] max-w-[350px] mb:max-w-[800px]">
@@ -92,9 +92,9 @@ function CompetitiveEdgeSection({ translations }) {
                                 whileHover={{ scale: 1.02 }}
                                 className='bg-gradient-to-br border rounded-xl min-w-full mb:min-w-[320px] border-[#717892] from-white/5 to-[#0B111D] p-4'
                             >
-                                <HiOutlineShieldCheck className='text-white w-6 h-6' />
+                                <HiOutlineShieldCheck className='text-textPrimary w-6 h-6' />
                                 <p className="bg-gradient-to-r font-semibold mt-3 from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text text-xl">{translations.fair}</p>
-                                <p className='max-w-full mb:max-w-[260px] font-light mt-8 text-sm text-white'>{translations.fair_desc}</p>
+                                <p className='max-w-full mb:max-w-[260px] font-light mt-8 text-sm text-textPrimary'>{translations.fair_desc}</p>
                             </motion.div>
 
                             <motion.div
@@ -104,9 +104,9 @@ function CompetitiveEdgeSection({ translations }) {
                                 whileHover={{ scale: 1.02 }}
                                 className='bg-gradient-to-br ml-0 mt-8 mb:mt-0 mb:ml-4 border rounded-xl border-[#717892] from-white/5 to-[#0B111D] p-4'
                             >
-                                <TfiTarget className='text-white w-6 h-6' />
+                                <TfiTarget className='text-textPrimary w-6 h-6' />
                                 <p className="bg-gradient-to-r font-semibold mt-3 from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text text-xl">{translations.simple}</p>
-                                <p className='max-w-full mb:max-w-[200px] font-light mt-8 text-sm text-white'>{translations.simple_desc}</p>
+                                <p className='max-w-full mb:max-w-[200px] font-light mt-8 text-sm text-textPrimary'>{translations.simple_desc}</p>
                             </motion.div>
                         </section>
 
@@ -118,9 +118,9 @@ function CompetitiveEdgeSection({ translations }) {
                                 whileHover={{ scale: 1.02 }}
                                 className='bg-gradient-to-br border rounded-xl w-full mb:w-[180px] border-[#717892] from-white/5 to-[#0B111D] p-4'
                             >
-                                <MdOutlineRocketLaunch className='text-white w-6 h-6' />
+                                <MdOutlineRocketLaunch className='text-textPrimary w-6 h-6' />
                                 <p className="bg-gradient-to-r max-w-full mb:max-w-[140px] font-semibold mt-3 from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text text-xl">{translations.challenge}</p>
-                                <p className='max-w-full mb:max-w-[140px] font-light mt-8 mb:mt-[70px] text-sm text-white'>{translations.challenge_desc}</p>
+                                <p className='max-w-full mb:max-w-[140px] font-light mt-8 mb:mt-[70px] text-sm text-textPrimary'>{translations.challenge_desc}</p>
                             </motion.div>
 
                             <motion.div
@@ -130,9 +130,9 @@ function CompetitiveEdgeSection({ translations }) {
                                 whileHover={{ scale: 1.02 }}
                                 className='bg-gradient-to-br border rounded-xl w-full mb:w-[180px] border-[#717892] ml-0 mt-8 mb:mt-0 mb:ml-4 from-white/5 to-[#0B111D] p-4'
                             >
-                                <IoChatboxEllipsesOutline className='text-white w-6 h-6' />
+                                <IoChatboxEllipsesOutline className='text-textPrimary w-6 h-6' />
                                 <p className="bg-gradient-to-r max-w-full mb:max-w-[140px] font-semibold mt-3 from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text text-xl">{translations.professional}</p>
-                                <p className='max-w-full mb:max-w-[140px] font-light mt-8 text-sm text-white'>{translations.professional_desc}</p>
+                                <p className='max-w-full mb:max-w-[140px] font-light mt-8 text-sm text-textPrimary'>{translations.professional_desc}</p>
                             </motion.div>
 
                             <motion.div
@@ -142,9 +142,9 @@ function CompetitiveEdgeSection({ translations }) {
                                 whileHover={{ scale: 1.02 }}
                                 className='bg-gradient-to-br border rounded-xl mt-8 mb:mt-0 w-full mb:w-[180px] border-[#717892] ml-0 mb:ml-4 from-white/5 to-[#0B111D] p-4'
                             >
-                                <BiMoneyWithdraw className='text-white w-6 h-6' />
+                                <BiMoneyWithdraw className='text-textPrimary w-6 h-6' />
                                 <p className="bg-gradient-to-r max-w-full mb:max-w-[120px] font-semibold mt-3 from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text text-xl">{translations.payouts}</p>
-                                <p className='max-w-full mb:max-w-[140px] font-light mt-8 mb:mt-[50px] text-sm text-white'>{translations.payouts_desc}</p>
+                                <p className='max-w-full mb:max-w-[140px] font-light mt-8 mb:mt-[50px] text-sm text-textPrimary'>{translations.payouts_desc}</p>
                             </motion.div>
                         </section>
                     </div>
@@ -157,13 +157,13 @@ function CompetitiveEdgeSection({ translations }) {
                     whileHover={{ scale: 1.02 }}
                     className='flex flex-col mb:flex-row bg-gradient-to-br border rounded-xl mb:min-w-[320px] border-[#717892] from-white/5 to-[#0B111D] mt-8 mb:mt-16'
                 >
-                    <div className='bg-gradient-to-r rounded-t-xl mb:rounded-l-xl mb:rounded-tl-xl mb:rounded-t-none flex flex-row mb:flex-col justify-center items-center from-[#0052B4] to-[#167ACC] text-white text-center p-3 mb:p-5'>
+                    <div className='bg-gradient-to-r rounded-t-xl mb:rounded-l-xl mb:rounded-tl-xl mb:rounded-t-none flex flex-row mb:flex-col justify-center items-center from-[#0052B4] to-[#167ACC] text-textPrimary text-center p-3 mb:p-5'>
                         <Image loading='lazy' width={50} height={50} className='w-10 mb:w-14' sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src={payoutImg} alt='payout-fairness' />
                         <p className='ml-4 mb:ml-0 block mb:hidden text-lg'>{translations.fairness}</p>
                     </div>
                     <div className='flex flex-col p-4 ml-1'>
                         <p className="bg-gradient-to-r font-semibold hidden mb:inline-block from-[#45D1FF] to-[#167BCC] text-transparent bg-clip-text text-xl">{translations.fairness}</p>
-                        <p className='text-white text-sm mt-0 mb:mt-2 font-light max-w-[600px]'>{translations.fairness_desc}</p>
+                        <p className='text-textPrimary text-sm mt-0 mb:mt-2 font-light max-w-[600px]'>{translations.fairness_desc}</p>
                     </div>
                     <Image loading='lazy' height={90} width={390} src={maleImg} alt='trade-img' className='hidden mb:block object-contain rounded-xl' />
                 </motion.div>

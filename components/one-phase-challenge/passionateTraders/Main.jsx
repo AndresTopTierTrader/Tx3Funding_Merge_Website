@@ -92,7 +92,7 @@ export function PassionateTraders({ translations, ctaTranslations }) {
     return (
         <SectionLayout padding>
             <motion.h2 
-                className="text-center mx-auto max-w-md text-2xl md:text-4xl text-white"
+                className="text-center mx-auto max-w-md text-2xl md:text-4xl text-textPrimary"
                 initial="hidden"
                 animate={isVisible ? "visible" : "hidden"}
                 variants={titleAnimation}
@@ -119,8 +119,8 @@ export function PassionateTraders({ translations, ctaTranslations }) {
                                 animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
                                 transition={{ delay: 0.3 + (cardIndex * 0.3), duration: 0.6 }}
                             >
-                                <p className={`px-4 py-2 rounded-lg text-white bg-[#0B111D]/70 ${cardIndex === 0 ? 'border-2 border-[#FF532D]' : 'border-2 border-[#45D1FF]'}`}>{phase}</p>
-                                <p className="text-white">{profitTarget}</p>
+                                <p className={`px-4 py-2 rounded-lg text-textPrimary bg-[#0B111D]/70 ${cardIndex === 0 ? 'border-2 border-[#FF532D]' : 'border-2 border-[#45D1FF]'}`}>{phase}</p>
+                                <p className="text-textPrimary">{profitTarget}</p>
                             </motion.span>
 
                             <motion.p

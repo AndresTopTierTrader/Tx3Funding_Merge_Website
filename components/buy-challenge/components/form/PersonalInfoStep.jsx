@@ -48,7 +48,7 @@ function PersonalInfoStep({
             type={FORM_FIELDS.firstName.type}
             value={displayFormData.firstName || ''}
             onChange={(e) => onInputChange('firstName', e.target.value)}
-            className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-all duration-200"
+            className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-textPrimary focus:border-white focus:outline-none transition-all duration-200"
             placeholder={FORM_FIELDS.firstName.placeholder}
             whileFocus={{ scale: 1.01 }}
             transition={springConfigs.premium}
@@ -78,7 +78,7 @@ function PersonalInfoStep({
             type={FORM_FIELDS.lastName.type}
             value={displayFormData.lastName || ''}
             onChange={(e) => onInputChange('lastName', e.target.value)}
-            className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-all duration-200"
+            className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-textPrimary focus:border-white focus:outline-none transition-all duration-200"
             placeholder={FORM_FIELDS.lastName.placeholder}
             whileFocus={{ scale: 1.01 }}
             transition={springConfigs.premium}
@@ -108,7 +108,7 @@ function PersonalInfoStep({
             type={FORM_FIELDS.email.type}
             value={displayFormData.email || ''}
             onChange={(e) => onInputChange('email', e.target.value)}
-            className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-all duration-200"
+            className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-textPrimary focus:border-white focus:outline-none transition-all duration-200"
             placeholder={FORM_FIELDS.email.placeholder}
             whileFocus={{ scale: 1.01 }}
             transition={springConfigs.premium}
@@ -138,7 +138,7 @@ function PersonalInfoStep({
             type={FORM_FIELDS.confirmEmail.type}
             value={displayFormData.confirmEmail || ''}
             onChange={(e) => onInputChange('confirmEmail', e.target.value)}
-            className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-all duration-200"
+            className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-textPrimary focus:border-white focus:outline-none transition-all duration-200"
             placeholder={FORM_FIELDS.confirmEmail.placeholder}
             whileFocus={{ scale: 1.01 }}
             transition={springConfigs.premium}
@@ -176,7 +176,7 @@ function PersonalInfoStep({
               type={FORM_FIELDS.phoneNumber.type}
               value={formatPhoneNumber(displayFormData.phoneNumber || '')}
               onChange={(e) => onPhoneChange(e.target.value)}
-              className="flex-1 min-w-0 bg-[#0B111D] border border-l-0 border-[#717892] rounded-r-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-all duration-200"
+              className="flex-1 min-w-0 bg-[#0B111D] border border-l-0 border-[#717892] rounded-r-lg px-4 py-3 text-textPrimary focus:border-white focus:outline-none transition-all duration-200"
               placeholder={FORM_FIELDS.phoneNumber.placeholder}
               whileFocus={{ scale: 1.01 }}
               transition={springConfigs.premium}

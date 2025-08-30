@@ -40,7 +40,7 @@ function TraderQuizBanner({ locale, translations }) {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 50 }}
                     transition={{ duration: 0.5 }}
-                    className="fixed bottom-0 left-0 right-0 z-30 flex flex-col justify-center w-full h-24 pl-3 -mb-1 text-white shadow-2xl cursor-pointer md:items-center md:gap-8 md:flex-row mb:mb-0 rounded-t-2xl mb:pl-0 mb:h-20" style={bgImageStyle}
+                    className="fixed bottom-0 left-0 right-0 z-30 flex flex-col justify-center w-full h-24 pl-3 -mb-1 text-textPrimary shadow-2xl cursor-pointer md:items-center md:gap-8 md:flex-row mb:mb-0 rounded-t-2xl mb:pl-0 mb:h-20" style={bgImageStyle}
                 >
                     <span className='flex gap-1 md:gap-0 text-md md:text-2xl md:flex-col'>
                         <p>{translations.p1}</p>

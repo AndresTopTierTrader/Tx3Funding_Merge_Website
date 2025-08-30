@@ -94,16 +94,16 @@ function FinalScreen({ userData, locale, translations }) {
                 {...fadeInUp}
             >
                 <p className='text-xl text-secondary  font-semibold'>{avatar}</p>
-                <p className='font-light text-2xl mb:text-3xl text-white'>{userData.avatar}</p>
+                <p className='font-light text-2xl mb:text-3xl text-textPrimary'>{userData.avatar}</p>
 
                 <div className='flex flex-col mb:flex-row mt-5'>
                     <div className='flex flex-col'>
                         <p className='text-base text-secondary font-semibold text-center mb:text-start'>{accountSize}</p>
-                        <p className='font-light text-2xl mb:text-3xl text-white text-center mb:text-start'>{userData.accountSize}</p>
+                        <p className='font-light text-2xl mb:text-3xl text-textPrimary text-center mb:text-start'>{userData.accountSize}</p>
                     </div>
                     <div className='flex flex-col mb:ml-10 mt-5 mb:mt-0'>
                         <p className='text-base font-semibold text-secondary  text-center mb:text-start'>{addOns}</p>
-                        <p className='font-light mb:text-lg text-white max-w-[300px] text-center mb:text-start'>{userData.addOns}</p>
+                        <p className='font-light mb:text-lg text-textPrimary max-w-[300px] text-center mb:text-start'>{userData.addOns}</p>
                     </div>
                 </div>
 
@@ -118,7 +118,7 @@ function FinalScreen({ userData, locale, translations }) {
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                             >
-                            <p className='text-slate-400'>  <span className='font-medium text-white' >  0{index+1} &nbsp; {desc.attribute}: </span> {desc.text}  </p>
+                            <p className='text-slate-400'>  <span className='font-medium text-textPrimary' >  0{index+1} &nbsp; {desc.attribute}: </span> {desc.text}  </p>
                             </motion.div>
                         ))}
                     </ul>

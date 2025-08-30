@@ -150,7 +150,7 @@ export function Considerations({ translations }) {
     return (
         <SectionLayout padding>
             <motion.h2 
-                className="text-center mx-auto text-2xl md:text-4xl text-white"
+                className="text-center mx-auto text-2xl md:text-4xl text-textPrimary"
                 initial="hidden"
                 animate={isVisible ? "visible" : "hidden"}
                 variants={titleAnimation}
@@ -166,7 +166,7 @@ export function Considerations({ translations }) {
             >
                 <button 
                     onClick={() => setAccount('flex')} 
-                    className={`text-xl md:text-2xl text-center w-full pb-4 relative ${account === 'flex' ? 'font-semibold bg-gradient-to-br from-[#0052B4] to-[#45D1FF] bg-clip-text text-transparent' : 'border-b border-[#717892] font-light text-white'}`}
+                    className={`text-xl md:text-2xl text-center w-full pb-4 relative ${account === 'flex' ? 'font-semibold bg-gradient-to-br from-[#0052B4] to-[#45D1FF] bg-clip-text text-transparent' : 'border-b border-[#717892] font-light text-textPrimary'}`}
                 >
                     {translations.flex}
                     {account === 'flex' && (
@@ -182,7 +182,7 @@ export function Considerations({ translations }) {
 
                 <button 
                     onClick={() => setAccount('pro')} 
-                    className={`text-xl md:text-2xl text-center w-full pb-4 relative ${account === 'pro' ? 'font-semibold bg-gradient-to-br from-[#0052B4] to-[#45D1FF] bg-clip-text text-transparent' : 'border-b border-[#717892] font-light text-white'}`}
+                    className={`text-xl md:text-2xl text-center w-full pb-4 relative ${account === 'pro' ? 'font-semibold bg-gradient-to-br from-[#0052B4] to-[#45D1FF] bg-clip-text text-transparent' : 'border-b border-[#717892] font-light text-textPrimary'}`}
                 >
                     {translations.pro}
                     {account === 'pro' && (
@@ -307,7 +307,7 @@ function AnimatedCard({ title, desc, index }) {
             }}
         >
             <motion.strong 
-                className="font-medium text-white"
+                className="font-medium text-textPrimary"
                 variants={titleAnimation}
             >
                 {title}

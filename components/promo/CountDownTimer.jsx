@@ -33,7 +33,7 @@ const CountDownTimer = ({ translations }) => {
   const formatNumber = (number) => number.toString().padStart(2, "0");
 
   return (
-    <section className="flex flex-col items-center gap-6 md:gap-12 bg-[#0B111D] text-white py-12 md:py-20 px-7">
+    <section className="flex flex-col items-center gap-6 md:gap-12 bg-[#0B111D] text-textPrimary py-12 md:py-20 px-7">
       <h2 className="text-4xl font-light text-center md:text-6xl max-w-5xl mx-auto">
         {/* //TODO: Replace translations before launch so it doesnt affect the current promo */}
         {translations.h1_title}

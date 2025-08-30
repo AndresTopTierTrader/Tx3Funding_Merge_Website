@@ -89,7 +89,7 @@ function TableSection({ locale, translations }) {
                 variants={containerVariants}
             >
                 <motion.h3 
-                    className="text-white font-light text-3xl mb:text-4xl max-w-[300px] mb:max-w-full text-center mb:text-left"
+                    className="text-textPrimary font-light text-3xl mb:text-4xl max-w-[300px] mb:max-w-full text-center mb:text-left"
                     variants={titleVariants}
                 >
                     {translations.title}
@@ -100,7 +100,7 @@ function TableSection({ locale, translations }) {
                         className="bg-gradient-to-br mb:min-w-[340px] w-full border mt-10 z-20 px-6 py-8 rounded-lg border-[#44495c] from-[#3D392A] to-[#0B111D]"
                         variants={cardVariants}
                     >
-                        <motion.p variants={itemVariants} className="text-white text-4xl font-normal">{translations.gold}</motion.p>
+                        <motion.p variants={itemVariants} className="text-textPrimary text-4xl font-normal">{translations.gold}</motion.p>
                         <div className="mt-16">
                             {/* Payout Levels */}
                             <motion.div variants={itemVariants} className="flex flex-row items-center mt-3 w-full justify-between">
@@ -131,7 +131,7 @@ function TableSection({ locale, translations }) {
                         className="bg-gradient-to-br mb:min-w-[330px] w-full border mt-10 mb:ml-10 z-20 px-6 py-8 rounded-lg border-[#44495c] from-[#5E6D72] to-[#0B111D]"
                         variants={cardVariants}
                     >
-                        <motion.p variants={itemVariants} className="text-white text-4xl font-normal">{translations.platinum}</motion.p>
+                        <motion.p variants={itemVariants} className="text-textPrimary text-4xl font-normal">{translations.platinum}</motion.p>
                         <div className="mt-16">
                             {/* Payout Levels */}
                             <motion.div variants={itemVariants} className="flex flex-row items-center mt-3 w-full justify-between">
@@ -162,7 +162,7 @@ function TableSection({ locale, translations }) {
                         className="relative bg-gradient-to-br mb:min-w-[320px] w-full border mt-10 mb:ml-10 z-20 px-6 py-8 rounded-lg border-[#45D1FF] from-[#176973] to-[#0B111D]"
                         variants={cardVariants}
                     >
-                        <motion.p variants={itemVariants} className="text-white text-4xl font-normal">{translations.diamond}</motion.p>
+                        <motion.p variants={itemVariants} className="text-textPrimary text-4xl font-normal">{translations.diamond}</motion.p>
                         <div className="mt-16">
                             {/* Payout Levels */}
                             <motion.div variants={itemVariants} className="flex flex-row items-center mt-3 w-full justify-between">

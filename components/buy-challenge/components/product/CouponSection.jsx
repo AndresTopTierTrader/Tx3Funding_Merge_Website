@@ -110,7 +110,7 @@ function CouponSection({ promoCode, setPromoCode, onCouponApplied, onCouponRemov
                 value={couponCode}
                 onChange={(e) => setCouponCode(e.target.value)}
                 placeholder="Enter coupon code"
-                className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-white focus:border-[#45D1FF] focus:outline-none transition-colors"
+                className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-textPrimary focus:border-[#45D1FF] focus:outline-none transition-colors"
                 onKeyPress={(e) => {
                   if (e.key === 'Enter') {
                     handleApplyCoupon();

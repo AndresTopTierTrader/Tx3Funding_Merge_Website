@@ -85,7 +85,7 @@ export default function Traders() {
             style={bgTraders}
         >
             <div className="flex flex-col items-center max-w-[1200px] py-8 ">
-                <h2 className="text-center text-3xl md:text-4xl font-light text-white px-7 tracking-tight">
+                <h2 className="text-center text-3xl md:text-4xl font-light text-textPrimary px-7 tracking-tight">
                     Hear It From Our Traders
                 </h2>
                 <div className="flex items-center gap-6 mt-8 md:mt-12 overflow-x-scroll pb-4 w-full pl-7">

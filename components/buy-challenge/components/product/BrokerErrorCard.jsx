@@ -54,7 +54,7 @@ function BrokerErrorCard({ brokerError, environmentUrl }) {
               <a
                 key={link.broker}
                 href={link.url}
-                className="bg-gradient-to-b from-[#0052B4] to-[#167ACC] text-white font-medium py-3 px-6 rounded-lg hover:opacity-90 transition-opacity text-center"
+                className="bg-gradient-to-b from-[#0052B4] to-[#167ACC] text-textPrimary font-medium py-3 px-6 rounded-lg hover:opacity-90 transition-opacity text-center"
               >
                 Continue with {getBrokerDisplayName(link.broker)}
               </a>
@@ -63,7 +63,7 @@ function BrokerErrorCard({ brokerError, environmentUrl }) {
           
           <a
             href={`${environmentUrl}/select-challenge`}
-            className="mt-4 flex items-center justify-center text-white bg-[#FF532D] hover:bg-orange-700 transition-all py-3 px-6 rounded-lg"
+            className="mt-4 flex items-center justify-center text-textPrimary bg-[#FF532D] hover:bg-orange-700 transition-all py-3 px-6 rounded-lg"
           >
             <span>Choose Your Own Challenge</span>
             <FaArrowRight className="ml-2 w-3" />

@@ -30,10 +30,10 @@ const Evaluation = ({ translations }) => {
     <Card className={`w-full relative mb:w-[400px] h-[390px] mb:h-[400px] p-6 bg-gradient-to-br border rounded-lg border-[#717892] from-white/5 to-[#0B111D]  transition-transform hover:scale-105`}>
       <section>
         <div className="flex justify-between items-center mb-4">
-          <span className={`px-5 py-3 rounded-lg ${color} text-white text-sm font-medium`}>{tier}</span>
-          <h4 className="text-base font-light text-white">{title}</h4>
+          <span className={`px-5 py-3 rounded-lg ${color} text-textPrimary text-sm font-medium`}>{tier}</span>
+          <h4 className="text-base font-light text-textPrimary">{title}</h4>
         </div>
-        <p className="text-white/90 mt-12 font-light mb-6">{description}</p>
+        <p className="text-textPrimary/90 mt-12 font-light mb-6">{description}</p>
         <div className="space-y-4 mt-16">
           {features.map((feature, index) => (
             <div key={index} className="flex items-center text-secondary gap-3">
@@ -64,7 +64,7 @@ const Evaluation = ({ translations }) => {
 
         {/* Title */}
         <div className="flex flex-col items-center text-center mb-16">
-          <h2 className="text-3xl mb:max-w-[700px] md:text-4xl font-light text-white mb-4">
+          <h2 className="text-3xl mb:max-w-[700px] md:text-4xl font-light text-textPrimary mb-4">
             {translations.titleOne}{' '} <br className='hidden mb:block' />
             {translations.titleTwo}
           </h2>
@@ -106,7 +106,7 @@ const Evaluation = ({ translations }) => {
 
         {/* Second Section */}
         <div className="flex flex-col mt-32 mb:mt-36 items-center">
-          <h2 className="text-3xl text-center md:text-4xl font-light text-white mb-4">
+          <h2 className="text-3xl text-center md:text-4xl font-light text-textPrimary mb-4">
             {translations.simTitleOne}{' '}{translations.simTitleTwo}
           </h2>
           <div className="space-y-4 mt-10">

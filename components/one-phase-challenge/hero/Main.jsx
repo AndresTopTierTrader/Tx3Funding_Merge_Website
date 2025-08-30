@@ -16,7 +16,7 @@ export function HeroSection({translations}) {
     return (
         <SectionLayout className='text-center pt-32 relative'>
             <motion.h1 
-                className="text-3xl md:text-5xl text-white mb-4"
+                className="text-3xl md:text-5xl text-textPrimary mb-4"
                 initial={{ opacity: 0, y: 30 }}
                 animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}

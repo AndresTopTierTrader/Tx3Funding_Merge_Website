@@ -94,7 +94,7 @@ function Team({translations}) {
     return (
         <div style={bgStyle} className='flex flex-col'>
             <div className="mx-10 py-20">
-                <h1 className="text-center text-3xl mb:text-center mb:text-4xl font-light text-white">{translations.titleOne} {" "}
+                <h1 className="text-center text-3xl mb:text-center mb:text-4xl font-light text-textPrimary">{translations.titleOne} {" "}
                     {translations.titleTwo} 
                 </h1>
                 <h2 className="mt-3 text-center text-base mb:px-0 mb:text-center  text-secondary">{translations.content}</h2>
@@ -123,7 +123,7 @@ function Team({translations}) {
                     </p>
                 </div>
             ) : <div className="flex items-center justify-center pb-24 -mt-10 mb:mt-0 ">
-                <IoIosArrowDropleft onClick={() => paginate(-1)} className='hover:scale-110 cursor-pointer transition-all text-white w-8 h-8 -mr-16 mb:mr-0' />
+                <IoIosArrowDropleft onClick={() => paginate(-1)} className='hover:scale-110 cursor-pointer transition-all text-textPrimary w-8 h-8 -mr-16 mb:mr-0' />
                 <AnimatePresence>
                     <motion.div className="flex"
                         initial={{ opacity: 0, scale: 0.8, x: 30 }}
@@ -132,13 +132,13 @@ function Team({translations}) {
                         {visibleMembers.map((member, index) => (
                             <motion.div key={index*235} className="flex flex-col px-20 items-center">
                                 <Image src={member.img} alt={member.name} className='mb:w-60 w-48' width={200} height={200} />
-                                <p className='font-light text-white text-xl mt-10'>{member.name}</p>
+                                <p className='font-light text-textPrimary text-xl mt-10'>{member.name}</p>
                                 <p className='text-secondary' >{member.role}</p>
                             </motion.div>
                         ))}
                     </motion.div>
                 </AnimatePresence>
-                <IoIosArrowDropright onClick={() => paginate(1)} className='hover:scale-110 cursor-pointer transition-all text-white w-8 h-8 -ml-16 mb:ml-0' />
+                <IoIosArrowDropright onClick={() => paginate(1)} className='hover:scale-110 cursor-pointer transition-all text-textPrimary w-8 h-8 -ml-16 mb:ml-0' />
             </div>}
 
         </div>

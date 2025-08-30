@@ -477,7 +477,7 @@ function CtaButton({ utm, page, section, translation }) {
    return (
        <a href={utm} onClick={() => track(`${page} - ${section} - CTA Clicked `)} rel="noopener noreferrer"
            className="transition-all hover:scale-105">
-           <button className={`flex flex-row mt-5 mb:mt-0 items-center text-sm rounded-lg bg-[#FF532D] hover:bg-orange-700 text-white transition-all py-2 px-4 scaleIn`}>
+           <button className={`flex flex-row mt-5 mb:mt-0 items-center text-sm rounded-lg bg-[#FF532D] hover:bg-orange-700 text-textPrimary transition-all py-2 px-4 scaleIn`}>
                {translation}
                <FaArrowRight className="w-3 h-3 ml-2" />
            </button>
@@ -1482,7 +1482,7 @@ export default function Blog() {
     return (
         <SectionLayout>
             <div className="max-w-[1100px] text-base md:text-lg mx-auto py-6 md:py-12">
-                <p className="text-white mb-2">
+                <p className="text-textPrimary mb-2">
                     <a className="text-slate-400" href="/blog">Blog /</a> {title}
                 </p>
                 <div className="px-4 py-2 rounded-lg border border-slate-400 w-fit my-6">

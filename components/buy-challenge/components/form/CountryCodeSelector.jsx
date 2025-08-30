@@ -70,7 +70,7 @@ function CountryCodeSelector({ value, onChange, error }) {
             <button
                 type="button"
                 onClick={handleToggle}
-                className={`bg-[#0B111D] border ${error ? 'border-red-400' : 'border-[#717892]'} rounded-l-lg px-3 py-3 text-white focus:border-ttorange focus:outline-none flex items-center space-x-2 min-w-[100px] md:min-w-[120px] hover:border-[#45D1FF] transition-colors`}
+                className={`bg-[#0B111D] border ${error ? 'border-red-400' : 'border-[#717892]'} rounded-l-lg px-3 py-3 text-textPrimary focus:border-ttorange focus:outline-none flex items-center space-x-2 min-w-[100px] md:min-w-[120px] hover:border-[#45D1FF] transition-colors`}
             >
                 <span className="text-lg">{selectedCountry.flag}</span>
                 <span className="text-sm font-medium">{selectedCountry.code}</span>
@@ -95,7 +95,7 @@ function CountryCodeSelector({ value, onChange, error }) {
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             placeholder="Search country..."
-                            className="w-full bg-[#1a1a1a] border border-[#717892] rounded px-3 py-2 text-white text-sm focus:border-[#45D1FF] focus:outline-none"
+                            className="w-full bg-[#1a1a1a] border border-[#717892] rounded px-3 py-2 text-textPrimary text-sm focus:border-[#45D1FF] focus:outline-none"
                         />
                     </div>
 
@@ -113,7 +113,7 @@ function CountryCodeSelector({ value, onChange, error }) {
                                 >
                                     <span className="text-lg">{country.flag}</span>
                                     <div className="flex-1 min-w-0">
-                                        <div className="text-white text-sm font-medium truncate">
+                                        <div className="text-textPrimary text-sm font-medium truncate">
                                             {country.name}
                                         </div>
                                         <div className="text-slate-400 text-xs">

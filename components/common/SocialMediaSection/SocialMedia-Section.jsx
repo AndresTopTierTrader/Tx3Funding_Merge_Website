@@ -37,7 +37,7 @@ function SocialMediaSection({ translations }) {
     return (
         <div className="flex flex-col -mt-1 mb:mt-0 pt-20 mb:pt-24 mb:pb-24 pb-20 items-center w-full bg-gradient-to-b from-[#181d2a] to-[#161C29]">
             <div className="max-w-[1100px] mb:w-full flex flex-col items-center px-6 mb:px-0">
-                <h3 className="text-white font-light text-4xl text-center mb:max-w-full">
+                <h3 className="text-textPrimary font-light text-4xl text-center mb:max-w-full">
                     {translations.title}
                 </h3>
                 <p className="pt-5 text-sm text-center font-light mb:font-normal mb:text-base w-full text-[#717892] max-w-[350px] mb:max-w-[500px]">

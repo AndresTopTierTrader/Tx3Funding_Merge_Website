@@ -115,11 +115,11 @@ const LoadingScreen = ({ setCurrentStep, setUserData, answers, translations }) =
                 exit="exit"
             >
                 <motion.div className="text-gray-800 text-center" variants={itemVariants}>
-                    <motion.h2 className="text-3xl text-white font-bold mb-4" variants={itemVariants}>
+                    <motion.h2 className="text-3xl text-textPrimary font-bold mb-4" variants={itemVariants}>
                         {loadingMessage}
                     </motion.h2>
                     <motion.p
-                        className="text-xl mb-8 text-white font-light"
+                        className="text-xl mb-8 text-textPrimary font-light"
                         variants={itemVariants}
                         key={currentPhrase}
                         initial={{ opacity: 0, y: 20 }}

@@ -49,7 +49,7 @@ function Learn({ translations }) {
                 >
                     <div className='flex flex-col items-center w-full'>
                         <motion.p 
-                            className='mb:max-w-[600px] text-white text-3xl font-ligth text-center'
+                            className='mb:max-w-[600px] text-textPrimary text-3xl font-ligth text-center'
                             variants={itemVariants}
                         >
                             {translations.learn.tOne}
@@ -71,7 +71,7 @@ function Learn({ translations }) {
                         >
                             <Image src={iconOne} alt='iconOne'/>
                             <motion.p 
-                                className='text-xl font-medium mt-5 max-w-[200px] text-center text-white'
+                                className='text-xl font-medium mt-5 max-w-[200px] text-center text-textPrimary'
                                 variants={itemVariants}
                             >
                                 {translations.learn.secOneTitleOne}
@@ -89,7 +89,7 @@ function Learn({ translations }) {
                         >
                             <Image src={iconTwo} alt='iconTwo'/>
                             <motion.p 
-                                className='text-xl font-medium mt-5 max-w-[200px] text-center text-white'
+                                className='text-xl font-medium mt-5 max-w-[200px] text-center text-textPrimary'
                                 variants={itemVariants}
                             >
                                 {translations.learn.secOneTitleTwo}
@@ -107,7 +107,7 @@ function Learn({ translations }) {
                         >
                             <Image src={iconThree} alt='iconThree'/>
                             <motion.p 
-                                className='text-xl font-medium mt-5 max-w-[200px] text-center text-white'
+                                className='text-xl font-medium mt-5 max-w-[200px] text-center text-textPrimary'
                                 variants={itemVariants}
                             >
                                 {translations.learn.secOneTitleThree}

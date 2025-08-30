@@ -44,7 +44,7 @@ function AllFlexChallenges({ locale }) {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 50 }}
                     transition={{ duration: 0.5 }}
-                    className="fixed bottom-0 left-0 right-0 z-30 flex flex-row items-center w-full h-24 gap-2 pl-3 -mb-1 text-white shadow-2xl cursor-pointer md:justify-center md:items-cente md:gap-8 mb:mb-0 rounded-t-2xl mb:pl-0 mb:h-20" style={bgImageStyle}
+                    className="fixed bottom-0 left-0 right-0 z-30 flex flex-row items-center w-full h-24 gap-2 pl-3 -mb-1 text-textPrimary shadow-2xl cursor-pointer md:justify-center md:items-cente md:gap-8 mb:mb-0 rounded-t-2xl mb:pl-0 mb:h-20" style={bgImageStyle}
                 >
                     <div className='flex items-center gap-4 px-1 md:px-4 py-1 rounded-md text-nowrap border border-[#45D1FF] bg-gradient-to-br from-[#0B111D] to-[#45D1FF]/0 justify-between max-w-[150px] md:max-w-full'>
                         <span className='flex flex-col items-center w-full text-center'>

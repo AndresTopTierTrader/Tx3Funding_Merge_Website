@@ -16,8 +16,8 @@ function Dropdown({ list, currentNavState, setCurrentNavState, setmobileMenuIsOp
 
     useEffect(() => {
         setSelectedStyles({
-            selected: "text-white",
-            unselected: `${isNavbarShort && 'text-white'} hover:text-white transition-all`
+            selected: "text-textPrimary",
+            unselected: `${isNavbarShort && 'text-textPrimary'} hover:text-textPrimary transition-all`
         });
     }, [width, isNavbarShort]);
 
@@ -79,15 +79,15 @@ function Dropdown({ list, currentNavState, setCurrentNavState, setmobileMenuIsOp
                 onClick={ () => {
                     handleDropdown()
                 } }
-                className={`flex flex-row w-full items-center justify-between px-8 ${isNavbarShort ? 'mb:px-8' : 'mb:px-3' } hover:text-white transition-all my-1 mb:my-0`}
+                className={`flex flex-row w-full items-center justify-between px-8 ${isNavbarShort ? 'mb:px-8' : 'mb:px-3' } hover:text-textPrimary transition-all my-1 mb:my-0`}
             >
-                <p className={`${selectedState} mb:text-white/90 font-light -ml-1 text-lg ${isNavbarShort ? 'mb:text-lg' : 'mb:text-base' } mb:text-base py-2`}>
+                <p className={`${selectedState} mb:text-textPrimary/90 font-light -ml-1 text-lg ${isNavbarShort ? 'mb:text-lg' : 'mb:text-base' } mb:text-base py-2`}>
                     {name.toString()}
                 </p>
                 <div className={`transform transition-transform duration-200 ease-in-out ${isOpen ? 'rotate-180' : 'rotate-0'}`}>
                     <MdKeyboardArrowDown 
                         className={`${isNavbarShort ? 'mb:h-8 mb:w-8 mb:-ml-8' : 'mb:h-5 mb:w-5'} h-8 w-8 object-contain ${
-                            isOpen ? 'text-white/90' : isNavbarShort ? 'text-white/90' : 'text-white/90'
+                            isOpen ? 'text-textPrimary/90' : isNavbarShort ? 'text-textPrimary/90' : 'text-textPrimary/90'
                         }`} 
                     />
                 </div>
@@ -108,7 +108,7 @@ function Dropdown({ list, currentNavState, setCurrentNavState, setmobileMenuIsOp
                     >
                         <Link href={item.href} onClick={() => hideMenus()}>
                             <div className="flex flex-col">
-                                <p className={`text-slate-300 ml-1 mb:ml-0 mb:text-base text-lg ${isNavbarShort ? 'mb:text-slate-300' : 'mb:text-slate-300 hover:text-white'} mb:px-6 py-2.5  transition-all duration-200 `}>
+                                <p className={`text-slate-300 ml-1 mb:ml-0 mb:text-base text-lg ${isNavbarShort ? 'mb:text-slate-300' : 'mb:text-slate-300 hover:text-textPrimary'} mb:px-6 py-2.5  transition-all duration-200 `}>
                                     {item.name}
                                 </p>
                             </div>

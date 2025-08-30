@@ -20,7 +20,7 @@ function Dropdown({ data }) {
     return (
         <div onClick={() => setIsOpen(!isOpen)} className='mb:max-w-[400px] bg-gradient-to-br my-4 border rounded-xl min-w-full mb:min-w-[400px] border-[#717892] from-white/5 to-[#0B111D] p-4'>
             <div className="flex flex-row justify-between">
-                <p className='text-white text-sm mr-4 font-light'>{title}</p>
+                <p className='text-textPrimary text-sm mr-4 font-light'>{title}</p>
                 <Image src={!isOpen ? downArrow : upArrow} className='hover:cursor-pointer' width={25} height={25} alt="arrow" />
             </div>
 

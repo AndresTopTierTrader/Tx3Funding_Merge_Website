@@ -1,9 +1,9 @@
 export const BUTTON_STYLES = {
   unifiedChallenge: {
     unselected:
-      "bg-[#181D28] hover:bg-[#131927] px-2 md:px-8 border border-[#4D516A] text-white w-full w-32 md:w-56 py-3 text-center text-sm md:text-base hover:cursor-pointer transition-all rounded-lg",
+      "bg-[#181D28] hover:bg-[#131927] px-2 md:px-8 border border-[#4D516A] text-textPrimary w-full w-32 md:w-56 py-3 text-center text-sm md:text-base hover:cursor-pointer transition-all rounded-lg",
     selected:
-      "bg-gradient-to-b from-[#0052B4] px-2 md:px-8 to-[#167ACC] text-white text-center font-semibold transition-all w-32 md:w-56 py-3 text-sm md:text-base hover:cursor-pointer rounded-lg",
+      "bg-gradient-to-b from-[#0052B4] px-2 md:px-8 to-[#167ACC] text-textPrimary text-center font-semibold transition-all w-32 md:w-56 py-3 text-sm md:text-base hover:cursor-pointer rounded-lg",
   },
 };
 

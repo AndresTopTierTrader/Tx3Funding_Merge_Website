@@ -95,7 +95,7 @@ const BlogFilter = ({
             placeholder="Search articles..."
             value={filters.search}
             onChange={handleSearchChange}
-            className="w-full pl-10 pr-4 py-3 bg-gray-300 border border-[#717892] rounded-lg focus:ring-2 focus:ring-[#45D1FF] focus:border-[#45D1FF] transition-all duration-200 text-white placeholder-[#717892] font-light"
+            className="w-full pl-10 pr-4 py-3 bg-gray-300 border border-[#717892] rounded-lg focus:ring-2 focus:ring-[#45D1FF] focus:border-[#45D1FF] transition-all duration-200 text-textPrimary placeholder-[#717892] font-light"
           />
         </div>
       </div>
@@ -112,7 +112,7 @@ const BlogFilter = ({
           className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg border transition-all duration-200 font-light ${
             isFilterOpen 
               ? 'bg-gradient-to-r from-[#45D1FF]/20 to-[#167BCC]/20 border-[#45D1FF] text-[#45D1FF]'
-              : 'bg-gradient-to-br from-white/5 to-[#0B111D] border-[#717892] text-white hover:border-[#45D1FF]'
+              : 'bg-gradient-to-br from-white/5 to-[#0B111D] border-[#717892] text-textPrimary hover:border-[#45D1FF]'
           }`}
         >
           <FiFilter className="w-4 h-4" />
@@ -155,7 +155,7 @@ const BlogFilter = ({
               
               {/* Date Period Filter */}
               <div>
-                <label className="flex items-center gap-2 text-sm font-light text-white mb-3">
+                <label className="flex items-center gap-2 text-sm font-light text-textPrimary mb-3">
                   <FiCalendar className="w-4 h-4 text-[#45D1FF]" />
                   Date Period
                 </label>
@@ -165,7 +165,7 @@ const BlogFilter = ({
                     className={`w-full text-left px-3 py-2 text-sm rounded-lg transition-all duration-200 font-light ${
                       !filters.datePeriod 
                         ? 'bg-gradient-to-r from-[#45D1FF]/20 to-[#167BCC]/20 text-[#45D1FF] border border-[#45D1FF]/50'
-                        : 'text-[#717892] hover:text-white hover:bg-[#0A1930] border border-transparent'
+                        : 'text-[#717892] hover:text-textPrimary hover:bg-[#0A1930] border border-transparent'
                     }`}
                   >
                     All time
@@ -177,7 +177,7 @@ const BlogFilter = ({
                       className={`w-full text-left px-3 py-2 text-sm rounded-lg transition-all duration-200 font-light ${
                         filters.datePeriod === period 
                           ? 'bg-gradient-to-r from-[#45D1FF]/20 to-[#167BCC]/20 text-[#45D1FF] border border-[#45D1FF]/50'
-                          : 'text-[#717892] hover:text-white hover:bg-[#0A1930] border border-transparent'
+                          : 'text-[#717892] hover:text-textPrimary hover:bg-[#0A1930] border border-transparent'
                       }`}
                     >
                       {period}
@@ -188,7 +188,7 @@ const BlogFilter = ({
 
               {/* Author Filter */}
               <div>
-                <label className="flex items-center gap-2 text-sm font-light text-white mb-3">
+                <label className="flex items-center gap-2 text-sm font-light text-textPrimary mb-3">
                   <FiUser className="w-4 h-4 text-[#45D1FF]" />
                   Author
                 </label>
@@ -198,7 +198,7 @@ const BlogFilter = ({
                     className={`w-full text-left px-3 py-2 text-sm rounded-lg transition-all duration-200 font-light ${
                       !filters.author 
                         ? 'bg-gradient-to-r from-[#45D1FF]/20 to-[#167BCC]/20 text-[#45D1FF] border border-[#45D1FF]/50'
-                        : 'text-[#717892] hover:text-white hover:bg-[#0A1930] border border-transparent'
+                        : 'text-[#717892] hover:text-textPrimary hover:bg-[#0A1930] border border-transparent'
                     }`}
                   >
                     All authors
@@ -210,7 +210,7 @@ const BlogFilter = ({
                       className={`w-full text-left px-3 py-2 text-sm rounded-lg transition-all duration-200 font-light ${
                         filters.author === author 
                           ? 'bg-gradient-to-r from-[#45D1FF]/20 to-[#167BCC]/20 text-[#45D1FF] border border-[#45D1FF]/50'
-                          : 'text-[#717892] hover:text-white hover:bg-[#0A1930] border border-transparent'
+                          : 'text-[#717892] hover:text-textPrimary hover:bg-[#0A1930] border border-transparent'
                       }`}
                     >
                       {author}
@@ -221,7 +221,7 @@ const BlogFilter = ({
 
               {/* Category Filter */}
               <div>
-                <label className="flex items-center gap-2 text-sm font-light text-white mb-3">
+                <label className="flex items-center gap-2 text-sm font-light text-textPrimary mb-3">
                   <FiFolder className="w-4 h-4 text-[#45D1FF]" />
                   Category
                 </label>
@@ -231,7 +231,7 @@ const BlogFilter = ({
                     className={`w-full text-left px-3 py-2 text-sm rounded-lg transition-all duration-200 font-light ${
                       !filters.category 
                         ? 'bg-gradient-to-r from-[#45D1FF]/20 to-[#167BCC]/20 text-[#45D1FF] border border-[#45D1FF]/50'
-                        : 'text-[#717892] hover:text-white hover:bg-[#0A1930] border border-transparent'
+                        : 'text-[#717892] hover:text-textPrimary hover:bg-[#0A1930] border border-transparent'
                     }`}
                   >
                     All categories
@@ -243,7 +243,7 @@ const BlogFilter = ({
                       className={`w-full text-left px-3 py-2 text-sm rounded-lg transition-all duration-200 font-light ${
                         filters.category === category 
                           ? 'bg-gradient-to-r from-[#45D1FF]/20 to-[#167BCC]/20 text-[#45D1FF] border border-[#45D1FF]/50'
-                          : 'text-[#717892] hover:text-white hover:bg-[#0A1930] border border-transparent'
+                          : 'text-[#717892] hover:text-textPrimary hover:bg-[#0A1930] border border-transparent'
                       }`}
                     >
                       {category}
@@ -254,7 +254,7 @@ const BlogFilter = ({
 
               {/* Tags Filter */}
               <div>
-                <label className="flex items-center gap-2 text-sm font-light text-white mb-3">
+                <label className="flex items-center gap-2 text-sm font-light text-textPrimary mb-3">
                   <FiTag className="w-4 h-4 text-[#45D1FF]" />
                   Tags
                 </label>
@@ -268,7 +268,7 @@ const BlogFilter = ({
                       className={`w-full text-left px-3 py-2 text-sm rounded-lg transition-all duration-200 font-light ${
                         filters.tags?.includes(tag)
                           ? 'bg-gradient-to-r from-[#45D1FF]/20 to-[#167BCC]/20 text-[#45D1FF] border border-[#45D1FF]/50'
-                          : 'text-[#717892] hover:text-white hover:bg-[#0A1930] border border-transparent'
+                          : 'text-[#717892] hover:text-textPrimary hover:bg-[#0A1930] border border-transparent'
                       }`}
                     >
                       <div className="flex items-center justify-between">
@@ -290,7 +290,7 @@ const BlogFilter = ({
                 animate={{ opacity: 1, y: 0 }}
                 className="mt-6 pt-6 border-t border-[#717892]"
               >
-                <h4 className="text-sm font-light text-white mb-3">Active Filters:</h4>
+                <h4 className="text-sm font-light text-textPrimary mb-3">Active Filters:</h4>
                 <div className="flex flex-wrap gap-2">
                   {filters.datePeriod && (
                     <span className="inline-flex items-center gap-1 px-2 py-1 bg-gradient-to-r from-[#45D1FF]/20 to-[#167BCC]/20 text-[#45D1FF] text-xs rounded-full border border-[#45D1FF]/30 font-light">

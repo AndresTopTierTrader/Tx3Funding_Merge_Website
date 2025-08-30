@@ -66,7 +66,7 @@ export function Hero({translations}) {
     return (
         <SectionLayout className='pt-32'>
             <motion.h1 
-                className="text-4xl md:text-7xl text-white mb-2 mx-auto text-center"
+                className="text-4xl md:text-7xl text-textPrimary mb-2 mx-auto text-center"
                 initial="hidden"
                 animate={isVisible ? "visible" : "hidden"}
                 variants={headingAnimation}
@@ -87,7 +87,7 @@ export function Hero({translations}) {
             </motion.h1>
             
             <motion.p 
-                className="text-white text-center mb-4"
+                className="text-textPrimary text-center mb-4"
                 initial="hidden"
                 animate={isVisible ? "visible" : "hidden"}
                 variants={subtitleAnimation}

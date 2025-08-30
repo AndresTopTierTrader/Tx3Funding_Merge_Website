@@ -49,7 +49,7 @@ function ProfitSplitFlash({ locale }) {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 50 }}
                     transition={{ duration: 0.5 }}
-                    className="fixed bottom-0 left-0 right-0 z-30 flex items-center justify-center w-full h-24 -mb-1 text-white shadow-2xl cursor-pointer md:pl-4 md:gap-8 md:flex-row mb:mb-0 rounded-t-2xl mb:pl-0 mb:h-20" style={bgImageStyle}
+                    className="fixed bottom-0 left-0 right-0 z-30 flex items-center justify-center w-full h-24 -mb-1 text-textPrimary shadow-2xl cursor-pointer md:pl-4 md:gap-8 md:flex-row mb:mb-0 rounded-t-2xl mb:pl-0 mb:h-20" style={bgImageStyle}
                 >
 
                     {/* DESKTOP */}

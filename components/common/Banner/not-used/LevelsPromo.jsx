@@ -52,7 +52,7 @@ function LevelsPromo({ locale, translations }) {
                             <div className='flex flex-col items-start'>
                                 <Image src={levelsLogoImg} alt='mb-title' width={'auto'} height={'auto'} className='w-28  my-1' />
                                 <div>
-                                    <p className='text-white text-sm font-light'> {mainLang == 'es' ? 'Las Reglas del Juego Estan a Punto de' : 'The Rules of the Game are About to'}<span className=' bg-gradient-to-r font-semibold from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text'> &nbsp;{mainLang == 'es' ? 'Cambiar' : 'Change'}</span> </p>
+                                    <p className='text-textPrimary text-sm font-light'> {mainLang == 'es' ? 'Las Reglas del Juego Estan a Punto de' : 'The Rules of the Game are About to'}<span className=' bg-gradient-to-r font-semibold from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text'> &nbsp;{mainLang == 'es' ? 'Cambiar' : 'Change'}</span> </p>
 
                                 </div>
                             </div>
@@ -66,8 +66,8 @@ function LevelsPromo({ locale, translations }) {
                     <div className="hidden mb:flex mb:flex-row mb:justify-between items-center ">
 
                         <div className='flex flex-col'>
-                            <p className='text-white text-lg font-light'> {mainLang == 'es' ? 'Las Reglas del Juego' : 'The Rules of the Game'} </p>
-                            <p className='text-white text-lg -mt-2  font-light'> {mainLang == 'es' ? 'Están a Punto de' : 'Are About to'} <span className=' bg-gradient-to-r font-semibold from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text'> {mainLang == 'es' ? 'Cambiar' : 'Change'} </span></p>
+                            <p className='text-textPrimary text-lg font-light'> {mainLang == 'es' ? 'Las Reglas del Juego' : 'The Rules of the Game'} </p>
+                            <p className='text-textPrimary text-lg -mt-2  font-light'> {mainLang == 'es' ? 'Están a Punto de' : 'Are About to'} <span className=' bg-gradient-to-r font-semibold from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text'> {mainLang == 'es' ? 'Cambiar' : 'Change'} </span></p>
                         </div>
 
                         <Image src={levelsLogoImg} alt='dk-title' width={'auto'} height={'auto'} className='w-44 ml-10 mr-1' />

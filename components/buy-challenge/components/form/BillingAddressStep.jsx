@@ -48,7 +48,7 @@ function BillingAddressStep({
             type={FORM_FIELDS.streetAddress.type}
             value={displayFormData.streetAddress || ''}
             onChange={(e) => onInputChange('streetAddress', e.target.value)}
-            className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-all duration-200"
+            className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-textPrimary focus:border-white focus:outline-none transition-all duration-200"
             placeholder={FORM_FIELDS.streetAddress.placeholder}
             whileFocus={{ scale: 1.01 }}
             transition={springConfigs.gentle}
@@ -77,7 +77,7 @@ function BillingAddressStep({
             type={FORM_FIELDS.streetAddress2.type}
             value={displayFormData.streetAddress2 || ''}
             onChange={(e) => onInputChange('streetAddress2', e.target.value)}
-            className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-all duration-200"
+            className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-textPrimary focus:border-white focus:outline-none transition-all duration-200"
             placeholder={FORM_FIELDS.streetAddress2.placeholder}
             whileFocus={{ scale: 1.01 }}
             transition={springConfigs.gentle}
@@ -95,7 +95,7 @@ function BillingAddressStep({
               type={FORM_FIELDS.city.type}
               value={displayFormData.city || ''}
               onChange={(e) => onInputChange('city', e.target.value)}
-              className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-all duration-200"
+              className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-textPrimary focus:border-white focus:outline-none transition-all duration-200"
               placeholder={FORM_FIELDS.city.placeholder}
               whileFocus={{ scale: 1.01 }}
               transition={springConfigs.premium}
@@ -125,7 +125,7 @@ function BillingAddressStep({
               type={FORM_FIELDS.stateProvince.type}
               value={displayFormData.stateProvince || ''}
               onChange={(e) => onInputChange('stateProvince', e.target.value)}
-              className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-all duration-200"
+              className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-textPrimary focus:border-white focus:outline-none transition-all duration-200"
               placeholder={FORM_FIELDS.stateProvince.placeholder}
               whileFocus={{ scale: 1.01 }}
               transition={springConfigs.premium}
@@ -155,7 +155,7 @@ function BillingAddressStep({
               type={FORM_FIELDS.postalCode.type}
               value={displayFormData.postalCode || ''}
               onChange={(e) => onInputChange('postalCode', e.target.value)}
-              className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-all duration-200"
+              className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-textPrimary focus:border-white focus:outline-none transition-all duration-200"
               placeholder={FORM_FIELDS.postalCode.placeholder}
               whileFocus={{ scale: 1.01 }}
               transition={springConfigs.premium}
@@ -184,7 +184,7 @@ function BillingAddressStep({
             <motion.select
               value={displayFormData.country || ''}
               onChange={(e) => onInputChange('country', e.target.value)}
-              className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-white focus:border-white focus:outline-none transition-all duration-200"
+              className="w-full bg-[#0B111D] border border-[#717892] rounded-lg px-4 py-3 text-textPrimary focus:border-white focus:outline-none transition-all duration-200"
               whileFocus={{ scale: 1.01 }}
               transition={springConfigs.premium}
             >
@@ -217,7 +217,7 @@ function BillingAddressStep({
         <motion.button
           type="button"
           onClick={onPrevious}
-          className="flex w-full md:max-w-[240px] font-light flex-row items-center justify-center bg-transparent text-white border border-slate-400 py-3 px-6 rounded-lg hover:opacity-90 transition-opacity"
+          className="flex w-full md:max-w-[240px] font-light flex-row items-center justify-center bg-transparent text-textPrimary border border-slate-400 py-3 px-6 rounded-lg hover:opacity-90 transition-opacity"
           variants={buttonVariants}
           initial="initial"
           whileHover="hover"

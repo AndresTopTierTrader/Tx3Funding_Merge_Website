@@ -151,7 +151,7 @@ export default function CouponForm() {
 
   const inputClass = (fieldName) => `
     w-full px-4 py-3 rounded-lg bg-white/5 border transition-all duration-200
-    text-white placeholder-[#717892] focus:outline-none focus:ring-2
+    text-textPrimary placeholder-[#717892] focus:outline-none focus:ring-2
     ${errors[fieldName] 
       ? 'border-red-500 focus:ring-red-500/20' 
       : 'border-[#717892] focus:border-[#45D1FF] focus:ring-[#45D1FF]/20'
@@ -170,7 +170,7 @@ export default function CouponForm() {
           variants={titleVariants}
           className="text-center mb-8"
         >
-          <h1 className="text-white font-light text-3xl sm:text-4xl mb-4">
+          <h1 className="text-textPrimary font-light text-3xl sm:text-4xl mb-4">
             Get Your  20% OFF Coupon
           </h1>
           <p className="text-[#717892] text-sm sm:text-base">
@@ -191,7 +191,7 @@ export default function CouponForm() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.1 }}
             >
-              <label className="block text-white text-sm mb-2">First Name *</label>
+              <label className="block text-textPrimary text-sm mb-2">First Name *</label>
               <input
                 type="text"
                 name="firstName"
@@ -218,7 +218,7 @@ export default function CouponForm() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <label className="block text-white text-sm mb-2">Last Name *</label>
+              <label className="block text-textPrimary text-sm mb-2">Last Name *</label>
               <input
                 type="text"
                 name="lastName"
@@ -245,7 +245,7 @@ export default function CouponForm() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
             >
-              <label className="block text-white text-sm mb-2">Email *</label>
+              <label className="block text-textPrimary text-sm mb-2">Email *</label>
               <input
                 type="email"
                 name="email"
@@ -272,7 +272,7 @@ export default function CouponForm() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <label className="block text-white text-sm mb-2">Phone Number (Optional)</label>
+              <label className="block text-textPrimary text-sm mb-2">Phone Number (Optional)</label>
               <div className="flex space-x-2">
                 <input
                   type="text"
@@ -309,7 +309,7 @@ export default function CouponForm() {
           <motion.button
             type="submit"
             disabled={isSubmitting}
-            className="mt-6 w-full bg-ttorange text-white font-semibold py-3 rounded-lg flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-[#45D1FF]/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="mt-6 w-full bg-ttorange text-textPrimary font-semibold py-3 rounded-lg flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-[#45D1FF]/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
             whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
           >
@@ -361,7 +361,7 @@ export default function CouponForm() {
               <div className="bg-gradient-to-br from-[#0B111D] to-[#1a2332] border border-[#717892] rounded-2xl p-8 max-w-sm w-full relative">
                 <motion.button
                   onClick={() => setShowSuccessPopup(false)}
-                  className="absolute top-4 right-4 text-[#717892] hover:text-white transition-colors"
+                  className="absolute top-4 right-4 text-[#717892] hover:text-textPrimary transition-colors"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
@@ -374,17 +374,17 @@ export default function CouponForm() {
                   transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
                   className="w-16 h-16 bg-gradient-to-r from-[#45D1FF] to-[#167BCC] rounded-full flex items-center justify-center mx-auto mb-4"
                 >
-                  <FaCheck className="text-white" size={28} />
+                  <FaCheck className="text-textPrimary" size={28} />
                 </motion.div>
 
-                <h2 className="text-white text-2xl font-semibold text-center mb-4">
+                <h2 className="text-textPrimary text-2xl font-semibold text-center mb-4">
                   Success! Here's Your Coupon
                 </h2>
 
                 <div className="bg-white/5 border border-[#717892] rounded-lg p-4 mb-6">
                   <p className="text-[#717892] text-sm mb-2 text-center">Your 20% OFF discount code:</p>
                   <div className="flex items-center justify-center space-x-3">
-                    <span className="text-white text-2xl font-bold">NEW20</span>
+                    <span className="text-textPrimary text-2xl font-bold">NEW20</span>
                     <motion.button
                       onClick={copyToClipboard}
                       className="bg-gradient-to-r from-[#45D1FF] to-[#167BCC] p-2 rounded-lg hover:shadow-lg hover:shadow-[#45D1FF]/20 transition-all"
@@ -396,10 +396,10 @@ export default function CouponForm() {
                           initial={{ scale: 0 }}
                           animate={{ scale: 1 }}
                         >
-                          <FaCheck className="text-white" size={16} />
+                          <FaCheck className="text-textPrimary" size={16} />
                         </motion.div>
                       ) : (
-                        <FaCopy className="text-white" size={16} />
+                        <FaCopy className="text-textPrimary" size={16} />
                       )}
                     </motion.button>
                   </div>
@@ -416,7 +416,7 @@ export default function CouponForm() {
 
                 <motion.a
                   href="https://app.toptiertrader.com/buy-challenge/?el=NewToToptierBannerJuly2025&hcategory=July2025&htrafficsource=Website&id=cad77f17-0cb5-4e7d-8a71-644f4a3f6a17&addons=doubleLeverage&addons=tradeOnWeekends&addons=higherProfitShare&addons=maxLoss&promo=NEW20"
-                  className="w-full bg-orange text-white font-semibold py-3 rounded-lg flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-[#45D1FF]/20 transition-all duration-300"
+                  className="w-full bg-orange text-textPrimary font-semibold py-3 rounded-lg flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-[#45D1FF]/20 transition-all duration-300"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >

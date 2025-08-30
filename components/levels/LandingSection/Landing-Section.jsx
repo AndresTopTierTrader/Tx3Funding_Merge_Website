@@ -52,8 +52,8 @@ function LandingSection({ locale, translations }) {
             <Image src={mainLang == 'es' ? mainImgEs : mainImg} width={width} height={850} priority alt="main_img" className="absolute mb:hidden -mr-20 fadeInUp" />
 
             <div className="flex flex-col h-full mt-[230px] mb:mt-[360px] items-center z-30 ">
-              <h1 className="text-4xl mb:text-6xl text-white font-medium titleFirst">{translations.titleOne}</h1>
-              <h1 className="text-2xl mb:text-3xl mt-2 text-white text-center font-light titleFirst">{translations.titleTwo}</h1>
+              <h1 className="text-4xl mb:text-6xl text-textPrimary font-medium titleFirst">{translations.titleOne}</h1>
+              <h1 className="text-2xl mb:text-3xl mt-2 text-textPrimary text-center font-light titleFirst">{translations.titleTwo}</h1>
               <h2 className="text-slate-300 text-center text-sm mt-4 titleSecond">{translations.subtitleOne}  </h2>
               <Link href="https://app.toptierlevels.com/checkout/payment" target="_blank">
                 <button onClick={() => { track('Lv - Landing Section CTA - Clicked') }} className="z-20 flex w-fit flex-row mt-5 items-center text-sm font-medium text-[#0B111D] rounded-lg bg-[#45D1FF] hover:bg-[#30f8ff] hover:scale-105 transition-all py-2.5 px-4 justify-center">

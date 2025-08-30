@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
@@ -82,10 +82,10 @@ const AddOnsToggleBox = React.memo(
 
     const [isLoading, setIsLoading] = useState(false);
 
-     // Handle CTA click with loading state
-     const handleCTAClick = async (e) => {
+    // Handle CTA click with loading state
+    const handleCTAClick = async (e) => {
       setIsLoading(true);
-      
+
       try {
         if (onCTAClick) {
           await onCTAClick(e);
@@ -93,7 +93,7 @@ const AddOnsToggleBox = React.memo(
       } catch (error) {
         console.error("CTA click error:", error);
       }
-      
+
       // Reset loading state after a short delay to allow navigation
       setTimeout(() => {
         setIsLoading(false);
@@ -148,7 +148,7 @@ const AddOnsToggleBox = React.memo(
                 fill="white"
               />
             </svg>
-            <h2 className="text-white text-lg md:text-xl font-medium ml-2">
+            <h2 className="text-textPrimary text-lg md:text-xl font-medium ml-2">
               Summary
             </h2>
           </div>
@@ -156,17 +156,13 @@ const AddOnsToggleBox = React.memo(
           <div className="mb-6 ">
             <div className="flex items-start mb-4">
               <div
-                className="flex items-center justify-center w-5 h-5 md:w-6 md:h-6 rounded-full text-white text-xs md:text-sm font-medium mr-3"
-                style={{
-                  background:
-                    "linear-gradient(153deg, #1151B2 16.88%, #07234C 160.59%)",
-                }}
+                className="flex items-center justify-center w-5 h-5 md:w-6 md:h-6 rounded-full bg-textPrimary text-bgDark text-xs md:text-sm font-medium mr-3"
               >
                 1
               </div>
               <div className="flex-1">
                 <div className="flex justify-between items-start mb-2 gap-4">
-                  <h3 className="text-white text-lg md:text-xl font-normal">
+                  <h3 className="text-textPrimary text-lg md:text-xl font-normal">
                     {challengeTitle}
                   </h3>
                   <span className="text-[#939BB5] text-lg md:text-xl font-normal">
@@ -187,11 +183,11 @@ const AddOnsToggleBox = React.memo(
                       >
                         <path
                           d="M32.076 20.2674L31.8252 20.8443C31.786 20.9383 31.7199 21.0185 31.6352 21.075C31.5505 21.1315 31.4509 21.1616 31.3491 21.1616C31.2473 21.1616 31.1478 21.1315 31.0631 21.075C30.9784 21.0185 30.9123 20.9383 30.8731 20.8443L30.6223 20.2674C30.1814 19.2467 29.3739 18.4283 28.3592 17.9737L27.5855 17.6281C27.4917 17.585 27.4121 17.5158 27.3564 17.4288C27.3007 17.3418 27.271 17.2406 27.271 17.1373C27.271 17.034 27.3007 16.9328 27.3564 16.8458C27.4121 16.7588 27.4917 16.6896 27.5855 16.6465L28.3164 16.3213C29.3566 15.8538 30.1779 15.0051 30.6111 13.9502L30.869 13.3273C30.9069 13.2308 30.9729 13.148 31.0586 13.0896C31.1442 13.0312 31.2455 13 31.3491 13C31.4528 13 31.554 13.0312 31.6397 13.0896C31.7253 13.148 31.7914 13.2308 31.8293 13.3273L32.0872 13.9491C32.5199 15.0043 33.3408 15.8533 34.3808 16.3213L35.1127 16.6475C35.2063 16.6908 35.2856 16.76 35.3411 16.8468C35.3966 16.9337 35.4261 17.0347 35.4261 17.1378C35.4261 17.2409 35.3966 17.3419 35.3411 17.4288C35.2856 17.5157 35.2063 17.5848 35.1127 17.6281L34.338 17.9727C33.3235 18.4277 32.5164 19.2465 32.076 20.2674ZM23.194 16.0593C21.5395 16.0595 19.9242 16.563 18.5626 17.5028C17.201 18.4426 16.1575 19.7744 15.5705 21.3212C14.9835 22.8681 14.8809 24.5569 15.2763 26.1634C15.6717 27.7699 16.5464 29.2182 17.7842 30.3159C19.022 31.4137 20.5645 32.109 22.2067 32.3095C23.849 32.51 25.5134 32.2063 26.979 31.4387C28.4446 30.6711 29.6421 29.4758 30.4124 28.0116C31.1828 26.5474 31.4895 24.8836 31.292 23.2409L33.3166 23.0004C33.3641 23.3993 33.3879 23.804 33.3879 24.2145C33.3879 29.8446 28.8241 34.4084 23.194 34.4084C17.5638 34.4084 13 29.8446 13 24.2145C13 18.5843 17.5638 14.0205 23.194 14.0205C24.0717 14.0205 24.9259 14.1326 25.7404 14.3416L25.2328 16.3162C24.5667 16.1449 23.8817 16.0586 23.194 16.0593ZM24.2134 23.1951H27.2715L22.1746 30.3308V25.2339H19.1164L24.2134 18.0981V23.1951Z"
-                          fill="#FF532D"
+                          fill="#42CFFB"
                         />
                         <path
                           d="M1.5 0V24.5H15"
-                          stroke="#FF532D"
+                          stroke="#42CFFB"
                           strokeWidth="2"
                         />
                       </svg>
@@ -211,11 +207,7 @@ const AddOnsToggleBox = React.memo(
           {/* Add Ons section */}
           <div className="flex items-center  mb-4">
             <div
-              className="flex items-center justify-center w-5 h-5 md:w-6 md:h-6 rounded-full text-white text-xs md:text-sm font-medium mr-3"
-              style={{
-                background:
-                  "linear-gradient(153deg, #1151B2 16.88%, #07234C 160.59%)",
-              }}
+              className="flex items-center justify-center w-5 h-5 md:w-6 md:h-6 rounded-full bg-textPrimary text-bgDark  text-xs md:text-sm font-medium mr-3"
             >
               2
             </div>
@@ -230,10 +222,10 @@ const AddOnsToggleBox = React.memo(
               >
                 <path
                   d="M23.1673 8.82603L22.8627 9.52675C22.8151 9.64086 22.7348 9.73833 22.632 9.80689C22.5291 9.87544 22.4082 9.91203 22.2846 9.91203C22.1609 9.91203 22.0401 9.87544 21.9372 9.80689C21.8343 9.73833 21.754 9.64086 21.7064 9.52675L21.4019 8.82603C20.8664 7.58641 19.8857 6.59252 18.6534 6.04046L17.7138 5.62076C17.5998 5.56832 17.5032 5.48429 17.4355 5.37864C17.3678 5.27298 17.3318 5.15013 17.3318 5.02465C17.3318 4.89917 17.3678 4.77632 17.4355 4.67066C17.5032 4.56501 17.5998 4.48098 17.7138 4.42854L18.6014 4.03361C19.8647 3.46582 20.8621 2.43516 21.3882 1.15395L21.7015 0.397509C21.7475 0.280334 21.8277 0.179736 21.9317 0.108831C22.0357 0.0379248 22.1587 0 22.2846 0C22.4104 0 22.5334 0.0379248 22.6374 0.108831C22.7414 0.179736 22.8217 0.280334 22.8677 0.397509L23.1809 1.15271C23.7064 2.43416 24.7034 3.46527 25.9665 4.03361L26.8554 4.42978C26.969 4.48237 27.0653 4.56638 27.1327 4.6719C27.2001 4.77742 27.236 4.90004 27.236 5.02527C27.236 5.1505 27.2001 5.27312 27.1327 5.37864C27.0653 5.48416 26.969 5.56817 26.8554 5.62076L25.9145 6.03922C24.6824 6.59183 23.7022 7.58617 23.1673 8.82603ZM12.3803 3.71543C10.371 3.71574 8.40931 4.32717 6.75567 5.46856C5.10202 6.60996 3.83465 8.22732 3.1218 10.1059C2.40895 11.9845 2.28435 14.0355 2.76454 15.9866C3.24473 17.9377 4.30699 19.6966 5.8103 21.0298C7.31361 22.363 9.18685 23.2074 11.1813 23.4509C13.1758 23.6945 15.1972 23.3256 16.9772 22.3933C18.7571 21.4611 20.2114 20.0094 21.147 18.2312C22.0825 16.453 22.4551 14.4323 22.2152 12.4374L24.674 12.1452C24.7317 12.6297 24.7606 13.1212 24.7606 13.6197C24.7606 20.4573 19.218 26 12.3803 26C5.54267 26 0 20.4573 0 13.6197C0 6.78204 5.54267 1.23937 12.3803 1.23937C13.4463 1.23937 14.4837 1.37555 15.4729 1.62935L14.8564 4.02742C14.0475 3.81944 13.2155 3.71461 12.3803 3.71543ZM13.6183 12.3817H17.3324L11.1423 21.0479V14.8577H7.42819L13.6183 6.1915V12.3817Z"
-                  fill="#FF532D"
+                  fill="#42CFFB"
                 />
               </svg>
-              <h3 className="text-white text-lg md:text-xl font-medium">
+              <h3 className="text-textPrimary text-lg md:text-xl font-medium">
                 Add Ons
               </h3>
             </div>
@@ -271,7 +263,7 @@ const AddOnsToggleBox = React.memo(
             {/* Total Section */}
             <div className="flex flex-col justify-end min-w-[100px] lg:min-w-[120px] mt-4 ">
               <div className="text-right">
-                <div className="text-white text-sm md:text-base mb-1 md:mb-2">
+                <div className="text-textPrimary text-sm md:text-base mb-1 md:mb-2">
                   Total
                 </div>
                 <div className="text-green-400 text-4xl md:text-4xl font-medium min-w-[120px] md:min-w-[160px] text-right">
@@ -289,9 +281,9 @@ const AddOnsToggleBox = React.memo(
             <div className="flex flex-col items-center w-full">
               <Link href={getCurrentChallengeUrl()}>
                 <motion.button
-                  className={`z-20 flex flex-row mt-3 w-full md:mt-0 items-center text-base text-white rounded-lg transition-all py-2.5 px-4 justify-center min-w-[180px] md:min-w-[200px] ${isLoading || isButtonDisabled
-                      ? 'bg-gray-600 cursor-not-allowed'
-                      : 'bg-[#FF532D] hover:bg-orange-700'
+                  className={`z-20 flex flex-row mt-3 w-full md:mt-0 items-center text-base text-textPrimary rounded-lg transition-all py-2.5 px-4 justify-center min-w-[180px] md:min-w-[200px] ${isLoading || isButtonDisabled
+                    ? 'bg-gray-600 cursor-not-allowed'
+                    : 'bg-forexBlue hover:bg-forexBlue/80'
                     }`}
                   variants={ANIMATION_VARIANTS.button}
                   whileHover={!isLoading && !isButtonDisabled ? "hover" : undefined}

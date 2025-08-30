@@ -47,11 +47,11 @@ function CallUsBanner({ locale, translations }) {
 
 
                         <div className='flex flex-col items-start ml-8 mt-0'>
-                            <p className='text-white font-medium text-2xl flex flex-row items-end z-50'>
+                            <p className='text-textPrimary font-medium text-2xl flex flex-row items-end z-50'>
                                 {mainLang == 'es' ? "¿Dudas? Estamos para ayudarte" : "Doubts? We're here to help"}
                             </p>
                             <div className='bg-black/40 px-5 py-2 rounded-lg mt-1 border border-[#45D1FF]'>
-                                <p className='text-sm text-white text-light'> <span className='font-semibold  text-slate-300'> {mainLang == 'es' ? "LLAMANOS YA: " : "CALL US NOW: "}</span> +1 (786) 957-8539 </p>
+                                <p className='text-sm text-textPrimary text-light'> <span className='font-semibold  text-slate-300'> {mainLang == 'es' ? "LLAMANOS YA: " : "CALL US NOW: "}</span> +1 (786) 957-8539 </p>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ function CallUsBanner({ locale, translations }) {
                         {/* No Cap, No Gimmicks, WERE RUNNING IT BACK */}
                         <div className='flex flex-col items-start -ml-16'>
                             <section className='flex flex-row items-start'>
-                                <p className='text-white text-3xl font-light flex flex-row items-end z-50'>
+                                <p className='text-textPrimary text-3xl font-light flex flex-row items-end z-50'>
                                     {mainLang == 'es' ? "¿Tienes preguntas sobre" : "Have a questions about"}
                                 </p>
                             </section>
@@ -72,11 +72,11 @@ function CallUsBanner({ locale, translations }) {
                         <Image src={decoration_img} alt="box" width={200} height={90} className='ml-16 ' />
 
                         <div className='flex flex-col items-center ml-16 mt-2'>
-                            <p className='text-white font-medium text-2xl flex flex-row items-end z-50'>
+                            <p className='text-textPrimary font-medium text-2xl flex flex-row items-end z-50'>
                                 {mainLang == 'es' ? "Estamos para ayudarte" : "We're here to help"}
                             </p>
                             <div className='bg-black/40 px-5 py-2 rounded-lg mt-1 border border-[#45D1FF]'>
-                                <p className='text-xs text-white text-light'> <span className='font-semibold  text-slate-300'> {mainLang == 'es' ? "LLAMANOS YA: " : "CALL US NOW: "}</span> +1 (786) 957-8539 </p>
+                                <p className='text-xs text-textPrimary text-light'> <span className='font-semibold  text-slate-300'> {mainLang == 'es' ? "LLAMANOS YA: " : "CALL US NOW: "}</span> +1 (786) 957-8539 </p>
                             </div>
                         </div>
 

@@ -107,18 +107,18 @@ export default function BlogDetailClient({ blog: initialBlog }) {
             )}
 
             {/* Title */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-white leading-tight mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-textPrimary leading-tight mb-6">
               {blog.title}
             </h1>
 
             {/* Meta Information */}
             <div className="flex flex-wrap items-center gap-6 text-[#717892] text-sm font-light">
               <div className="flex items-center gap-2">
-                <FiUser className="w-4 h-4 text-white" />
+                <FiUser className="w-4 h-4 text-textPrimary" />
                 <span>{blog.author}</span>
               </div>
               <div className="flex items-center gap-2">
-                <FiCalendar className="w-4 h-4 text-white" />
+                <FiCalendar className="w-4 h-4 text-textPrimary" />
                 <span>{new Date(blog.date).toLocaleDateString('en-US', {
                   year: 'numeric',
                   month: 'long',
@@ -126,7 +126,7 @@ export default function BlogDetailClient({ blog: initialBlog }) {
                 })}</span>
               </div>
               <div className="flex items-center gap-2">
-                <FiClock className="w-4 h-4 text-white" />
+                <FiClock className="w-4 h-4 text-textPrimary" />
                 <span>{blog.readTime}</span>
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function BlogDetailClient({ blog: initialBlog }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
             className="prose prose-lg max-w-none
-              prose-headings:font-light prose-headings:text-white
+              prose-headings:font-light prose-headings:text-textPrimary
               prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl
               prose-p:text-[#9AA2BF] prose-p:leading-relaxed prose-p:font-light
               prose-a:text-[#45D1FF] prose-a:no-underline hover:prose-a:underline hover:prose-a:text-[#167BCC]
@@ -156,7 +156,7 @@ export default function BlogDetailClient({ blog: initialBlog }) {
               prose-blockquote:border-l-4 prose-blockquote:border-[#45D1FF] prose-blockquote:bg-gradient-to-r prose-blockquote:from-[#45D1FF]/10 prose-blockquote:to-transparent prose-blockquote:px-4 prose-blockquote:py-2 prose-blockquote:rounded-r
               prose-ul:list-disc prose-ul:ml-6 prose-ol:list-decimal prose-ol:ml-6
               prose-li:text-[#9AA2BF] prose-li:mb-1 prose-li:font-light
-              prose-table:border-collapse prose-th:border prose-th:border-[#717892] prose-th:bg-[#0A1930] prose-th:px-4 prose-th:py-2 prose-th:text-white
+              prose-table:border-collapse prose-th:border prose-th:border-[#717892] prose-th:bg-[#0A1930] prose-th:px-4 prose-th:py-2 prose-th:text-textPrimary
               prose-td:border prose-td:border-[#717892] prose-td:px-4 prose-td:py-2 prose-td:text-[#9AA2BF]
               prose-img:rounded-lg prose-img:shadow-md prose-img:border prose-img:border-[#717892]/30"
           >
@@ -166,17 +166,17 @@ export default function BlogDetailClient({ blog: initialBlog }) {
               components={{
                 // Custom components for better styling
                 h1: ({ children }) => (
-                  <h1 className="text-3xl font-light text-white mt-8 mb-4 first:mt-0">
+                  <h1 className="text-3xl font-light text-textPrimary mt-8 mb-4 first:mt-0">
                     {children}
                   </h1>
                 ),
                 h2: ({ children }) => (
-                  <h2 className="text-2xl font-light text-white mt-8 mb-4">
+                  <h2 className="text-2xl font-light text-textPrimary mt-8 mb-4">
                     {children}
                   </h2>
                 ),
                 h3: ({ children }) => (
-                  <h3 className="text-xl font-light text-white mt-6 mb-3">
+                  <h3 className="text-xl font-light text-textPrimary mt-6 mb-3">
                     {children}
                   </h3>
                 ),
@@ -227,7 +227,7 @@ export default function BlogDetailClient({ blog: initialBlog }) {
                   </div>
                 ),
                 th: ({ children }) => (
-                  <th className="border border-[#717892] bg-[#0A1930] px-4 py-2 text-white font-light text-left">
+                  <th className="border border-[#717892] bg-[#0A1930] px-4 py-2 text-textPrimary font-light text-left">
                     {children}
                   </th>
                 ),
@@ -275,7 +275,7 @@ export default function BlogDetailClient({ blog: initialBlog }) {
             </div>
             <button
               onClick={() => router.back()}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-br from-white/5 to-[#0B111D] border border-[#717892] text-white rounded-lg hover:border-[#45D1FF] hover:shadow-lg hover:shadow-[#45D1FF]/25 transition-all font-light relative overflow-hidden group"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-br from-white/5 to-[#0B111D] border border-[#717892] text-textPrimary rounded-lg hover:border-[#45D1FF] hover:shadow-lg hover:shadow-[#45D1FF]/25 transition-all font-light relative overflow-hidden group"
             >
               <span className="relative z-10 flex items-center gap-2">
                 <FiArrowLeft className="w-4 h-4" />

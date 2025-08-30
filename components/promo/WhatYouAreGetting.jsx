@@ -38,11 +38,11 @@ export function WhatYouAreGetting({ translations }) {
 
   return (
     <section className="flex flex-col items-center gap-12 md:gap-20 px-7 py-12 md:py-16">
-      <h2 className="text-center text-4xl md:text-4xl font-light text-white">
+      <h2 className="text-center text-4xl md:text-4xl font-light text-textPrimary">
         {translations.t1}
       </h2>
 
-      <ul className="mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-x-20 text-white">
+      <ul className="mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-x-20 text-textPrimary">
         {points.map((point) => (
           <li key={point} className="flex gap-4 max-w-xs">
             <span className="w-6 h-6">

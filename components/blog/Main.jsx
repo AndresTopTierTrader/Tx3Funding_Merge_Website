@@ -200,7 +200,7 @@ const Main = () => {
           className="text-center mb-12"
         >
           <motion.h1 
-            className="text-4xl md:text-5xl font-light text-white mb-4"
+            className="text-4xl md:text-5xl font-light text-textPrimary mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -261,7 +261,7 @@ const Main = () => {
         >
           <div className="flex items-center gap-4">
             <span className="text-sm text-[#717892] font-light">
-              <span className="font-semibold text-white">{filteredAndSortedBlogs.length}</span> 
+              <span className="font-semibold text-textPrimary">{filteredAndSortedBlogs.length}</span> 
               {filteredAndSortedBlogs.length === 1 ? ' article' : ' articles'} found
             </span>
             
@@ -287,7 +287,7 @@ const Main = () => {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="text-sm bg-[#0A1930] border border-[#717892] text-white rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#45D1FF] focus:border-[#45D1FF] transition-all"
+                className="text-sm bg-[#0A1930] border border-[#717892] text-textPrimary rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#45D1FF] focus:border-[#45D1FF] transition-all"
               >
                 <option value="date">Latest</option>
                 <option value="title">Title A-Z</option>
@@ -305,7 +305,7 @@ const Main = () => {
                 className={`p-2 rounded-md transition-all ${
                   viewMode === 'grid' 
                     ? 'bg-gradient-to-r from-[#45D1FF] to-[#167BCC] text-[#0B111D] shadow-sm' 
-                    : 'text-[#717892] hover:text-white'
+                    : 'text-[#717892] hover:text-textPrimary'
                 }`}
               >
                 <FiGrid className="w-4 h-4" />
@@ -317,7 +317,7 @@ const Main = () => {
                 className={`p-2 rounded-md transition-all ${
                   viewMode === 'list' 
                     ? 'bg-gradient-to-r from-[#45D1FF] to-[#167BCC] text-[#0B111D] shadow-sm' 
-                    : 'text-[#717892] hover:text-white'
+                    : 'text-[#717892] hover:text-textPrimary'
                 }`}
               >
                 <FiList className="w-4 h-4" />
@@ -352,7 +352,7 @@ const Main = () => {
             className="text-center py-12 bg-gradient-to-br from-white/5 to-[#0B111D] border border-[#717892] rounded-lg"
           >
             <div className="text-[#717892]">
-              <p className="text-lg mb-2 text-white font-light">No blogs found</p>
+              <p className="text-lg mb-2 text-textPrimary font-light">No blogs found</p>
               <p className="text-sm font-light">Check your Strapi API connection or add some blog posts.</p>
             </div>
           </motion.div>
@@ -385,7 +385,7 @@ const Main = () => {
                   boxShadow: "0 0 20px rgba(69, 209, 255, 0.3)"
                 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 bg-gradient-to-br from-white/5 to-[#0B111D] border border-[#717892] text-white rounded-lg hover:border-[#45D1FF] hover:shadow-md transition-all duration-200 font-light relative overflow-hidden group"
+                className="px-8 py-3 bg-gradient-to-br from-white/5 to-[#0B111D] border border-[#717892] text-textPrimary rounded-lg hover:border-[#45D1FF] hover:shadow-md transition-all duration-200 font-light relative overflow-hidden group"
               >
                 <span className="relative z-10">Load More Articles</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#45D1FF]/10 to-[#167BCC]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>

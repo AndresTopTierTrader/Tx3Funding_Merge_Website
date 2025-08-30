@@ -13,7 +13,7 @@ function Faq({ translations, locale }) {
                 {/* Tile*/}
                 <div className='flex flex-col mb:w-full justify-between mb:flex-row py-10 mb:pt-16'>
                     <div>
-                        <h3 className="text-white text-3xl mb:text-4xl py-4 font-light"> {translations.titleOne} <br />  {translations.titleTwo} </h3>
+                        <h3 className="text-textPrimary text-3xl mb:text-4xl py-4 font-light"> {translations.titleOne} <br />  {translations.titleTwo} </h3>
                         <p className="text-secondary mb:w-3/4 text-base">
                             {translations.content}
                         </p>
@@ -25,7 +25,7 @@ function Faq({ translations, locale }) {
                                 translation={translations.ctaButton} />
                           
                             <a href='https://help.toptiertrader.com'>
-                                <button className="flex flex-row mt-4 mb:mt-0 mb:ml-4  items-center text-sm text-white rounded-lg bg-transparent border border-white hover:bg-orange-700 transition-all py-2 px-4 scaleIn">
+                                <button className="flex flex-row mt-4 mb:mt-0 mb:ml-4  items-center text-sm text-textPrimary rounded-lg bg-transparent border border-white hover:bg-orange-700 transition-all py-2 px-4 scaleIn">
                                     {translations.buttonFaqs}
                                 </button>
                             </a>

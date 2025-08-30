@@ -39,8 +39,8 @@ function LandingSection({ locale, translations }) {
             <Image src={mainLang == 'es' ? mainImgEs : mainImg} width={1600} height={850} priority alt="main_img" className="block absolute mb:hidden min-w-[400px] ml-20  fadeInUp" />
 
             <div className="flex flex-col h-full items-center mt-[280px] mb:mt-[450px] z-30 ">
-              <h1 className="text-4xl mb:text-6xl text-white font-medium titleFirst">Thank You</h1>
-              <h1 className="text-2xl mb:text-3xl mt-2 text-white text-center font-light titleFirst">For Joining Levels</h1>
+              <h1 className="text-4xl mb:text-6xl text-textPrimary font-medium titleFirst">Thank You</h1>
+              <h1 className="text-2xl mb:text-3xl mt-2 text-textPrimary text-center font-light titleFirst">For Joining Levels</h1>
               <Link href="https://levels.toptiertrader.com/login" target="_blank">
                 <button onClick={() => {track('Lv - TY Page  - Login Button Clicked')}} className="z-20 flex w-fit flex-row mt-5 items-center text-sm font-medium text-[#0B111D] rounded-lg bg-[#45D1FF] hover:bg-[#30f8ff] hover:scale-105 transition-all py-2.5 px-4 justify-center">
                   Log in

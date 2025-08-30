@@ -40,7 +40,7 @@ function NewToTopTier({ locale, translations }) {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 50 }}
                     transition={{ duration: 0.5 }}
-                    className="fixed bottom-0 left-0 right-0 z-30 flex flex-col items-center justify-center w-full h-24 pl-3 -mb-1 overflow-hidden text-white shadow-2xl cursor-pointer md:gap-8 md:flex-row mb:mb-0 rounded-t-2xl mb:pl-0 mb:h-20 re" style={bgImageStyle}
+                    className="fixed bottom-0 left-0 right-0 z-30 flex flex-col items-center justify-center w-full h-24 pl-3 -mb-1 overflow-hidden text-textPrimary shadow-2xl cursor-pointer md:gap-8 md:flex-row mb:mb-0 rounded-t-2xl mb:pl-0 mb:h-20 re" style={bgImageStyle}
                 >
 
                     <p className='py-1 absolute md:relative grid place-items-center w-[300px] bg-[#FF532D] -rotate-[40deg] md:-rotate-[25deg] md:-ml-32 scale-75 -left-28 top-5 md:top-0 md:left-0 md:scale-100'>{translations.p4}</p>

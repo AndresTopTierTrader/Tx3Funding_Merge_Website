@@ -57,7 +57,7 @@ function Main({ translations, setPopUpOpen }) {
                 animate="visible"
             >
                 <div className='flex flex-col -mt-10 mb:mt-0 items-center mb:items-start'>
-                    <motion.h1 className='text-white text-center mb:text-start font-lig text-4xl mb:text-6xl mb:max-w-[550px] ' variants={itemVariants}>
+                    <motion.h1 className='text-textPrimary text-center mb:text-start font-lig text-4xl mb:text-6xl mb:max-w-[550px] ' variants={itemVariants}>
                         {translations.main.title}
                     </motion.h1>
                     <motion.p className='text-slate-200 text-center mb:text-start mt-4 font-medium text-lg mb:text-2xl ' variants={itemVariants}>
@@ -65,7 +65,7 @@ function Main({ translations, setPopUpOpen }) {
                     </motion.p>
 
                     <motion.button
-                        className='flex flex-row items-center bg-gradient-to-b from-[#0052B4] to-[#167ACC] text-center  text-white py-2 mt-8 px-6 rounded-xl font-medium transition-all hover:scale-110 hover:bg-cyan-500'
+                        className='flex flex-row items-center bg-gradient-to-b from-[#0052B4] to-[#167ACC] text-center  text-textPrimary py-2 mt-8 px-6 rounded-xl font-medium transition-all hover:scale-110 hover:bg-cyan-500'
                         onClick={() => {
                             track('Academy - CTA Clicked')
                             setPopUpOpen(true)}}

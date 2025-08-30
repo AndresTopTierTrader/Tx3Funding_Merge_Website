@@ -112,50 +112,50 @@ function Team({ translations }) {
 
     return (
         <div style={bgImageStyle} className='flex flex-col text-slate-300 px-4 mb:px-32 py-20 mb:py-32 mb:-mb-20 gap-6'>
-            <h1 className="text-center text-4xl mb:text-center mb:text-6xl font-light text-white">{h1_1} <span className="">{h1_2}</span>
+            <h1 className="text-center text-4xl mb:text-center mb:text-6xl font-light text-textPrimary">{h1_1} <span className="">{h1_2}</span>
             </h1>
 
             <article className="mt-12">
-                <h2 className="text-white font-semibold text-xl md:text-3xl">{t1}</h2> <br/>
-                <strong className="text-white">{t2}</strong> <br/> <br/>
+                <h2 className="text-textPrimary font-semibold text-xl md:text-3xl">{t1}</h2> <br/>
+                <strong className="text-textPrimary">{t2}</strong> <br/> <br/>
                 <p>{p1_1}</p> <br/>
                 <p>{p1_2}</p> <br/>
 
-                <strong className="text-white">{t3}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{t3}</strong> <br/> <br/>
                 <p>{p2_1}</p> <br/>
                 <p>{p2_2}</p> <br/>
 
-                <strong className="text-white">{t4}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{t4}</strong> <br/> <br/>
                 <p>{p3_1}</p> <br/>
                 <p>{p3_2}</p> <br/>
 
-                <h2 className="text-white font-semibold text-xl md:text-3xl">{t5}</h2> <br/>
+                <h2 className="text-textPrimary font-semibold text-xl md:text-3xl">{t5}</h2> <br/>
                 <p>{p4_1}</p> <br/>
-                <strong className="text-white">{p4_2}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p4_2}</strong> <br/> <br/>
                 <p>{p4_3}</p> <br/>
-                <strong className="text-white">{p4_4}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p4_4}</strong> <br/> <br/>
                 <p>{p4_5}</p> <br/>
-                <strong className="text-white">{p4_6}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p4_6}</strong> <br/> <br/>
                 <p>{p4_7}</p> <br/>
-                <strong className="text-white">{p4_8}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p4_8}</strong> <br/> <br/>
                 <p>{p4_9}</p> <br/>
-                <strong className="text-white">{p4_10}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p4_10}</strong> <br/> <br/>
                 <p>{p4_11}</p> <br/>
-                <strong className="text-white">{p4_12}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p4_12}</strong> <br/> <br/>
                 <p>{p4_13}</p> <br/>
-                <strong className="text-white">{p4_14}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p4_14}</strong> <br/> <br/>
                 <p>{p4_15}</p> <br/>
-                <strong className="text-white">{p4_16}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p4_16}</strong> <br/> <br/>
                 <p>{p4_17}</p> <br/>
-                <strong className="text-white">{p4_18}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p4_18}</strong> <br/> <br/>
                 <p>{p4_19}</p> <br/>
 
-                <h2 className="text-white font-semibold text-xl md:text-3xl">{t6}</h2> <br/>
-                <strong className="text-white">{t7}</strong> <br/> <br/>
+                <h2 className="text-textPrimary font-semibold text-xl md:text-3xl">{t6}</h2> <br/>
+                <strong className="text-textPrimary">{t7}</strong> <br/> <br/>
                 <p>{p5_1}</p> <br/>
                 <p>{p5_2}</p> <br/>
                 <p>{p5_3}</p> <br/>
-                <strong className="text-white">{t8}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{t8}</strong> <br/> <br/>
                 <p>{p6_1}</p> <br/>
                 <p>{p6_2}</p> <br/>
                 <ul className="flex flex-col pl-6 gap-6 list-disc">
@@ -164,24 +164,24 @@ function Team({ translations }) {
                     <li>{p6_5}</li>
                 </ul> <br/>
                 <p>{p6_6}</p> <br/>
-                <strong className="text-white">{t9}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{t9}</strong> <br/> <br/>
                 <p>{p7_1}</p> <br/>
                 <p>{p7_2}</p> <br/>
                 <p>{p7_3}</p> <br/>
                 <p>{p7_4}</p> <br/>
 
-                <h2 className="text-white font-semibold text-xl md:text-3xl">{t10}</h2> <br/>
-                <strong className="text-white">{p8_1}</strong> <br/> <br/>
+                <h2 className="text-textPrimary font-semibold text-xl md:text-3xl">{t10}</h2> <br/>
+                <strong className="text-textPrimary">{p8_1}</strong> <br/> <br/>
                 <p>{p8_2}</p> <br/>
-                <strong className="text-white">{p8_3}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p8_3}</strong> <br/> <br/>
                 <p>{p8_4}</p> <br/>
-                <strong className="text-white">{p8_5}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p8_5}</strong> <br/> <br/>
                 <p>{p8_6}</p> <br/>
-                <strong className="text-white">{p8_7}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p8_7}</strong> <br/> <br/>
                 <p>{p8_8}</p> <br/>
 
-                <h2 className="text-white font-semibold text-xl md:text-3xl">{t11}</h2> <br/>
-                <strong className="text-white">{p9_1}</strong> <br/> <br/>
+                <h2 className="text-textPrimary font-semibold text-xl md:text-3xl">{t11}</h2> <br/>
+                <strong className="text-textPrimary">{p9_1}</strong> <br/> <br/>
                 <p>{p9_2}</p> <br/>
                 <p>{p9_3}</p> <br/>
                 <p>{p9_4}</p> <br/>
@@ -194,7 +194,7 @@ function Team({ translations }) {
                     <li>{p9_7}</li>
                 </ul> <br/>
 
-                <strong className="text-white">{t12}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{t12}</strong> <br/> <br/>
                 <p>{p10_1}</p> <br/>
                 <ul className="flex flex-col pl-6 gap-6 list-disc">
                     <li>{p10_2}</li>
@@ -204,7 +204,7 @@ function Team({ translations }) {
                     <li>{p10_6}</li>
                 </ul> <br/>
 
-                <strong className="text-white">{t13}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{t13}</strong> <br/> <br/>
                 <p>{p11_1}</p> <br/>
                 <ul className="flex flex-col pl-6 gap-6 list-disc">
                     <li>{p11_2}</li>
@@ -215,7 +215,7 @@ function Team({ translations }) {
                 </ul> <br/>
                 <p>{p11_7}</p> <br/>
 
-                <h2 className="text-white font-semibold text-xl md:text-3xl">{t14}</h2> <br/>
+                <h2 className="text-textPrimary font-semibold text-xl md:text-3xl">{t14}</h2> <br/>
                 <p>{p12_1}</p> <br/>
                 <p>{p12_2}</p> <br/>
                 <p>{p12_3}</p> <br/>
@@ -230,53 +230,53 @@ function Team({ translations }) {
                 <p>{p12_12}</p> <br/>
                 <p>{p12_13}</p> <br/>
 
-                <h2 className="text-white font-semibold text-xl md:text-3xl">{t15}</h2> <br/>
+                <h2 className="text-textPrimary font-semibold text-xl md:text-3xl">{t15}</h2> <br/>
                 <p>{p13_1}</p> <br/>
-                <strong className="text-white">{p13_2}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p13_2}</strong> <br/> <br/>
                 <p>{p13_3}</p> <br/>
                 <p>{p13_4}</p> <br/>
                 <p>{p13_5}</p> <br/>
                 <p>{p13_6}</p> <br/>
                 <p>{p13_7}</p> <br/>
-                <strong className="text-white">{t16}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{t16}</strong> <br/> <br/>
                 <p>{p14_1}</p> <br/>
                 <p>{p14_2}</p> <br/>
                 <p>{p14_3}</p> <br/>
-                <strong className="text-white">{p14_4}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p14_4}</strong> <br/> <br/>
                 <p>{p14_5}</p> <br/>
                 <p>{p14_6}</p> <br/>
                 <p>{p14_7}</p> <br/>
 
-                <h2 className="text-white font-semibold text-xl md:text-3xl">{t17}</h2> <br/>
-                <strong className="text-white">{p15_1}</strong> <br/> <br/>
+                <h2 className="text-textPrimary font-semibold text-xl md:text-3xl">{t17}</h2> <br/>
+                <strong className="text-textPrimary">{p15_1}</strong> <br/> <br/>
                 <p>{p15_2}</p> <br/>
-                <strong className="text-white">{p15_3}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p15_3}</strong> <br/> <br/>
                 <p>{p15_4}</p> <br/>
-                <strong className="text-white">{p15_5}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p15_5}</strong> <br/> <br/>
                 <p>{p15_6}</p> <br/>
-                <strong className="text-white">{p15_7}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p15_7}</strong> <br/> <br/>
                 <p>{p15_8}</p> <br/>
-                <strong className="text-white">{p15_9}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p15_9}</strong> <br/> <br/>
                 <p>{p15_10}</p> <br/>
 
-                <h2 className="text-white font-semibold text-xl md:text-3xl">{t18}</h2> <br/>
-                <strong className="text-white">{p16_1}</strong> <br/> <br/>
+                <h2 className="text-textPrimary font-semibold text-xl md:text-3xl">{t18}</h2> <br/>
+                <strong className="text-textPrimary">{p16_1}</strong> <br/> <br/>
                 <ul className="flex flex-col pl-6 gap-6 list-disc">
                     <li>{p16_2}</li>
                     <li>{p16_3}</li>
                 </ul> <br/>
-                <strong className="text-white">{p16_4}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p16_4}</strong> <br/> <br/>
                 <ul className="flex flex-col pl-6 gap-6 list-disc">
                     <li>{p16_5}</li>
                     <li>{p16_6}</li>
                 </ul> <br/>
-                <strong className="text-white">{p16_7}</strong> <br/> <br/>
+                <strong className="text-textPrimary">{p16_7}</strong> <br/> <br/>
                 <ul className="flex flex-col pl-6 gap-6 list-disc">
                     <li>{p16_8}</li>
                     <li>{p16_9}</li>
                 </ul> <br/>
 
-                <h2 className="text-white font-semibold text-xl md:text-3xl">{t19}</h2> <br/>
+                <h2 className="text-textPrimary font-semibold text-xl md:text-3xl">{t19}</h2> <br/>
                 <p>{p17_1}</p> <br/>
                 <p>{p17_2}</p> <br/>
                 <p>{p17_3}</p> <br/>
@@ -289,14 +289,14 @@ function Team({ translations }) {
                 </ul> <br/>
                 <p>{p17_9}</p> <br/>
 
-                <h2 className="text-white font-semibold text-xl md:text-3xl">{t20}</h2> <br/>
+                <h2 className="text-textPrimary font-semibold text-xl md:text-3xl">{t20}</h2> <br/>
                 <p>{p18_1}</p> <br/>
                 <p>{p18_2}</p> <br/>
                 <p>{p18_3}</p> <br/>
                 <p>{p18_4}</p> <br/>
 
 
-                <h2 className="text-white font-semibold text-xl md:text-3xl">{t21}</h2> <br/>
+                <h2 className="text-textPrimary font-semibold text-xl md:text-3xl">{t21}</h2> <br/>
                 <p>{p19_1}</p> <br/>
                 <p>{p19_2}</p> <br/>
                 <p>{p19_3}</p> <br/>

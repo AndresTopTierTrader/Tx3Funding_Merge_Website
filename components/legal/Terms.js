@@ -47,7 +47,7 @@ function Team({ translations }) {
     return (
         <div style={bgImageStyle} className='flex flex-col'>
             <div className="mx-10 py-20 mb:py-32 mb:-mb-2">
-                <h1 className="text-center text-4xl mb:text-center mb:text-6xl font-light text-white">{t1_1} <span className="bg-gradient-to-r from-ttblue py-1 to-ttelectricBlue inline-block text-transparent bg-clip-text">{t1_2}</span>
+                <h1 className="text-center text-4xl mb:text-center mb:text-6xl font-light text-textPrimary">{t1_1} <span className="bg-gradient-to-r from-ttblue py-1 to-ttelectricBlue inline-block text-transparent bg-clip-text">{t1_2}</span>
                 </h1>
                 <p className="mt-8 text-base px-0 mb:px-24 text-left text-slate-300">
                     {p1}

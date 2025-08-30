@@ -127,7 +127,7 @@ export function WhyChoose({ translations }) {
     return (
         <SectionLayout padding className='relative'>
             <motion.h2 
-                className="text-center mx-auto text-2xl md:text-4xl text-white"
+                className="text-center mx-auto text-2xl md:text-4xl text-textPrimary"
                 initial="hidden"
                 animate={isVisible ? "visible" : "hidden"}
                 variants={titleAnimation}
@@ -151,7 +151,7 @@ export function WhyChoose({ translations }) {
                         >
                             <motion.span variants={iconAnimation}>{icon}</motion.span>
                             <motion.strong 
-                                className="text-white font-medium"
+                                className="text-textPrimary font-medium"
                                 variants={textAnimation}
                             >
                                 {title}

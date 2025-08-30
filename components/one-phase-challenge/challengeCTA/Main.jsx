@@ -14,7 +14,7 @@ export function ChallengeCTA({ translations }) {
       <div className="w-full max-w-md min-[1120px]:max-w-[calc(2*28rem+2rem)] mx-auto rounded-xl bg-[#0B111D]/70 p-8 border-2 border-[#FF532D]">
         <div className="flex flex-col min-[1120px]:flex-row items-center justify-between gap-6">
           <div className="text-center min-[1120px]:text-left">
-            <h2 className="text-white text-xl md:text-2xl font-medium leading-tight">
+            <h2 className="text-textPrimary text-xl md:text-2xl font-medium leading-tight">
               {translations.CTA_text_1}
               <br />
               <span className="text-[#FF532D] font-semibold">

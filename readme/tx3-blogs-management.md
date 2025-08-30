@@ -100,7 +100,7 @@ export default function Blog() {
     return (
         <SectionLayout>
             <div className="max-w-[1100px] text-base md:text-lg mx-auto py-6 md:py-12">
-                <p className="text-white mb-2">
+                <p className="text-textPrimary mb-2">
                     <a className="text-slate-400" href="/blog">Blog /</a> {title}
                 </p>
                 <div className="px-4 py-2 rounded-lg border border-slate-400 w-fit my-6">

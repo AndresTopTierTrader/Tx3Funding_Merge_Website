@@ -13,7 +13,7 @@ function CtaButton({ utm, page, section, translation, color = 'orange' }) {
     return (
         <a href={utm} onClick={() => track(`${page} - ${section} - CTA Clicked `)} rel="noopener noreferrer"
             className="transition-all hover:scale-105">
-            <button className={`flex flex-row mt-5 mb:mt-0 items-center text-sm rounded-lg ${color === 'orange' ? 'bg-[#FF532D] hover:bg-orange-700 text-white' : 'bg-[#45D1FF] hover:bg-[#2090B5] text-[#0B111D]'} transition-all py-2 px-4 scaleIn`}>
+            <button className={`flex flex-row mt-5 mb:mt-0 items-center text-sm rounded-lg ${color === 'orange' ? 'bg-[#FF532D] hover:bg-orange-700 text-textPrimary' : 'bg-[#45D1FF] hover:bg-[#2090B5] text-[#0B111D]'} transition-all py-2 px-4 scaleIn`}>
                 {translation}
                 <FaArrowRight className="w-3 h-3 ml-2" />
             </button>

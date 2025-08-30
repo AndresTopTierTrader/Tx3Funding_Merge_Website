@@ -33,7 +33,7 @@ export function TheProcess({ translations, pageType = 'onePhase' }) {
 
     return (
         <SectionLayout padding className='flex flex-col items-center gap-12'>
-            <motion.h2 {...animationProps} className="text-center mx-auto text-2xl md:text-4xl text-white">{translations.t4_1} <span className="bg-gradient-to-br from-[#0052B4] to-[#45D1FF] bg-clip-text text-transparent">{translations.t4_2}</span></motion.h2>
+            <motion.h2 {...animationProps} className="text-center mx-auto text-2xl md:text-4xl text-textPrimary">{translations.t4_1} <span className="bg-gradient-to-br from-[#0052B4] to-[#45D1FF] bg-clip-text text-transparent">{translations.t4_2}</span></motion.h2>
 
             <ul className="flex flex-col gap-6">
                 {

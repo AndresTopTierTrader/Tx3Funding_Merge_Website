@@ -172,7 +172,7 @@ const BlogCard = ({ blog, index }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="font-light text-white mb-3 line-clamp-2 group-hover:text-[#45D1FF] transition-colors text-xl md:text-2xl"
+                className="font-light text-textPrimary mb-3 line-clamp-2 group-hover:text-[#45D1FF] transition-colors text-xl md:text-2xl"
               >
                 {blog.title}
               </motion.h3>
@@ -310,7 +310,7 @@ const BlogCard = ({ blog, index }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="font-light text-white mb-2 line-clamp-2 group-hover:text-[#45D1FF] transition-colors text-base leading-tight flex-shrink-0"
+              className="font-light text-textPrimary mb-2 line-clamp-2 group-hover:text-[#45D1FF] transition-colors text-base leading-tight flex-shrink-0"
             >
               {blog.title}
             </motion.h3>
@@ -430,7 +430,7 @@ const BlogGrid = ({ blogs, isLoading }) => {
         >
           <FiTag className="w-8 h-8 text-[#45D1FF]" />
         </motion.div>
-        <h3 className="text-xl font-light text-white mb-2">No articles found</h3>
+        <h3 className="text-xl font-light text-textPrimary mb-2">No articles found</h3>
         <p className="text-[#717892] max-w-md mx-auto font-light">
           Try adjusting your search criteria or clearing your filters to see more results.
         </p>

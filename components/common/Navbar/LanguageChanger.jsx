@@ -106,7 +106,7 @@ export default function LanguageChanger() {
           onClick={() => {
             setIsOpen((prev) => !prev);
           }}
-          className={`flex flex-row items-center transition-all text-white/90 rounded-xl mb:px-4 px-2 py-[4px] mb:py-2`}
+          className={`flex flex-row items-center transition-all text-textPrimary/90 rounded-xl mb:px-4 px-2 py-[4px] mb:py-2`}
         >
           <BiWorld className='mr-2 w-5 h-5 ' />
           <p className={selectedState}>
@@ -124,19 +124,19 @@ export default function LanguageChanger() {
             <div onClick={() => {
               handleChange("en")
             }} className="transition-all hover:rounded-b-lg cursor-pointer">
-              <h3 className="text-slate-200 hover:text-white py-4 mb:py-2 px-6">EN</h3>
+              <h3 className="text-slate-200 hover:text-textPrimary py-4 mb:py-2 px-6">EN</h3>
             
             </div>
             <div onClick={() => {
               handleChange("es")
             }} className="transition-all hover:rounded-b-lg cursor-pointer">
-              <h3 className="text-slate-200 hover:text-white py-4 mb:py-2 px-6 ">ES</h3>
+              <h3 className="text-slate-200 hover:text-textPrimary py-4 mb:py-2 px-6 ">ES</h3>
             
             </div>
             <div onClick={() => {
               handleChange("fr")
             }} className="transition-all hover:rounded-b-lg cursor-pointer">
-              <h3 className="text-slate-200 hover:text-white py-4 mb:py-2 px-6 ">FR</h3>            
+              <h3 className="text-slate-200 hover:text-textPrimary py-4 mb:py-2 px-6 ">FR</h3>            
             </div>
           </motion.div>
         )}

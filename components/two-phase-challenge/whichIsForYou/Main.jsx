@@ -112,7 +112,7 @@ export function WhichIsForYou({ translations }) {
   return (
     <SectionLayout padding>
       <motion.h2
-        className="text-center mx-auto text-2xl md:text-4xl text-white"
+        className="text-center mx-auto text-2xl md:text-4xl text-textPrimary"
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
         variants={titleAnimation}
@@ -135,7 +135,7 @@ export function WhichIsForYou({ translations }) {
           className={`text-xl md:text-2xl text-center w-full pb-4 relative ${
             account === "flex"
               ? "font-semibold bg-gradient-to-br from-[#0052B4] to-[#45D1FF] bg-clip-text text-transparent"
-              : "border-b border-[#717892] font-light text-white"
+              : "border-b border-[#717892] font-light text-textPrimary"
           }`}
         >
           {translations.flex}
@@ -155,7 +155,7 @@ export function WhichIsForYou({ translations }) {
           className={`text-xl md:text-2xl text-center w-full pb-4 relative ${
             account === "pro"
               ? "font-semibold bg-gradient-to-br from-[#0052B4] to-[#45D1FF] bg-clip-text text-transparent"
-              : "border-b border-[#717892] font-light text-white"
+              : "border-b border-[#717892] font-light text-textPrimary"
           }`}
         >
           {translations.pro}
@@ -287,7 +287,7 @@ function AnimatedCard({
         variants={headerAnimation}
       >
         <motion.p
-          className={`px-4 py-2 rounded-lg text-white bg-[#0B111D]/70 border-2 ${
+          className={`px-4 py-2 rounded-lg text-textPrimary bg-[#0B111D]/70 border-2 ${
             isFirst ? "border-[#FF532D]" : "border-[#45D1FF]"
           }`}
           whileHover={{ scale: 1.03 }}
@@ -295,7 +295,7 @@ function AnimatedCard({
         >
           {phase}
         </motion.p>
-        <p className="text-white">{profitTarget}</p>
+        <p className="text-textPrimary">{profitTarget}</p>
       </motion.span>
 
       <motion.p className="min-h-[72px]" variants={descriptionAnimation}>

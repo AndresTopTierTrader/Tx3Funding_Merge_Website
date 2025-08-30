@@ -110,7 +110,7 @@ const OnePhaseTable = ({
 
   if (!data?.values) {
     return (
-      <div className="text-white p-4 text-center">
+      <div className="text-textPrimary p-4 text-center">
         <p>
           No One Phase challenge data available for {accountAmount} in{" "}
           {language}
@@ -121,7 +121,7 @@ const OnePhaseTable = ({
 
   if (cards.length === 0) {
     return (
-      <div className="text-white p-4 text-center">
+      <div className="text-textPrimary p-4 text-center">
         <p>No valid cards to display for One Phase challenge</p>
       </div>
     );

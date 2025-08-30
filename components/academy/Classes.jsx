@@ -47,7 +47,7 @@ function Classes({ translations, setPopUpOpen }) {
                         className='flex flex-col w-full items-center'
                         variants={itemVariants}
                     >
-                        <p className='font-medium text-white py-10 mb:-mt-20 -mt-20 text-3xl'> {translations.learn.inside} </p>
+                        <p className='font-medium text-textPrimary py-10 mb:-mt-20 -mt-20 text-3xl'> {translations.learn.inside} </p>
                         <motion.div
                             className='flex mb:flex-row flex-col items-center mb:py-10 mb:justify-evenly w-full'
                             variants={containerVariants}
@@ -90,11 +90,11 @@ function Classes({ translations, setPopUpOpen }) {
                                 className='flex flex-col items-center mb:items-start text-center mb:text-left'
                                 variants={itemVariants}
                             >
-                                <p className='text-3xl text-white font-light mt-4 max-w-[440px]'>
+                                <p className='text-3xl text-textPrimary font-light mt-4 max-w-[440px]'>
                                     {translations.popular.secTwoTitleThree}
                                 </p>
                                 <motion.button
-                                    className='bg-gradient-to-b from-[#0052B4] to-[#167ACC] text-center text-white py-2 mt-8 w-fit px-6 rounded-xl font-medium transition-all hover:scale-110'
+                                    className='bg-gradient-to-b from-[#0052B4] to-[#167ACC] text-center text-textPrimary py-2 mt-8 w-fit px-6 rounded-xl font-medium transition-all hover:scale-110'
                                     onClick={() => {
                                         track('Academy - CTA Clicked')
                                         setPopUpOpen(true)

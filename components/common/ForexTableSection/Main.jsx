@@ -191,7 +191,7 @@ function TableSection({
 
   return (
     <div
-      className={`w-full bg-[#0B111D] md:pt-10 md:pb-20 pb-24 flex flex-col items-center ${MASTER_CONTAINER_STYLES.responsivePadding}`}
+      className={`w-full md:pt-10 md:pb-20 pb-24 flex flex-col items-center ${MASTER_CONTAINER_STYLES.responsivePadding}`}
       id="challenges"
       ref={ref}
     >
@@ -206,13 +206,13 @@ function TableSection({
         >
           <div className="flex flex-col items-center mt-8 mb:mt-0">
             <motion.h3
-              className="text-3xl font-light text-center text-white mb:text-4xl mb:font-light"
+              className="text-3xl font-light text-center text-textPrimary mb:text-4xl mb:font-light"
               variants={ANIMATION_VARIANTS.item}
             >
               {getAccountTypeTitle}
             </motion.h3>
             <motion.p
-              className="pt-5 text-center text-base font-light mb:font-normal mb:text-lg w-full text-[#717892] max-w-[350px] mb:max-w-[800px]"
+              className="pt-5 text-center text-base font-light mb:font-normal mb:text-lg w-full text-textSecondary max-w-[350px] mb:max-w-[800px]"
               variants={ANIMATION_VARIANTS.item}
             >
               {getDescriptionText}

@@ -19,11 +19,11 @@ const bgImageStyle = {
 
 const AMLPolicy = ({translations}) => {
     return (
-        <div className="w-full px-5 bg-[#] sm:px-10 lg:px-20 pt-36 pb-24 bg-ttdark text-white overflow-hidden" style={bgImageStyle} >
+        <div className="w-full px-5 bg-[#] sm:px-10 lg:px-20 pt-36 pb-24 bg-ttdark text-textPrimary overflow-hidden" style={bgImageStyle} >
             <div className="max-w-6xl mx-auto">
                 <div className='flex flex-col w-full items-center justify-center pb-6'>
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-6 text-white">
-                        {translations.h1_title_1} <span className="text-white">{translations.h1_title_2}</span>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-6 text-textPrimary">
+                        {translations.h1_title_1} <span className="text-textPrimary">{translations.h1_title_2}</span>
                     </h1>
                 </div>
 
@@ -33,7 +33,7 @@ const AMLPolicy = ({translations}) => {
                     <p className="mb-6">{translations.p1_2}</p>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t1}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t1}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p2_1}</p>
                     <ol className="list-decimal pl-8 mb-6 space-y-2">
@@ -44,7 +44,7 @@ const AMLPolicy = ({translations}) => {
                     </ol>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t2}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t2}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p3_1}</p>
                     <ul className="list-disc pl-8 mb-6 space-y-2">
@@ -56,7 +56,7 @@ const AMLPolicy = ({translations}) => {
                     <p className="mb-6">{translations.p3_6}</p>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t3}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t3}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p4_1}</p>
                     <ol className="list-decimal pl-8 mb-6 space-y-2">
@@ -66,7 +66,7 @@ const AMLPolicy = ({translations}) => {
                     </ol>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t4}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t4}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p5_1}</p>
                     <ul className="list-disc pl-8 mb-6 space-y-2">
@@ -77,7 +77,7 @@ const AMLPolicy = ({translations}) => {
                     <p className="mb-6">{translations.p5_5}</p>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t5}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t5}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p6_1}</p>
                     <ul className="list-disc pl-8 mb-6 space-y-2">
@@ -94,18 +94,18 @@ const AMLPolicy = ({translations}) => {
                     <p className="mb-6">{translations.p6_11}</p>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t6}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t6}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p7}</p>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t7}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t7}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p8_1}</p>
                     <p className="mb-6">{translations.p8_2}</p>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t8}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t8}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p9_1}</p>
                     <ul className="list-disc pl-8 mb-6 space-y-2">
@@ -114,7 +114,7 @@ const AMLPolicy = ({translations}) => {
                     </ul>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t9}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t9}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p10_1}</p>
                     <p className="mb-6">{translations.p10_2}</p>
@@ -125,7 +125,7 @@ const AMLPolicy = ({translations}) => {
                     </ul>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t10}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t10}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p11_1}</p>
                     <ul className="list-disc pl-8 mb-6 space-y-2">
@@ -134,7 +134,7 @@ const AMLPolicy = ({translations}) => {
                     </ul>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t11}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t11}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p12_1}</p>
                     <ul className="list-disc pl-8 mb-6 space-y-2">
@@ -145,7 +145,7 @@ const AMLPolicy = ({translations}) => {
                     <p className="mb-6">{translations.p12_5}</p>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t12}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t12}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p13_1}</p>
                     <ul className="list-disc pl-8 mb-6 space-y-2">
@@ -155,7 +155,7 @@ const AMLPolicy = ({translations}) => {
                     <p className="mb-6">{translations.p13_4}</p>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t13}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t13}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p14_1}</p>
                     <ul className="list-disc pl-8 mb-6 space-y-2">
@@ -167,7 +167,7 @@ const AMLPolicy = ({translations}) => {
                     </ul>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t14}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t14}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p15_1}</p>
                     <ul className="list-disc pl-8 mb-6 space-y-2">
@@ -177,7 +177,7 @@ const AMLPolicy = ({translations}) => {
                     <p className="mb-6">{translations.p15_4}</p>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t15}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t15}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p16_1}</p>
                     <ol className="list-decimal pl-8 mb-6 space-y-2">
@@ -189,7 +189,7 @@ const AMLPolicy = ({translations}) => {
                     </ol>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t16}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t16}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p17_1}</p>
                     <ul className="list-disc pl-8 mb-6 space-y-2">
@@ -199,7 +199,7 @@ const AMLPolicy = ({translations}) => {
                     </ul>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.t17}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.t17}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p18_1}</p>
                     <p className="mb-6">{translations.p18_2}</p>
@@ -217,7 +217,7 @@ const AMLPolicy = ({translations}) => {
                     <p className="mb-6">{translations.p18_10}</p>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{translations.p18}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-textPrimary">{translations.p18}</h2>
                 <div className="mb-8 leading-relaxed text-gray-300">
                     <p className="mb-6">{translations.p19_1}</p>
                     <p className="mb-6">{translations.p19_2}</p>

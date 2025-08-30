@@ -28,7 +28,7 @@ function Main({ translations }) {
 
             <div className="flex relative flex-col items-center  ">
                 <div className="flex flex-col items-center px-6 mb:px-0 justify-evenly w-full">
-                    <h1 className="text-center text-4xl mb:text-6xl font-light text-white">
+                    <h1 className="text-center text-4xl mb:text-6xl font-light text-textPrimary">
                         {translations.titleOne} <br />
                         {translations.titleTwo} <br />
                         {translations.titleThree} <br />

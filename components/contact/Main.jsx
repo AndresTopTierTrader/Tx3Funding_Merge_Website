@@ -68,7 +68,7 @@ function Main({ translations }) {
       <div className='mb:max-w-[1100px] flex flex-col items-center w-full mb:px-10'>
         {/* Title & Paragraph*/}
         <div className='flex flex-col px-6 mb:px-0 items-center max-w-[600px] '>
-          <h1 className="text-center text-4xl mb:text-6xl font-light text-white">
+          <h1 className="text-center text-4xl mb:text-6xl font-light text-textPrimary">
             {translations.titleOne}
             <span className="bg-gradient-to-r py-1 font-medium from-[#45D1FF] to-[#167BCC] inline-block text-transparent bg-clip-text"> {translations.titleTwo} </span> <br />
           </h1>
@@ -81,7 +81,7 @@ function Main({ translations }) {
           {/* 24/7 Chat support */}
           <div className='flex flex-col items-center'>
             <p className='font-medium text-center text-slate-300'> 24/7</p>
-            <p className='text-white font-light underline cursor-pointer'> {translations.chatSupport} </p>
+            <p className='text-textPrimary font-light underline cursor-pointer'> {translations.chatSupport} </p>
           </div>
 
 
@@ -92,7 +92,7 @@ function Main({ translations }) {
           {/* Email Us */}
           <div className='flex flex-col'>
             <p className='font-medium text-center text-slate-300'> {translations.emailUs} </p>
-            <p className='text-white font-light underline cursor-pointer'>support@toptiertrader.com</p>
+            <p className='text-textPrimary font-light underline cursor-pointer'>support@toptiertrader.com</p>
           </div>
 
 
@@ -101,7 +101,7 @@ function Main({ translations }) {
 
           <div className='flex flex-col items-center'>
             <p className='font-medium text-center text-slate-300'> {translations.callUs} </p>
-            <p className='text-white font-light underline cursor-pointer'> +1 (786) 957-8539 </p>
+            <p className='text-textPrimary font-light underline cursor-pointer'> +1 (786) 957-8539 </p>
           </div>
 
 
@@ -113,9 +113,9 @@ function Main({ translations }) {
           <a href='https://discord.com/invite/WrC2xdZZng'
             onClick={() => track("Contact Section  - Clicked Discord")}
           >
-            <button className='flex flex-row w-fit bg-[#5865F2] text-white py-2 rounded-lg px-3 items-center text-base transition-all hover:bg-[#424cb9]'>
+            <button className='flex flex-row w-fit bg-[#5865F2] text-textPrimary py-2 rounded-lg px-3 items-center text-base transition-all hover:bg-[#424cb9]'>
               <p className='text-base'>{translations.joinOurDiscord} </p>
-              <BiLogoDiscordAlt className='text-white w-8 h-8 ml-3' />
+              <BiLogoDiscordAlt className='text-textPrimary w-8 h-8 ml-3' />
             </button>
           </a>
 
@@ -128,7 +128,7 @@ function Main({ translations }) {
         {/* Buttons */}
         <div className='flex mb:flex-row flex-col items-end mx-8 mt-8 mb-16 mb:mb-0 mb:mx-0'>
           <a href="https://help.toptiertrader.com">
-            <button className='flex flex-row items-center py-2 px-4 border border-secondary rounded-lg text-white'>
+            <button className='flex flex-row items-center py-2 px-4 border border-secondary rounded-lg text-textPrimary'>
               {translations.viewFAQs}
               <FaArrowRight className='w-3 h-3 ml-2' />
             </button>
