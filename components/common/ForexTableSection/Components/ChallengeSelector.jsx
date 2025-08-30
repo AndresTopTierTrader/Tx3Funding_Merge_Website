@@ -41,7 +41,7 @@ const ChallengeSelector = ({
           onClick={() => onChallengeSelection(CHALLENGE_TYPES.ONE_PHASE)}
           className={`w-full  py-3 md:py-4 px-2 text-sm md:text-base font-medium rounded-lg transition-all duration-200 ${
             isOptionSelected(CHALLENGE_TYPES.ONE_PHASE)
-              ? "bg-gradient-to-b from-[#0052B4] to-[#167ACC] h-12 md:h-14 text-textPrimary"
+              ? "bg-forexBlue h-12 md:h-14 text-textPrimary"
               : "bg-[#181D28] border border-[#4D516A] text-textPrimary h-12 md:h-14 hover:bg-[#131927]"
           }`}
           whileHover={{ scale: 1.02 }}
@@ -72,7 +72,7 @@ const ChallengeSelector = ({
           }
           className={`w-full py-3 md:py-4 px-2 sm:px-4 text-sm md:text-base font-medium rounded-lg transition-all duration-200 ${
             isOptionSelected(CHALLENGE_TYPES.TWO_PHASE, TWO_PHASE_VARIANTS.FLEX)
-              ? "bg-gradient-to-b from-[#0052B4] to-[#167ACC] h-12 md:h-14 text-textPrimary"
+              ? "bg-forexBlue h-12 md:h-14 text-textPrimary"
               : "bg-[#181D28] border border-[#4D516A] text-textPrimary h-12 md:h-14 hover:bg-[#131927]"
           }`}
           whileHover={{ scale: 1.02 }}
@@ -84,7 +84,7 @@ const ChallengeSelector = ({
           }}
         >
           <span className="flex items-center justify-center">
-            <FaCrown className="mr-1 sm:mr-2 md:hidden text-orange-500 flex-shrink-0" />
+            <FaCrown className="mr-1 sm:mr-2 md:hidden text-textPrimary flex-shrink-0" />
             <span className="truncate">
               <span className="sm:hidden">2 Phase Flex</span>
               <span className="hidden sm:block">2 Phase Flex</span>
@@ -93,7 +93,7 @@ const ChallengeSelector = ({
         </motion.button>
         {/* Badge for Flex */}
         <div
-          className={`hidden md:flex flex-row justify-center items-center bg-ttorange absolute -top-4 left-1/2 w-20 md:w-36 transform -translate-x-1/2 text-xs text-textPrimary ${
+          className={`hidden md:flex flex-row justify-center items-center bg-textPrimary absolute -top-4 left-1/2 w-20 md:w-36 transform -translate-x-1/2 text-xs text-bgDark ${
             isLATAM ? "scale-125" : ""
           } px-2 py-1 rounded-md`}
         >

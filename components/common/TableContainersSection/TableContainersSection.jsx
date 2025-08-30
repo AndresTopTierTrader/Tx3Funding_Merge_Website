@@ -1,6 +1,12 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
+
+// Decoration
+
+import decorationLeftImg from "./assets/decoration_left.svg"
+import decorationRightImg from "./assets/decoration_right.svg"
 
 const ForexTableSection = dynamic(() => import("@/components/common/ForexTableSection/Main"), {
   ssr: false
@@ -190,7 +196,12 @@ export default function TableContainers({locale, translations}) {
   };
 
   return (
-    <section className="bg-[#0B111D] flex flex-col items-center w-full">
+    <section className="bg-[#0B111D] relative flex flex-col items-center w-full">
+
+        {/* Decorations */}
+            <Image src={decorationLeftImg} width="auto" height="auto" alt="decoration_left" className="absolute w-36 md:w-56 object-contain left-0 md:left-96 md:ml-32 top-14 md:top-24 opacity-30 md:opacity-100" />
+            <Image src={decorationRightImg} width="auto" height="auto" alt="decoration_right" className="absolute w-4/5 md:w-72 object-contain right-0 md:right-96 md:mr-32 top-20 md:top-96 opacity-30 md:opacity-100" />
+
       <div className="flex flex-col w-full items-center max-w-[1200px] tracking-tight px-4">
         
         {/* Tab Navigation */}
@@ -215,7 +226,7 @@ export default function TableContainers({locale, translations}) {
             variants={tabVariants}
             animate={activeTab === 'futures' ? 'active' : 'inactive'}
             whileHover={{ 
-              color: activeTab === 'futures' ? '#5EE44C' : '#5EE44C'
+              color: activeTab === 'futures' ? '#65FD51' : '#65FD51'
             }}
             whileTap={{ scale: 0.98 }}
             disabled={isTransitioning}

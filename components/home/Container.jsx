@@ -2,8 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-// Dynamic imports for constants and styles
+import Image from 'next/image';
+
+// Styles
 import { bgImageStyle } from "@/constants/styles";
+
+// Images
+import logo from '@/public/img/logo.svg'
 
 // Loading Component with fade-out transition
 const LoadingScreen = ({ isVisible = true }) => {
@@ -14,12 +19,23 @@ const LoadingScreen = ({ isVisible = true }) => {
         }`}
       style={bgImageStyle}
     >
-      <div className={`text-center animate-fade-in transition-all duration-[800ms] ease-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+      <div className={`text-center transition-all duration-[800ms] ease-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
         }`}>
-        <div className="mb-8">
-          <div className="w-16 h-16 mx-auto rounded-full border-4 border-[#45D1FF] border-t-transparent animate-spin"></div>
+        <div className="relative animate-fade-in">
+          <div className="skeleton-pulse">
+            <Image 
+              src={logo}
+              alt="Tx3Funding Logo"
+              width={200}
+              height={80}
+              className="mx-auto"
+            />
+          </div>
+          {/* Small spinner below the logo */}
+          <div className="mt-6 flex justify-center">
+            <div className="w-6 h-6 border-2 border-textSecondary border-t-transparent rounded-full animate-spin opacity-80"></div>
+          </div>
         </div>
-        <p className="text-xl font-light text-textPrimary opacity-80 animate-pulse">Loading a Top Tier Experience...</p>
       </div>
       <style jsx>{`
         @keyframes fade-in {
@@ -33,8 +49,25 @@ const LoadingScreen = ({ isVisible = true }) => {
           }
         }
         
+        @keyframes skeleton-pulse {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.3;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        
         .animate-fade-in {
-          animation: fade-in 0.5s ease-out;
+          animation: fade-in 0.6s ease-out forwards;
+        }
+        
+        .skeleton-pulse {
+          animation: skeleton-pulse 1.2s ease-in-out infinite;
+          animation-delay: 0.3s;
         }
       `}</style>
     </div>

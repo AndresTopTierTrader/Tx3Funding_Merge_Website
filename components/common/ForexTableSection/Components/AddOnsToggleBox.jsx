@@ -281,9 +281,9 @@ const AddOnsToggleBox = React.memo(
             <div className="flex flex-col items-center w-full">
               <Link href={getCurrentChallengeUrl()}>
                 <motion.button
-                  className={`z-20 flex flex-row mt-3 w-full md:mt-0 items-center text-base text-textPrimary rounded-lg transition-all py-2.5 px-4 justify-center min-w-[180px] md:min-w-[200px] ${isLoading || isButtonDisabled
+                  className={`z-20 flex flex-row mt-3 w-full md:mt-0 items-center text-base text-bgDark rounded-lg transition-all py-2.5 px-4 justify-center min-w-[180px] md:min-w-[200px] ${isLoading || isButtonDisabled
                     ? 'bg-gray-600 cursor-not-allowed'
-                    : 'bg-forexBlue hover:bg-forexBlue/80'
+                    : 'bg-white hover:bg-slate-200'
                     }`}
                   variants={ANIMATION_VARIANTS.button}
                   whileHover={!isLoading && !isButtonDisabled ? "hover" : undefined}
