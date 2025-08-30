@@ -440,7 +440,7 @@ export default async function Home({ params: { locale } }) {
         locale={locale}
         namespaces={i18nNameSpaces}
       >
-        <PromoPopUp locale={locale} /> 
+        {/* <PromoPopUp locale={locale} />  */}
         <Container 
           locale={locale} 
           translations={allTranslations}

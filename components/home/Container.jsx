@@ -23,7 +23,7 @@ const LoadingScreen = ({ isVisible = true }) => {
         }`}>
         <div className="relative animate-fade-in">
           <div className="skeleton-pulse">
-            <Image 
+            <Image
               src={logo}
               alt="Tx3Funding Logo"
               width={200}
@@ -103,6 +103,11 @@ const TableContainersSection = dynamic(() => import("@/components/common/TableCo
   ssr: false
 });
 
+const WhyTx3Section = dynamic(() => import("./WhyTx3Section/WhyTx3Section"), {
+  loading: () => <MinimalLoader />,
+  ssr: false
+});
+
 
 const PayoutSection = dynamic(() => import("./PayoutSection/PayoutSection"), {
   loading: () => <MinimalLoader />,
@@ -146,6 +151,7 @@ export default function Container({ locale, translations, mainLang }) {
           <TraderTestimonialsSection locale={locale} translations={translations.traderTestimonialsTranslations} />
           <ProductsSection />
           <TableContainersSection locale={locale} translations={translations} />
+          <WhyTx3Section />
           <PayoutSection translations={translations.payoutTranslations} />
           <SocialMediaSection locale={locale} translations={translations.socialmediaTranslations} />
         </div>

@@ -119,9 +119,9 @@ function WhatTradersWant() {
                     />
 
                     <div className="text-center z-10 relative">
-                        <h2 className="text-textPrimary tracking-tight text-3xl md:text-4xl px-8 md:px-0 ">
+                        <h3 className="text-textPrimary tracking-tight text-3xl md:text-4xl px-8 md:px-0 ">
                             We Know What Traders Want.
-                        </h2>
+                        </h3>
                         <p className="mt-3 text-center px-4 md:px-0 font-light text-textSecondary">
                             Whatever you're into Forex & Indices or Futures, we've got the challenge for you.
                         </p>

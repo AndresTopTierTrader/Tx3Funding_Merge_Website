@@ -139,7 +139,7 @@ export default async function Layout({ children, params: { locale } }) {
             {children}
           </main>
           <EnviromentTag />
-          <MainBanner translations={couponTranslations} locale={locale} />
+          {/* <MainBanner translations={couponTranslations} locale={locale} /> */}
           <FooterLazyLoading locale={locale} translations={footerTranslations} />
           <CookieConsentHandler translations={cookieTranslations} />
           <Analytics />

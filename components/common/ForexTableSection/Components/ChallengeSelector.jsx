@@ -30,7 +30,7 @@ const ChallengeSelector = ({
 
   return (
     <motion.div
-      className="flex flex-row items-center justify-center w-full mt-14 gap-2 sm:gap-4 px-3 max-w-4xl mx-auto"
+      className="flex flex-row tracking-tight items-center justify-center w-full mt-14 gap-2 sm:gap-4 px-3 max-w-4xl mx-auto"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
